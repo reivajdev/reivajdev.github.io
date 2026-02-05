@@ -1,0 +1,2521 @@
+[
+  {
+    "q": "¿El encargado del tratamiento?",
+    "options": [
+      "Es quien decide quién será el responsable del tratamiento.",
+      "Es quien decide sobre la finalidad del tratamiento.",
+      "Es quien trata los datos por cuenta del responsable del tratamiento.",
+      "Es quien indica al responsable del tratamiento para que se tratan los datos."
+    ],
+    "correct": 2,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Cuál de las siguientes definiciones se corresponde con la de derecho de las nuevas tecnologías?",
+    "options": [
+      "La normativa que regula las relaciones de las nuevas profesiones.",
+      "El uso de la tecnología en la gestión de la justicia.",
+      "La normativa que regula las nuevas realidades sociales en las que impera el factor tecnológico.",
+      "Todas las anteriores."
+    ],
+    "correct": 2,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Cuál de estos servicios sería un servicio de la sociedad de la información?",
+    "options": [
+      "Instalar un lector de huella dactilar.",
+      "Administrar y mantener un dispositivo electrónico.",
+      "Desarrollar una aplicación informática.",
+      "Un almacenamiento de información en Cloud."
+    ],
+    "correct": 3,
+    "theme": "extra"
+  },
+  {
+    "q": "El principio que obliga a solicitar sólo los datos necesarios para la finalidad perseguida es el:",
+    "options": [
+      "Principio de consentimiento.",
+      "Principio de seguridad.",
+      "Principio de información.",
+      "Principio de minimización de datos."
+    ],
+    "correct": 3,
+    "theme": "extra"
+  },
+  {
+    "q": "La responsabilidad proactiva:",
+    "options": [
+      "Es una medida de control de la información.",
+      "Es un derecho de las personas.",
+      "Es la necesidad del responsable del tratamiento de aplicar medidas técnicas y organizativas apropiadas a fin de garantizar y poder demostrar que el tratamiento es conforme con el RGPD.",
+      "Es la capacidad del responsable del tratamiento de predecir posibles ataques informáticos."
+    ],
+    "correct": 2,
+    "theme": "extra"
+  },
+  {
+    "q": "El derecho de supresión también se conoce como:",
+    "options": [
+      "Derecho al olvido.",
+      "Derecho de eliminación.",
+      "Derecho de cancelación.",
+      "Derecho de oposición."
+    ],
+    "correct": 0,
+    "theme": "extra"
+  },
+  {
+    "q": "El consentimiento debe ser:",
+    "options": [
+      "Tácito o expreso.",
+      "Libre, específico, informado e inequívoco.",
+      "Siempre por escrito ante notario.",
+      "Válido solo para mayores de 18 años."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué es el Registro de Actividades de Tratamiento (RAT)?",
+    "options": [
+      "Un registro público donde se inscriben los ficheros.",
+      "Un documento interno que describe los tratamientos de datos realizados por una organización.",
+      "Una lista de empleados con acceso a ordenadores.",
+      "El historial de navegación de los usuarios."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "Las brechas de seguridad deben notificarse a la AEPD en un plazo máximo de:",
+    "options": [
+      "24 horas.",
+      "48 horas.",
+      "72 horas.",
+      "7 días."
+    ],
+    "correct": 2,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Cuál de estos NO es un derecho ARSULIPO (o derechos de los interesados)?",
+    "options": [
+      "Acceso.",
+      "Portabilidad.",
+      "Limitación del tratamiento.",
+      "Derecho al secreto profesional."
+    ],
+    "correct": 3,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué es el 'Habeas Data'?",
+    "options": [
+      "Un impuesto sobre el tráfico de datos.",
+      "El derecho de una persona a conocer, actualizar y rectificar la información que se haya recogido sobre ella en bases de datos.",
+      "Una técnica de cifrado de archivos.",
+      "Un protocolo de transferencia de ficheros."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "La LSSI-CE se aplica a:",
+    "options": [
+      "Solo a las grandes empresas tecnológicas.",
+      "A todos los prestadores de servicios de la sociedad de la información establecidos en España.",
+      "Solo a las tiendas online que venden productos físicos.",
+      "Exclusivamente a los proveedores de internet (ISP)."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "El concepto de 'Privacidad desde el Diseño' implica:",
+    "options": [
+      "Hacer que la web sea bonita pero segura.",
+      "Integrar la protección de datos en la fase de desarrollo de cualquier producto o servicio.",
+      "Contratar a un diseñador experto en leyes.",
+      "Cifrar los datos solo cuando el cliente lo pida."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué figura es obligatoria en administraciones públicas y en empresas que traten datos a gran escala?",
+    "options": [
+      "Director de Marketing.",
+      "Delegado de Protección de Datos (DPO).",
+      "Perito Informático Titulado.",
+      "Notario Digital."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Cuál es la duración general de la propiedad intelectual para el autor tras su muerte?",
+    "options": [
+      "20 años.",
+      "50 años.",
+      "70 años.",
+      "100 años."
+    ],
+    "correct": 2,
+    "theme": "extra"
+  },
+  {
+    "q": "En un contrato de software, el licenciamiento de 'uso' suele ser:",
+    "options": [
+      "Una transmisión de la propiedad total.",
+      "Una autorización de uso limitada y no exclusiva por regla general.",
+      "Un regalo del desarrollador.",
+      "Una venta del código fuente."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué elemento garantiza la integridad de una prueba electrónica?",
+    "options": [
+      "El tamaño del archivo.",
+      "La función hash y la cadena de custodia.",
+      "El nombre del archivo.",
+      "La marca del ordenador donde se encontró."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "La firma electrónica cualificada tiene el mismo valor jurídico que:",
+    "options": [
+      "Una firma escaneada.",
+      "La firma manuscrita.",
+      "Un correo electrónico normal.",
+      "Un mensaje de WhatsApp."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué ley regula el comercio electrónico en España?",
+    "options": [
+      "Ley Orgánica de Protección de Datos.",
+      "Ley de Servicios de la Sociedad de la Información (LSSI).",
+      "Código Penal.",
+      "Ley de Propiedad Intelectual."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "El derecho de 'portabilidad' permite:",
+    "options": [
+      "Mover los datos de un responsable a otro en un formato estructurado y legible.",
+      "Cambiar de operador de telefonía conservando el número.",
+      "Borrar todos los correos antiguos.",
+      "Viajar con el portátil por la UE."
+    ],
+    "correct": 0,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué es el derecho informático?",
+    "options": [
+      "Es el derecho que regula materias donde la tecnología es un elemento esencial.",
+      "Es la rama del derecho que trata los asuntos generados por empresas informáticas.",
+      "Es el derecho que se realiza con medios informáticos.",
+      "Es el tipo de derecho de las nuevas tecnologías: robótica, inteligencia artificial, blockchain, etc."
+    ],
+    "correct": 0,
+    "theme": "extra"
+  },
+  {
+    "q": "El encargado del tratamiento no debe:",
+    "options": [
+      "Implantar medidas de seguridad a los datos personales.",
+      "Transferir datos a otros países.",
+      "Permitir que nadie accede a los datos personales.",
+      "Tratar datos para un fin distinto al indicado por el responsable del tratamiento."
+    ],
+    "correct": 3,
+    "theme": "extra"
+  },
+  {
+    "q": "Una comunicación comercial por medios electrónicos es una comunicación promocional, directa o indirecta, de la imagen o bienes/servicios.",
+    "options": [
+      "Realizada por medio de SMS.",
+      "Realizada por medio de correos electrónicos.",
+      "Realizada por sistemas de mensajería (Whatsapp, Telegram, etc).",
+      "Todas las opciones anteriores son correctas."
+    ],
+    "correct": 3,
+    "theme": "extra"
+  },
+  {
+    "q": "El principio de transparencia debe conllevar, concretamente:",
+    "options": [
+      "Organización clara y estructurada de los datos personales en los sistemas informáticos.",
+      "El tratamiento de los datos personales adecuados, pertinentes y limitados al mínimo necesario en relación a los fines para los que se traten.",
+      "Políticas transparentes que deben ser fácilmente accesibles y descriptivas del tratamiento de datos personales y del ejercicio de los derechos de los interesados.",
+      "Un deber de diligencia por parte del responsable del fichero en el cumplimiento de la normativa."
+    ],
+    "correct": 2,
+    "theme": "extra"
+  },
+  {
+    "q": "El derecho informático:",
+    "options": [
+      "Es el derecho que utiliza la compra-venta de informática.",
+      "Es el derecho que regula materias donde la tecnología es un elemento esencial.",
+      "Es el derecho que regula el uso de la tecnología por los usuarios.",
+      "Es el derecho que utiliza la tecnología para ejercerse con los jueces y tribunales."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué se debe cumplir en la venta a través de comercio electrónico?",
+    "options": [
+      "Suministrar el producto en un plazo de 7 días hábiles.",
+      "Ofrecer al menos tres medios de pago diferentes.",
+      "Informar del precio, características, medios de pago, gastos, envío.",
+      "Informar al comprador de la procedencia de los productos que comprará si son importados de fuera de la Unión Europea."
+    ],
+    "correct": 2,
+    "theme": "extra"
+  },
+  {
+    "q": "Las firmas electrónicas:",
+    "options": [
+      "Pueden utilizarse por personas físicas, personas jurídicas y administración pública.",
+      "Pueden utilizarse por personas físicas.",
+      "Pueden utilizarse por personas físicas y personas jurídicas.",
+      "Pueden utilizarse por personas jurídicas."
+    ],
+    "correct": 0,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Se pueden mandar comunicaciones comerciales a través de envíos por correo electrónico (emailings)?",
+    "options": [
+      "Si se cuenta con el consentimiento o existe una relación contractual.",
+      "Si las direcciones de email son de cuentas gratuitas (Gmail, Yahoo, Outlook, etc.).",
+      "Si las direcciones de email las hemos recabado de páginas web.",
+      "Si las direcciones de email son de empresas."
+    ],
+    "correct": 0,
+    "theme": "extra"
+  },
+  {
+    "q": "No hace falta implantar medidas de seguridad:",
+    "options": [
+      "A los datos personales almacenados en soporte papel.",
+      "A los datos personales que se manejan como encargado del tratamiento.",
+      "A los datos personales que no identifican o hacen identificable a una persona física.",
+      "A los datos personales de un fichero que se almacenan en varios servidores."
+    ],
+    "correct": 2,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué tienen en común el phishing, el sexting y el ciberacoso?",
+    "options": [
+      "Que son delitos contra menores de edad.",
+      "Que son delitos de violencia de género.",
+      "Que son delitos informáticos.",
+      "Que son delitos contra las personas jurídicas."
+    ],
+    "correct": 2,
+    "theme": "extra"
+  },
+  {
+    "q": "El servicio de la sociedad de la información de comercio electrónico de material deportivo:",
+    "options": [
+      "No requiere ninguna autorización para prestarse.",
+      "Requiere autorización administrativa pero no civil.",
+      "Debe autorizarse por el organismo pertinente.",
+      "Se debe prestar por una entidad certificada en servicios de la sociedad de la información."
+    ],
+    "correct": 0,
+    "theme": "extra"
+  },
+  {
+    "q": "El software libre (free software):",
+    "options": [
+      "No significa que sea software sin autor.",
+      "Significa que es software gratuito.",
+      "No significa que sea software gratuito.",
+      "Significa que es software abierto."
+    ],
+    "correct": 2,
+    "theme": "extra"
+  },
+  {
+    "q": "Si se solicita un derecho de acceso:",
+    "options": [
+      "Se debe aportar un documento que acredite la identidad o representación, salvo que el destinatario ya tenga acreditada la identidad.",
+      "Se debe solicitar en soporte electrónico si los datos solicitados se recabaron en soporte electrónico.",
+      "Se debe solicitar en el formulario elaborado por el destinatario del derecho publicado en su página web.",
+      "No se puede solicitar ya otro derecho hasta que transcurran 12 meses o se hayan modificado los datos."
+    ],
+    "correct": 0,
+    "theme": "extra"
+  },
+  {
+    "q": "La firma electrónica escaneada:",
+    "options": [
+      "No tiene efectos jurídicos.",
+      "No se puede manipular.",
+      "No tiene efectos salvo que lo reconozcan terceros de confianza.",
+      "No se le niegan efectos jurídicos."
+    ],
+    "correct": 3,
+    "theme": "extra"
+  },
+  {
+    "q": "La normativa de protección de datos:",
+    "options": [
+      "No se aplica en las actividades exclusivamente públicas y estatales.",
+      "Solo se aplica a las empresas privadas.",
+      "No se aplica a las personas mayores de edad.",
+      "No se aplica en actividades exclusivamente personales y domésticas."
+    ],
+    "correct": 3,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué exige el principio de minimización de datos en el tratamiento de datos personales?",
+    "options": [
+      "Exige que los datos recabados sean de personas que hayan consentido que se traten sus datos.",
+      "Exige que los datos recabados sean los necesarios para el uso que se les va a dar.",
+      "Exige que los datos que se recaben sean de un tamaño mínimo.",
+      "Exige que se recaben datos útiles para el responsable del fichero."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Cuál es el secreto relativo a la técnica de los procedimientos de producción?",
+    "options": [
+      "Secreto de empresa.",
+      "Secreto patrimonial.",
+      "Secreto productivo.",
+      "Secreto Industrial."
+    ],
+    "correct": 3,
+    "theme": "extra"
+  },
+  {
+    "q": "Las fotografías con datos personales almacenados en el teléfono particular:",
+    "options": [
+      "No están sujetas a la normativa sobre los servicios de la sociedad de la información.",
+      "No están sujetos a la normativa sobre propiedad intelectual.",
+      "No están sujetos a la normativa sobre el derecho al honor y a la intimidad.",
+      "No están sujetos a la normativa de protección de datos si son de ámbito doméstico y particular."
+    ],
+    "correct": 3,
+    "theme": "extra"
+  },
+  {
+    "q": "Un responsable del tratamiento, según la normativo de protección de datos personales, es:",
+    "options": [
+      "La persona física o jurídica que decide que datos se compran o venden de la empresa.",
+      "La persona jurídica o física que almacena los datos.",
+      "La persona que decide sobre qué datos se compran y se venden de la empresa.",
+      "La persona jurídica o física que decide sobre los fines y los medios del tratamiento."
+    ],
+    "correct": 3,
+    "theme": "extra"
+  },
+  {
+    "q": "El consentimiento es un requisito para poder tratar los datos personales:",
+    "options": [
+      "Siempre que los datos sean de personas físicas identificadas o identificables.",
+      "Siempre que los datos se traten de forma automatizada.",
+      "Siempre que no haya otra base jurídica o de licitud para tratar los datos.",
+      "Siempre que se traten datos de personas físicas y no jurídicas."
+    ],
+    "correct": 2,
+    "theme": "extra"
+  },
+  {
+    "q": "El software libre o free software:",
+    "options": [
+      "No significa que sea software gratuito.",
+      "No significa que sea software sin autor.",
+      "Significa que es software gratuito.",
+      "Significa que es software abierto."
+    ],
+    "correct": 0,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Se pueden enviar comunicaciones comerciales a través del correo electrónico (emailings)?",
+    "options": [
+      "Si las direcciones de email las hemos recabado de páginas web.",
+      "Si se cuenta con el consentimiento o existe una relación contractual.",
+      "Si las direcciones de email son de cuentas gratuitas (Gmail, Yahoo, Outlook, etc.).",
+      "Si las direcciones de email son de empresas."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "Los derechos del autor de una obra persisten durante toda la vida del autor y tras su muerte, durante:",
+    "options": [
+      "100 años.",
+      "El tiempo que haya determinado el autor.",
+      "25 años.",
+      "70 años."
+    ],
+    "correct": 3,
+    "theme": "extra"
+  },
+  {
+    "q": "Una transferencia internacional o transferencia a un tercer país, según el Reglamento General de Protección de Datos, se produce:",
+    "options": [
+      "Cuando se transfieren datos personales fuera el territorio español.",
+      "Cuando se intercomunican servidores ubicados en varios países.",
+      "Cuando se transfieren datos fuera de la Unión Europea.",
+      "Cuando se contrata un servicio de Cloud."
+    ],
+    "correct": 2,
+    "theme": "extra"
+  },
+  {
+    "q": "En la actividad del profesional informático, éste se verá obligado a cumplir:",
+    "options": [
+      "Las conductas restrictivas.",
+      "La ética constructiva.",
+      "El secreto profesional y la confidencialidad.",
+      "El compromiso de las relaciones con sus iguales."
+    ],
+    "correct": 2,
+    "theme": "extra"
+  },
+  {
+    "q": "Un dato personal recogido en un documento en papel:",
+    "options": [
+      "No está sujeto a la normativa de protección de datos personales.",
+      "Está sujeto a la normativa de protección de datos personales sólo si se graba en soporte lógico.",
+      "Está sujeto a la normativa como otro dato personal cualquiera.",
+      "Se puede tratar sin consentimiento porque está grabado en papel."
+    ],
+    "correct": 2,
+    "theme": "extra"
+  },
+  {
+    "q": "En el derecho sui generis, relativo a la propiedad intelectual de las bases de datos, se protege",
+    "options": [
+      "La originalidad de la base de datos.",
+      "La originalidad de su contenido.",
+      "El esfuerzo invertido en tiempo y dinero para crear los contenidos de la base de datos.",
+      "El esfuerzo invertido en tiempo y dinero para crear la base de datos."
+    ],
+    "correct": 3,
+    "theme": "extra"
+  },
+  {
+    "q": "Los tipos de peritos informáticos son:",
+    "options": [
+      "Forense, implantador, telemático y auditor.",
+      "Telemático, implantador, forense y mantenedor.",
+      "Forense, de gestión, tasador y telemático.",
+      "Pericial, telemático, forense e implantador."
+    ],
+    "correct": 2,
+    "theme": "extra"
+  },
+  {
+    "q": "Un responsable del tratamiento es:",
+    "options": [
+      "La persona que decide sobre qué datos se compran y se venden de la empresa.",
+      "La persona jurídica o física que almacena los datos.",
+      "La persona jurídica o física que decide sobre los fines y los medios del tratamiento.",
+      "La persona física o jurídica que decide que datos se compran o venden de la empresa."
+    ],
+    "correct": 2,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué es la 'privacidad por defecto'?",
+    "options": [
+      "Aplicar medidas para tratar solo los datos necesarios para cada fin específico de forma automática.",
+      "Que el usuario siempre tenga que marcar la casilla de 'sí quiero'.",
+      "Que los datos sean públicos a menos que se diga lo contrario.",
+      "Ocultar la política de privacidad en el pie de página."
+    ],
+    "correct": 0,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Cuál es la función del Delegado de Protección de Datos (DPO)?",
+    "options": [
+      "Sustituir al responsable del tratamiento.",
+      "Informar, asesorar y supervisar el cumplimiento del RGPD en la organización.",
+      "Sancionar a los empleados que pierdan su contraseña.",
+      "Vender bases de datos a terceros."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "La LSSI-CE obliga a los prestadores de servicios a:",
+    "options": [
+      "Ofrecer sus servicios de forma gratuita.",
+      "Facilitar sus datos de contacto (Nombre, NIF, Email) de forma permanente y fácil.",
+      "Registrar a cada usuario con su DNI físico.",
+      "No usar nunca cookies."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "En el marco de la firma electrónica, el 'no repudio' significa:",
+    "options": [
+      "Que el mensaje no ha sido modificado.",
+      "Que el emisor no puede negar la autoría del mensaje enviado.",
+      "Que el mensaje es secreto.",
+      "Que el destinatario no puede leer el mensaje."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué se entiende por 'conocimiento efectivo' en el caso de contenidos ilícitos alojados por un PSI?",
+    "options": [
+      "Cuando el administrador sospecha que algo va mal.",
+      "Cuando un órgano competente declara la ilicitud y ordena la retirada.",
+      "Cuando un usuario cualquiera envía un reporte por error.",
+      "Cuando el contenido tiene pocas visitas."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué protege el derecho de autor en un programa de ordenador?",
+    "options": [
+      "Las ideas y principios en los que se basa el software.",
+      "La expresión del programa (código fuente y código objeto).",
+      "La funcionalidad comercial del programa.",
+      "El algoritmo matemático abstracto."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "Un contrato de 'Escrow' o depósito de código fuente sirve para:",
+    "options": [
+      "Evitar pagar al desarrollador.",
+      "Garantizar el acceso al código si el desarrollador desaparece o quiebra.",
+      "Vender el código a la competencia.",
+      "Registrar la marca del software."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué es el 'pharming'?",
+    "options": [
+      "Enviar correos basura masivos.",
+      "Redirigir el tráfico de un sitio web legítimo a uno fraudulento mediante la alteración de DNS.",
+      "Robar cables de fibra óptica.",
+      "Vender medicamentos online sin licencia."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "La cadena de custodia en la prueba pericial informática garantiza:",
+    "options": [
+      "Que el perito cobre sus honorarios.",
+      "Que la prueba no ha sido manipulada desde su obtención hasta su presentación en el juzgado.",
+      "Que el sospechoso confiese el delito.",
+      "Que el disco duro sea de última generación."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué es una Evaluación de Impacto (EIPD)?",
+    "options": [
+      "Un test de velocidad del servidor.",
+      "Un análisis para identificar y mitigar riesgos en tratamientos de datos de alto riesgo.",
+      "Una encuesta de satisfacción al cliente.",
+      "Un examen de leyes para abogados."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "El software de código abierto (Open Source):",
+    "options": [
+      "No permite su modificación.",
+      "Permite el acceso al código fuente para su estudio y mejora.",
+      "Es ilegal en el entorno empresarial.",
+      "Siempre es gratuito."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿A quién corresponde la carga de la prueba en el cumplimiento del RGPD?",
+    "options": [
+      "Al usuario afectado.",
+      "Al Responsable del Tratamiento.",
+      "A la policía judicial.",
+      "Al juez de instrucción."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué ocurre si un contrato electrónico no informa sobre el derecho de desistimiento?",
+    "options": [
+      "El contrato es nulo de pleno derecho.",
+      "El plazo para desistir se amplía a 12 meses.",
+      "El comprador pierde el derecho a devolver el producto.",
+      "El vendedor debe pagar una multa al comprador directamente."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "La firma electrónica avanzada requiere:",
+    "options": [
+      "Estar vinculada al firmante de manera única y permitir su identificación.",
+      "Haber sido creada con un certificado cualificado y dispositivo seguro.",
+      "Solo un nombre escrito al final de un email.",
+      "Una foto del DNI adjunta."
+    ],
+    "correct": 0,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Cuál es el objetivo principal de la Deontología informática?",
+    "options": [
+      "Ganar más dinero como profesional.",
+      "Establecer deberes y normas éticas para el correcto ejercicio de la profesión.",
+      "Aprender a programar en lenguajes antiguos.",
+      "Evitar pagar impuestos tecnológicos."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "Los datos biométricos se consideran:",
+    "options": [
+      "Datos de nivel básico.",
+      "Categorías especiales de datos (si se usan para identificar de forma unívoca).",
+      "Datos públicos.",
+      "Datos no sujetos al RGPD."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué es el 'spam' legalmente?",
+    "options": [
+      "Cualquier correo que no me guste.",
+      "Comunicaciones comerciales no solicitadas enviadas por medios electrónicos sin consentimiento previo.",
+      "Un virus informático.",
+      "Un tipo de carne enlatada."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "En propiedad intelectual, el derecho de 'paternidad' es:",
+    "options": [
+      "El derecho a cobrar por la obra.",
+      "El derecho a ser reconocido como el autor de la obra.",
+      "El derecho a destruir la obra.",
+      "El derecho a heredar los programas de los padres."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Cuál de estos es un delito de daño informático?",
+    "options": [
+      "Leer un correo ajeno sin permiso.",
+      "Borrar o inutilizar datos, programas o documentos electrónicos ajenos de forma grave.",
+      "Insultar a alguien por redes sociales.",
+      "Comprar un ordenador robado."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "El principio de 'integridad y confidencialidad' obliga a:",
+    "options": [
+      "Publicar todos los datos para que sean transparentes.",
+      "Garantizar la seguridad técnica para evitar el tratamiento no autorizado o la pérdida de datos.",
+      "Solo guardar datos de personas casadas.",
+      "No borrar nunca ningún dato."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué es una cookie de terceros?",
+    "options": [
+      "Una que se borra al cerrar el navegador.",
+      "Aquella enviada al equipo del usuario desde un dominio que no es gestionado por el editor de la web visitada.",
+      "Una galleta que se comparte entre tres personas.",
+      "Un programa malicioso que roba contraseñas."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "La 'cesión' de derechos de software implica:",
+    "options": [
+      "Permitir el uso temporal a cambio de una cuota.",
+      "La transferencia de la titularidad de los derechos de explotación.",
+      "Regalar el programa sin condiciones.",
+      "Prestar el CD de instalación."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "El perito tasador informático se encarga de:",
+    "options": [
+      "Buscar virus en los equipos.",
+      "Valorar económicamente bienes, servicios o daños informáticos.",
+      "Reparar ordenadores estropeados.",
+      "Instalar redes WiFi."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "Un contrato 'Click-wrap' se perfecciona cuando:",
+    "options": [
+      "Se firma con certificado digital cualificado.",
+      "El usuario hace clic en el botón de 'Acepto'.",
+      "Se rompe el precinto de la caja del software.",
+      "Se recibe la factura por correo postal."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué es la 'Legitimación' en protección de datos?",
+    "options": [
+      "La base legal que permite tratar los datos (consentimiento, contrato, interés legítimo, etc.).",
+      "El carnet de identidad del responsable.",
+      "La antigüedad de la empresa en el mercado.",
+      "Un sello que pone la AEPD en las webs."
+    ],
+    "correct": 0,
+    "theme": "extra"
+  },
+  {
+    "q": "El 'interés legítimo' como base legal requiere:",
+    "options": [
+      "Que el responsable gane dinero con el tratamiento.",
+      "Una ponderación entre el interés del responsable y los derechos y libertades del interesado.",
+      "Que los datos sean públicos.",
+      "Que el usuario lo firme ante notario."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Cuál es la sanción máxima prevista por el RGPD?",
+    "options": [
+      "600.000 euros.",
+      "20 millones de euros o el 4% del volumen de negocio anual global.",
+      "El cierre definitivo de la empresa.",
+      "Penas de cárcel para el CEO."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "La firma electrónica 'cualificada' se diferencia de la 'avanzada' en:",
+    "options": [
+      "Que es más rápida.",
+      "Que se basa en un certificado cualificado y se genera mediante un dispositivo cualificado de creación de firma.",
+      "Que solo se puede usar en dispositivos Apple.",
+      "Que requiere conexión a internet permanente."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "En un juicio, si se impugna una prueba electrónica:",
+    "options": [
+      "La prueba se descarta automáticamente.",
+      "Quien la presentó debe demostrar su autenticidad e integridad (normalmente con pericial).",
+      "El juez decide por sorteo.",
+      "Se detiene el juicio para siempre."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué es un 'Responsable del Tratamiento'?",
+    "options": [
+      "El empleado que mete los datos en el sistema.",
+      "La entidad que determina los fines y los medios del tratamiento de datos personales.",
+      "El técnico de soporte que arregla el servidor.",
+      "La persona que compra el software."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "En un peritaje, el 'Principio de Idoneidad' significa:",
+    "options": [
+      "Que el perito sea simpático.",
+      "Que los medios y métodos utilizados sean los adecuados para obtener la prueba sin dañarla.",
+      "Que el ordenador sea de marca reconocida.",
+      "Que la prueba se entregue en papel."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "La propiedad intelectual del software creado por un trabajador en el ejercicio de sus funciones pertenece a:",
+    "options": [
+      "Al trabajador siempre.",
+      "Al empresario o empleador, salvo pacto en contrario.",
+      "Al Estado.",
+      "A ambos al 50%."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué es el 'Cyberbullying' o ciberacoso?",
+    "options": [
+      "Un error en el código de red.",
+      "El uso de medios digitales para acosar a una persona mediante ataques personales o divulgación de información confidencial.",
+      "Jugar a videojuegos muchas horas.",
+      "Enviar publicidad no deseada."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "El certificado cualificado de firma electrónica debe ser expedido por:",
+    "options": [
+      "Cualquier programador.",
+      "Un Prestador de Servicios de Confianza cualificado.",
+      "El fabricante del ordenador.",
+      "La policía local."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "En el comercio electrónico, el 'clic' en 'He leído y acepto' se considera:",
+    "options": [
+      "Un gesto sin valor legal.",
+      "La manifestación del consentimiento contractual.",
+      "Una forma de descargar un virus.",
+      "Un requisito solo para mayores de edad."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué derecho permite al interesado obtener una copia de sus datos personales?",
+    "options": [
+      "Derecho de Rectificación.",
+      "Derecho de Acceso.",
+      "Derecho de Oposición.",
+      "Derecho de Supresión."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Cuál es la principal diferencia entre software libre y software propietario?",
+    "options": [
+      "El precio únicamente.",
+      "Las libertades de uso, estudio, modificación y distribución del código.",
+      "Que uno tiene virus y el otro no.",
+      "Que el propietario no se puede instalar en Linux."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "El delito de 'Descubrimiento y revelación de secretos' incluye:",
+    "options": [
+      "Perder una llave física.",
+      "Apoderarse de correos electrónicos o interceptar telecomunicaciones sin consentimiento.",
+      "Contar un chiste sobre un amigo.",
+      "Olvidar la contraseña de tu propio correo."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "La 'Cadena de Custodia' comienza en:",
+    "options": [
+      "El juicio.",
+      "El momento de la recogida o hallazgo de la evidencia informática.",
+      "Cuando el juez dicta sentencia.",
+      "Cuando el perito llega a su casa."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué es la LOPDGDD?",
+    "options": [
+      "Una ley sobre piratería.",
+      "La Ley Orgánica de Protección de Datos Personales y Garantía de los Derechos Digitales.",
+      "Un protocolo de internet.",
+      "La liga de programadores de España."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "El derecho a la 'limitación del tratamiento' significa que:",
+    "options": [
+      "Solo se pueden usar los datos 2 horas al día.",
+      "El responsable debe marcar los datos para evitar su tratamiento futuro en ciertos casos.",
+      "Hay que borrar los datos inmediatamente.",
+      "Los datos solo pueden ser leídos por el CEO."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué sanción tiene el envío masivo de spam (más de 30 correos en un año) según la LSSI?",
+    "options": [
+      "Es una infracción leve.",
+      "Es una infracción grave.",
+      "Es un delito de cárcel.",
+      "No está sancionado."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "Un contrato de 'Mantenimiento Informático' es:",
+    "options": [
+      "Un contrato de compraventa.",
+      "Un contrato de arrendamiento de servicios.",
+      "Un contrato de seguro médico.",
+      "Un contrato gratuito por ley."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "La 'Ingeniería Social' se basa en:",
+    "options": [
+      "Programar en Java.",
+      "Manipular psicológicamente a las personas para que revelen información confidencial.",
+      "Construir puentes digitales.",
+      "Arreglar hardware social."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "El perito informático forense:",
+    "options": [
+      "Limpia los ordenadores de polvo.",
+      "Recopila, analiza y preserva evidencias digitales para un proceso judicial.",
+      "Vende licencias de software.",
+      "Diseña páginas web seguras."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Es obligatorio el consentimiento para cookies técnicas (necesarias para la web)?",
+    "options": [
+      "Sí, siempre.",
+      "No, están exceptuadas del deber de información y consentimiento.",
+      "Solo si la web es de un banco.",
+      "Depende del navegador del usuario."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "La 'Licencia de Uso' de un software permite:",
+    "options": [
+      "Ser el dueño legal del código.",
+      "Utilizar el programa bajo las condiciones establecidas por el titular de los derechos.",
+      "Revender el programa a quien quieras.",
+      "Modificar el código fuente aunque esté prohibido."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué es el 'secreto profesional' del informático?",
+    "options": [
+      "No decir cuánto cobra.",
+      "El deber de no revelar los datos o información confidencial a los que accede por su trabajo.",
+      "Esconder los errores del código.",
+      "No compartir contraseñas con los jefes."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "El principio de 'Exactitud' en el RGPD implica:",
+    "options": [
+      "Que el servidor no tenga retardos.",
+      "Que los datos deben ser exactos y estar actualizados.",
+      "Que el perito debe usar una regla métrica.",
+      "Que la factura debe ser exacta."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué es la 'Propiedad Industrial' en informática?",
+    "options": [
+      "El derecho sobre los libros de texto.",
+      "Protege invenciones (patentes) o signos distintivos (marcas).",
+      "El derecho a tener una oficina en un polígono.",
+      "La propiedad de los muebles de la empresa."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "Un ataque de denegación de servicio (DoS) busca:",
+    "options": [
+      "Robar fotos del usuario.",
+      "Inhabilitar el acceso a un servicio o recurso a sus usuarios legítimos.",
+      "Mejorar la velocidad de la red.",
+      "Instalar un antivirus."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "En un juicio, un documento electrónico es:",
+    "options": [
+      "Solo un PDF.",
+      "Toda información de naturaleza electrónica archivada en un soporte electrónico.",
+      "Cualquier papel escaneado.",
+      "Solo los correos con firma cualificada."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "La 'Responsabilidad Proactiva' exige:",
+    "options": [
+      "Esperar a que la AEPD te multe para arreglar los fallos.",
+      "Capacidad de demostrar que se han aplicado las medidas de protección necesarias.",
+      "Que el informático sea una persona activa y deportista.",
+      "Publicar en la web que eres una empresa segura."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Cuál es la función de una 'Autoridad de Control'?",
+    "options": [
+      "Vigilar el tráfico de coches.",
+      "Supervisar la aplicación del RGPD (en España, la AEPD).",
+      "Controlar los precios del hardware.",
+      "Ninguna de las anteriores."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "La 'Firma Electrónica Simple' consiste en:",
+    "options": [
+      "Un código secreto muy largo.",
+      "Datos en formato electrónico asociados a otros datos electrónicos que el firmante utiliza para firmar.",
+      "Una firma hecha con un bolígrafo sobre la pantalla.",
+      "Un mensaje de audio."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué ley regula la Propiedad Intelectual en España?",
+    "options": [
+      "Código de Comercio.",
+      "Ley de Propiedad Intelectual (Texto Refundido 1/1996).",
+      "Constitución Española únicamente.",
+      "Ley de Enjuiciamiento Criminal."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "El 'análisis de riesgos' debe hacerse:",
+    "options": [
+      "Solo una vez al crear la empresa.",
+      "De forma continua y antes de iniciar nuevos tratamientos de datos.",
+      "Solo si hay una brecha de seguridad.",
+      "Si el cliente lo solicita por escrito."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "Un perito 'informático de gestión' se centra en:",
+    "options": [
+      "Hackear sistemas externos.",
+      "Analizar procesos de negocio, valoraciones de proyectos y auditorías de sistemas.",
+      "Limpiar virus de los móviles.",
+      "Reparar impresoras."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "La 'Revocación del consentimiento' debe ser:",
+    "options": [
+      "Imposible de encontrar.",
+      "Tan fácil como darlo.",
+      "Previo pago de una tasa.",
+      "Solo mediante carta certificada."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué es la 'Criptografía'?",
+    "options": [
+      "El estudio de las cuevas digitales.",
+      "Técnicas para proteger la información mediante el uso de algoritmos que la hacen ininteligible para terceros.",
+      "La moneda de internet.",
+      "Un lenguaje de programación ruso."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "En un contrato de software 'a medida', si no se dice nada:",
+    "options": [
+      "El cliente es el dueño de todo.",
+      "El desarrollador conserva los derechos de autor y el cliente tiene una licencia de uso exclusiva para sus fines.",
+      "El código pasa a ser dominio público.",
+      "El contrato es nulo."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "El 'Phishing' suele realizarse a través de:",
+    "options": [
+      "Llamadas telefónicas de familiares.",
+      "Correos electrónicos que suplantan a entidades de confianza (bancos, etc.).",
+      "Mensajes de radio.",
+      "Anuncios en el periódico físico."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "¿De qué será responsable el prestador de servicios respecto a un foro?",
+    "options": [
+      "De lo que se publica si tiene conocimiento efectivo de que es ilícito y no lo retira.",
+      "De todo lo que se publique, aunque no lo haya visto.",
+      "De nada, nunca es responsable.",
+      "Solo si el foro es de pago."
+    ],
+    "correct": 0,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Qué entidades expiden certificados de firma?",
+    "options": [
+      "Las tiendas de informática.",
+      "Los prestadores de servicios de certificación (o de confianza).",
+      "Los fabricantes de routers.",
+      "Google y Microsoft únicamente."
+    ],
+    "correct": 1,
+    "theme": "extra"
+  },
+  {
+    "q": "El derecho 'sui generis' de las bases de datos protege:",
+    "options": [
+      "La inversión sustancial en la obtención, verificación o presentación del contenido.",
+      "Solo si la base de datos es muy bonita.",
+      "El nombre de la base de datos.",
+      "A los usuarios que leen la base de datos."
+    ],
+    "correct": 0,
+    "theme": "extra"
+  },
+  {
+    "q": "¿Cuál de las siguientes definiciones se corresponde con la de derecho informático?",
+    "options": [
+      "El uso de la informática en el ámbito jurídico.",
+      "Las implicaciones tecnológicas en una sociedad organizada.",
+      "La rama del derecho que regula aspectos en los que las tecnologías de la información tienen un componente esencial.",
+      "Todas las anteriores son correctas"
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Cuál de las siguientes afirmaciones es correcta respecto al derecho informático?",
+    "options": [
+      "Es estanco y no se ve informado de otras áreas del derecho.",
+      "Existen implicaciones solo en el ámbito del derecho privado.",
+      "Existen implicaciones solo en el ámbito del derecho público.",
+      "Afecta tanto al ámbito privado (civil mercantil) como al público (administrativo penal)."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Qué son los códigos de conducta?",
+    "options": [
+      "Un conjunto de principios y buenas prácticas que gobiernan una acción.",
+      "Un conjunto de leyes que regulan un sector.",
+      "Reglamentos que rigen para todos los ciudadanos independientemente del sector.",
+      "Ninguna es correcta."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Sobre la responsabilidad del ingeniero informático:",
+    "options": [
+      "Nunca es responsable de los daños.",
+      "Es responsable de los daños que cause.",
+      "La responsabilidad puede ser contractual y extracontractual.",
+      "B y C son correctas."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Cuál es el origen de la obligación de confidencialidad del ingeniero?",
+    "options": [
+      "Solo de los códigos de conducta.",
+      "Solo del código deontológico.",
+      "Puede ser contractual estatutaria deontológica o legal.",
+      "Ninguna es correcta."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Quién dijo: «cuando la gente entra a la sala de informática, da la impresión de que dejan la ética fuera»?",
+    "options": [
+      "Walter Maner.",
+      "Donn Parker.",
+      "Isaac Asimov.",
+      "James Moor"
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "La exigibilidad de los códigos de conducta:",
+    "options": [
+      "Son obligatorios para todos los ciudadanos.",
+      "Solo se aplican en el ámbito público.",
+      "Se aplican a quienes lo hayan aceptado asumido o por su sector de actividad.",
+      "A y B son correctas."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "En las empresas, los códigos de conducta pueden servir para:",
+    "options": [
+      "Decidir qué leyes nacionales aplicar.",
+      "Determinar qué contratos cumplir.",
+      "Regular el uso de herramientas y dispositivos electrónicos por empleados.",
+      "Determinar leyes laborales."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Qué materias suelen regular los códigos dictados por las empresas?",
+    "options": [
+      "La privacidad.",
+      "La responsabilidad profesional.",
+      "El uso de dispositivos móviles.",
+      "Todas son correctas."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Qué afirmación es correcta sobre el secreto de empresa e industrial?",
+    "options": [
+      "El secreto de empresa no aplica a entidades no industriales.",
+      "El secreto industrial se puede subsumir dentro del secreto de empresa.",
+      "Si hay secreto de empresa no debe aplicarse el industrial.",
+      "B y C son correctas."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Qué término refiere a quien determina los medios y fines del tratamiento?",
+    "options": [
+      "El interesado.",
+      "El encargado del tratamiento.",
+      "El responsable del tratamiento.",
+      "El afectado."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "La «libertad informática» (art 18.4 CE):",
+    "options": [
+      "Es el derecho al habeas data.",
+      "Permite oponerse al uso de datos para fines distintos al legítimo.",
+      "Está recogido en la Constitución Española.",
+      "Todas las anteriores son correctas."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Según el RGPD, el consentimiento debe ser:",
+    "options": [
+      "Libre, tácito e informado.",
+      "Libre, específico, informado e inequívoco.",
+      "Válido mediante casillas preseleccionadas.",
+      "Ninguna de las anteriores."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Datos sobre características físicas, fisiológicas o conductuales obtenidos por tratamiento técnico:",
+    "options": [
+      "Datos genéticos.",
+      "Datos biométricos.",
+      "Datos disociados.",
+      "Datos sensibles."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Los datos personales obtenidos a partir de una muestra biológica son:",
+    "options": [
+      "Datos genéticos.",
+      "Datos biométricos.",
+      "Datos disociados.",
+      "Datos sensibles."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "El principio de minimización se refiere a:",
+    "options": [
+      "Cantidad limitada de los datos recogidos.",
+      "Número de personas con acceso.",
+      "El período del tratamiento.",
+      "Todas las anteriores."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "El principio de limitación de la finalidad implica que:",
+    "options": [
+      "Hay límites temporales de tratamiento.",
+      "Los fines deben ser determinados explícitos y legítimos.",
+      "Hay fines económicos prohibidos.",
+      "Hay límites territoriales."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "El derecho de acceso en el RGPD consiste en:",
+    "options": [
+      "Acceso universal a Internet.",
+      "Derecho a la tecnología.",
+      "Acceso a información pública.",
+      "Derecho a saber qué datos personales propios se están tratando."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "El derecho de limitación permite:",
+    "options": [
+      "Limitar el número de encargados.",
+      "Limitar dispositivos con datos.",
+      "Limitar el tratamiento de los datos en ciertas situaciones.",
+      "Todas las anteriores."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿En qué consiste el derecho de portabilidad?",
+    "options": [
+      "Llevar datos en el móvil u ordenador.",
+      "Transportar datos por redes físicas.",
+      "Exigir que las empresas porten datos a cajas fuertes.",
+      "Pedir copia de los datos en formato electrónico legible."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "El registro de actividades del tratamiento:",
+    "options": [
+      "Es obligación exclusiva del responsable.",
+      "No es obligatorio sin encargados.",
+      "Es obligación tanto del responsable como del encargado.",
+      "No aplica a empresas de menos de 200 trabajadores."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Al externalizar el tratamiento de datos, el responsable deberá:",
+    "options": [
+      "Tener encargados si hay +250 empleados.",
+      "Contratar solo a encargados que garanticen cumplir el RGPD.",
+      "Priorizar garantías laborales y fiscales.",
+      "Contratar encargados solo para datos de salud."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Qué ocurre si el encargado incumple las instrucciones del responsable?",
+    "options": [
+      "Resolución inmediata del contrato.",
+      "Indemnización obligatoria.",
+      "El encargado pasa a ser considerado responsable del tratamiento.",
+      "Supresión inmediata de los datos."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Qué medidas de seguridad hay que implantar?",
+    "options": [
+      "Niveles básico medio y alto (antigua LOPD).",
+      "Nivel según el tipo de datos únicamente.",
+      "Medidas según los riesgos detectados para los derechos.",
+      "Medidas según los fines del tratamiento."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Cuál es el plazo para notificar brechas de seguridad a la autoridad?",
+    "options": [
+      "24 horas.",
+      "12 horas.",
+      "48 horas.",
+      "72 horas."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Cuándo es obligatorio nombrar un DPD (Delegado de Protección de Datos)?",
+    "options": [
+      "Si se usan casillas premarcadas.",
+      "Si hay una ley que legitime el tratamiento.",
+      "Cuando se traten datos de categoría especial.",
+      "Si hay transferencias internacionales."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "La excepción de registro para empresas de < 250 trabajadores aplica si:",
+    "options": [
+      "Son datos casuales y sin riesgo.",
+      "Son datos no sensibles.",
+      "A y B son correctas.",
+      "No existe tal exención."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Cuándo es necesaria una Evaluación de Impacto (EIPD)?",
+    "options": [
+      "Uso de nuevas tecnologías con alto riesgo.",
+      "Tratamiento a gran escala de datos sensibles.",
+      "Elaboración de perfiles (profiling).",
+      "Todas las anteriores son correctas."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "La privacidad desde el diseño y por defecto:",
+    "options": [
+      "Solo para datos de categoría especial.",
+      "Es voluntaria para el responsable.",
+      "Es una obligación para todos los responsables.",
+      "Solo si hay registro de actividades."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Cuándo se analiza la necesidad y proporcionalidad del tratamiento?",
+    "options": [
+      "Al realizar una Evaluación de Impacto.",
+      "Al nombrar al DPD.",
+      "Al analizar solo la finalidad.",
+      "Al firmar el contrato con el encargado."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Cuál de estos rasgos NO define a un PSI (Prestador de Servicios de Intermediación)?",
+    "options": [
+      "Actividad técnica automática y pasiva.",
+      "Siglas de prestador de servicios de intermediación.",
+      "Obligación de controlar preventivamente toda la información.",
+      "No es responsable si no tiene conocimiento efectivo."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Sobre los servicios de la sociedad de la información:",
+    "options": [
+      "Solo son aquellos de pago.",
+      "Solo son los modelos 'freemium'.",
+      "Incluyen tanto servicios remunerados como no remunerados.",
+      "Incluyen únicamente servicios gratuitos."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Qué información legal debe facilitar un servicio web (LSSICE)?",
+    "options": [
+      "Nombre y domicilio.",
+      "Datos de inscripción registral.",
+      "Correo electrónico.",
+      "Todas las anteriores."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Cuál NO es un servicio de la sociedad de la información según la LSSICE?",
+    "options": [
+      "Teletexto televisivo en Smart TV.",
+      "Buscadores.",
+      "Servicios de acceso a Internet.",
+      "Almacenamiento online."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Régimen de responsabilidad de un PSI de intermediación:",
+    "options": [
+      "Igual que cualquier otra empresa sin excepciones.",
+      "Deben vigilar activamente lo que hacen los usuarios.",
+      "Pueden beneficiarse de no ser responsables de la licitud de contenidos ajenos.",
+      "No tienen responsabilidad nunca."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Rasgos característicos de la actividad de un PSI:",
+    "options": [
+      "Técnico.",
+      "Automático.",
+      "Pasivo.",
+      "Todas las anteriores son correctas."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Cuál es el ámbito de aplicación de la LSSICE?",
+    "options": [
+      "Cualquier empresa tecnológica del mundo.",
+      "Empresas con sede en cualquier país de la UE.",
+      "Empresas con sede en territorio español.",
+      "Todas las anteriores."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Qué empresas deben informar sobre la seguridad de sus servicios?",
+    "options": [
+      "Solo las españolas.",
+      "Solo las de intermediación.",
+      "Solo las de acceso a Internet.",
+      "Las de intermediación y acceso a Internet (B y C)."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Cuándo hay 'conocimiento efectivo' de ilicitud para un PSI?",
+    "options": [
+      "Cuando almacena los datos.",
+      "Cuando un usuario avisa por un formulario común.",
+      "Cuando el PSI navega por sus equipos.",
+      "Cuando una autoridad judicial declara el contenido ilícito."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Si una empresa de la UE presta servicios en España, debe cumplir la LSSICE en:",
+    "options": [
+      "Propiedad intelectual o industrial.",
+      "Seguridad alimentaria.",
+      "Importación de mercancías.",
+      "Fiscalidad."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Qué es FALSO sobre el envío de comunicaciones comerciales electrónicas?",
+    "options": [
+      "Hay que identificar que es publicidad.",
+      "Debe constar quién la envía.",
+      "La LSSI es la única norma aplicable sin ninguna otra.",
+      "A y B son correctas."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Regla general para envío de publicidad por email:",
+    "options": [
+      "Prohibido si no han sido solicitadas o autorizadas.",
+      "Permitido siempre que se pueda cancelar.",
+      "Permitido sin consentimiento si hay botón de baja.",
+      "Solo prohibido por correo postal."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Cuál NO es una excepción al consentimiento para publicidad?",
+    "options": [
+      "Relación comercial previa.",
+      "Datos obtenidos lícitamente.",
+      "Publicidad de productos similares a los contratados.",
+      "Que los datos estuvieran disponibles en Internet."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Para el envío de comunicaciones comerciales se exige:",
+    "options": [
+      "Siempre un opt-in sin excepciones.",
+      "Identificar claramente la publicidad como tal.",
+      "Manifestación tácita es suficiente para medios ordinarios.",
+      "Que el producto sea propio obligatoriamente."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Derecho de revocación del destinatario de publicidad:",
+    "options": [
+      "En todo momento procedimiento sencillo y gratuito.",
+      "Previo pago de una tasa de gestión.",
+      "No es obligatorio informar de cómo revocar.",
+      "Cualquier medio vale incluso papel para email."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Son válidos los contratos electrónicos?",
+    "options": [
+      "Solo con fedatario público.",
+      "Válidos si hay consentimiento objeto y causa.",
+      "Solo si se hacen por email.",
+      "Solo con certificado digital."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Plazo de desistimiento en comercio electrónico:",
+    "options": [
+      "14 días.",
+      "1 mes.",
+      "7 días.",
+      "3 meses."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Obligaciones previas al contrato (información):",
+    "options": [
+      "Trámites para celebrar el contrato.",
+      "Si se va a archivar el documento.",
+      "Medios técnicos para corregir errores.",
+      "Todas son correctas."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Nombre técnico de dispositivos de almacenamiento en terminales:",
+    "options": [
+      "Mailmarketing.",
+      "Web Site.",
+      "Cookies.",
+      "Apps."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Clasificación de cookies según su FINALIDAD:",
+    "options": [
+      "Persistentes y de sesión.",
+      "Técnicas, de análisis y publicidad.",
+      "Personalizadas y de terceros.",
+      "Propias y publicitarias."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Qué es una licencia 'shrink-wrap'?",
+    "options": [
+      "Se acepta haciendo clic en un botón.",
+      "Términos impresos en el paquete se aceptan al desprecintar.",
+      "Términos solo en un hiperenlace.",
+      "Licencia de código abierto."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Licencia de uso vs. Cesión de software:",
+    "options": [
+      "La licencia es autorización de uso; la cesión transmite derechos de explotación.",
+      "Son términos idénticos.",
+      "La licencia transmite más derechos que la cesión.",
+      "La cesión es solo para software libre."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Jurídicamente, un videojuego se considera principalmente:",
+    "options": [
+      "Un programa de ordenador simple.",
+      "Una obra multimedia (textos software sonidos etc.).",
+      "Una base de datos.",
+      "Una obra científica."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Sobre el registro de la propiedad intelectual del software:",
+    "options": [
+      "Es declarativo; la protección nace con la creación no con el registro.",
+      "Es constitutivo; sin registro no hay protección.",
+      "Solo vale si se hace ante notario.",
+      "Es obligatorio para comercializar."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "El derecho de transformación en software incluye:",
+    "options": [
+      "Darle al 'play' para ejecutarlo.",
+      "La capacidad de hacer nuevas versiones.",
+      "Usarlo en más de un ordenador.",
+      "Venderlo a terceros."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Protección jurídica del software:",
+    "options": [
+      "Como patente industrial únicamente.",
+      "Como secreto de estado.",
+      "No se protege para no frenar la innovación.",
+      "Se equipara a una obra literaria."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Quién tiene los derechos de una obra colectiva?",
+    "options": [
+      "La persona que coordinó e impulsó la creación.",
+      "El que primero la registre.",
+      "Todos los autores por partes iguales.",
+      "La empresa de hosting."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Protección de las bases de datos:",
+    "options": [
+      "Doble sistema: derecho sui generis y derecho de autor.",
+      "Solo derecho de autor.",
+      "Solo derecho sui generis.",
+      "Solo mediante patentes."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Derechos patrimoniales de propiedad intelectual:",
+    "options": [
+      "Reproducción, comercialización y enajenación.",
+      "Distribución, cesión y externalización.",
+      "Reproducción, distribución, comunicación pública y transformación.",
+      "Solo el derecho de cobro."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Qué NO es aplicable al software libre?",
+    "options": [
+      "El usuario solo tiene acceso al código objeto.",
+      "El usuario puede ejecutarlo para cualquier propósito.",
+      "El autor da acceso al código fuente.",
+      "Se permite estudiar y modificar el programa."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Cuál es el objeto del delito de espionaje industrial?",
+    "options": [
+      "Secreto de empresa.",
+      "Cualquier dato económico.",
+      "Cualquier dato informático.",
+      "Datos personales de empleados."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Acceso intencional a un sistema sin autorización del titular:",
+    "options": [
+      "Ciberacoso.",
+      "Ciberfraude.",
+      "Intromisión ilegítima.",
+      "Espionaje militar."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Dimensiones de seguridad a proteger en la empresa:",
+    "options": [
+      "Competitividad y productividad.",
+      "Confidencialidad e integridad.",
+      "Viabilidad y finanzas.",
+      "Igualdad laboral."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Conductas que facilitan la comisión de delitos informáticos posteriores:",
+    "options": [
+      "Facilitadores.",
+      "Impulsores.",
+      "Precursores del delito.",
+      "Cómplices pasivos."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Phishing consiste en:",
+    "options": [
+      "Suplantación de identidad para robar datos confidenciales.",
+      "Ataque de denegación de servicio.",
+      "Redirigir DNS.",
+      "Borrar bases de datos."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Pharming consiste en:",
+    "options": [
+      "Enviar emails masivos.",
+      "Robar contraseñas por teclado.",
+      "Redirigir nombres de dominio a ordenadores falsos (DNS).",
+      "Estafas en compras online."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Uso de pantallazos de WhatsApp en juicio:",
+    "options": [
+      "No se admiten nunca.",
+      "Se admiten si son auténticos y no se impugnan.",
+      "Se aconseja acta notarial y hash de custodia.",
+      "B y C son correctas."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Perito especializado en extracción de datos de terminales móviles:",
+    "options": [
+      "Perito de gestión.",
+      "Perito tasador.",
+      "Perito financiero.",
+      "Perito forense."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Principio de garantía de no alteración de evidencias físicas:",
+    "options": [
+      "Idoneidad.",
+      "Proporcionalidad.",
+      "Privacidad.",
+      "Inalterabilidad."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Requisitos de la prueba pericial:",
+    "options": [
+      "Admisible, auténtica, inalterable y privada.",
+      "Admisible, auténtica, completa, fiable y entendible.",
+      "Rápida, barata y digital.",
+      "Solo que sea auténtica."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Cuál de las siguientes definiciones se corresponde con la de derecho de las nuevas tecnologías?",
+    "options": [
+      "La normativa que regula las relaciones de las nuevas profesiones.",
+      "El uso de la tecnología en la gestión de la justicia.",
+      "La normativa que regula las nuevas realidades sociales en las que impera el factor tecnológico.",
+      "Todas las anteriores."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "El principio que obliga a solicitar sólo los datos necesarios para la finalidad perseguida es el:",
+    "options": [
+      "Principio de consentimiento.",
+      "Principio de seguridad.",
+      "Principio de información.",
+      "Principio de minimización de datos."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Qué entiendes por un servicio de intermediación?",
+    "options": [
+      "El servicio prestado por un responsable que intermedia en la recogida de los datos personales.",
+      "El servicio prestado por el notario en la relación entre las partes.",
+      "Una operación electrónica donde interviene un intermediario a la hora de contratar el servicio o producto.",
+      "Un servicio de la sociedad de la información por el que se presta otro servicio de la sociedad de la información."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "La firma electrónica equiparable en juicio a la manuscrita es la:",
+    "options": [
+      "Firma electrónica reconocida.",
+      "Firma electrónica avanzada.",
+      "Firma electrónica escaneada.",
+      "Firma electrónica simple."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Cuándo se entiende que hay comercio electrónico?",
+    "options": [
+      "Cuando la oferta y aceptación del contrato es de un producto electrónico.",
+      "Cuando la oferta y la aceptación del contrato se transmite por medio de equipos electrónicos de tratamiento y almacenamiento de datos.",
+      "Cuando la oferta y la aceptación del contrato se realiza entre una empresa y un consumidor.",
+      "Cuando la oferta y la aceptación del contrato se realiza por medio de un prestador de servicios de la sociedad de la información."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Contratar un servicio de almacenamiento en la nube, de la base de datos personales:",
+    "options": [
+      "Supone una cesión de datos al prestador del servicio.",
+      "Supone una nueva responsabilidad de los datos para el prestador del servicio.",
+      "Supone un alquiler de la base de datos.",
+      "Supone un encargo del tratamiento."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Quién tiene derecho de desistimiento en el comercio electrónico?",
+    "options": [
+      "El comprador si el vendedor lo ofrece.",
+      "El comprador excepto para determinados productos.",
+      "Cualquiera cuando el producto es importado.",
+      "Los consumidores que lo hayan contratado."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "La clave pública y la clave privada son términos que se utilizan:",
+    "options": [
+      "Al crear ficheros firmados.",
+      "Al crear firmas electrónicas avanzadas.",
+      "Al crear firmas electrónicas.",
+      "En ninguno de los casos anteriores."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Una obra colectiva, en cuanto a los derechos de propiedad intelectual:",
+    "options": [
+      "Otorga derechos a quien la edite y divulgue.",
+      "Otorga derechos a quienes hayan suscrito el contrato de gestión de derechos de la obra.",
+      "Otorga siempre derechos a todos los partícipes independientemente de quien la edite y divulgue.",
+      "Otorga derechos de autor a todos y patrimoniales a los que más aporten."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "El derecho al olvido es:",
+    "options": [
+      "La obligación de que se olviden los datos de alguien.",
+      "El derecho a que el interesado olvide sus propios datos.",
+      "El derecho a que se supriman los datos o los enlaces a los datos.",
+      "El derecho a que se olviden los datos obsoletos."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Cómo se denomina el derecho en propiedad intectual, que protege la inversión sustancial, evaluada cualitativa o cuantitativamente, que realiza su fabricante, en una base de datos?",
+    "options": [
+      "Derechos de explotación.",
+      "Derechos de autor.",
+      "Derechos patrimoniales.",
+      "Derechos sui generis."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "A la hora de realizar una venta de un producto por medios electrónicos:",
+    "options": [
+      "La información previa se facilita en el idioma del vendedor y del comprador.",
+      "Hay que facilitar información previa en soporte/archivo descargable.",
+      "No hay que facilitar la información previa si se realiza a través de correos electrónicos y es entre empresas.",
+      "Hay que facilitar la información previa cuando lo solicite el comprador."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Para demostrar y probar la comisión de un delito informático:",
+    "options": [
+      "Deben presentar pruebas electrónicas de los dispositivos del denunciado.",
+      "Hay libertad para presentar pruebas electrónicas y no electrónicas.",
+      "Deben presentarse las pruebas anonimizadas y cifradas.",
+      "Hay libertad para denunciar pero se debe disponer y presentar el dispositivo electrónico del denunciado."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Qué contrato de software requiere más condiciones, regulación y detalles?",
+    "options": [
+      "Dependerá del número de usuarios que utilicen el software.",
+      "El contrato de software estándar.",
+      "El contrato para la realización de un software libre.",
+      "El contrato de desarrollo a medida."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Entre los derechos patrimoniales de la propiedad intelectual se incluyen:",
+    "options": [
+      "El derecho a la modificación coautoría subrogación y cesión.",
+      "El derecho a la subcontratación publicación cesión y copia.",
+      "El derecho a la transmisión sustitución y reconocimiento del autor.",
+      "El derecho de reproducción distribución transformación y comunicación pública."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Dónde es un elemento esencial la tecnología, en las materias que regula el derecho?",
+    "options": [
+      "En el derecho informático.",
+      "En las tecnologías de la sociedad de la información.",
+      "En las materias de los jueces y tribunales informáticos.",
+      "En la ley de servicios de la sociedad de la información."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Los tipos de firma electrónica son:",
+    "options": [
+      "Firma electrónica escaneada firma electrónica avanzada y firma electrónica simple.",
+      "Firma electrónica simple firma electrónica avanzada y firma electrónica reconocida.",
+      "Firma electrónica simple firma electrónica digitalizada y firma electrónica escaneada.",
+      "Firma electrónica avanzada firma electrónica certificada y firma electrónica manuscrita."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "La propiedad intelectual recoge los derechos:",
+    "options": [
+      "Los derechos morales y los derechos sociales.",
+      "Los derechos morales y los derechos patrimoniales.",
+      "Los derechos personales y los derechos reales.",
+      "Los derechos patrimoniales y los derechos económicos."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Los derechos morales del autor, en propiedad intelectual, son:",
+    "options": [
+      "Inalienables, subastables y comercializables.",
+      "Renunciables, transmisibles y cedibles.",
+      "Irrenunciables e inalienables.",
+      "Comercializables y cedibles."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "El derecho sui generis tiene en cuenta:",
+    "options": [
+      "La génesis de la base de datos.",
+      "La creación de los contenidos incluidos.",
+      "El esfuerzo de la estructuración y recopilación de los contenidos.",
+      "La originalidad de los contenidos."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Los derechos del autor de una obra perduran toda la vida del autor y tras su muerte:",
+    "options": [
+      "25 años.",
+      "70 años.",
+      "100 años.",
+      "El tiempo que determine el autor."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Qué regula materias donde la tecnología es un elemento esencial?",
+    "options": [
+      "La justicia informática.",
+      "La administración informática.",
+      "El derecho informático.",
+      "La informática jurídica."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Cuáles son las entidades que expiden certificados que vinculan datos de firma con un firmante?",
+    "options": [
+      "Los prestadores de servicios de intermediación.",
+      "Los prestadores de servicios de verificación.",
+      "Los prestadores de servicios de certificación.",
+      "Los prestadores de servicios de la sociedad de la información."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Las conductas para abusar de un menor y obtener material pornográfico se denomina?",
+    "options": [
+      "Grooming.",
+      "Phising.",
+      "Sexting.",
+      "Child Grooming."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Una comunicación comercial electrónica es una comunicación promocional realizada por:",
+    "options": [
+      "SMS.",
+      "Correos electrónicos.",
+      "Mensajería (Whatsapp Telegram).",
+      "Todas las opciones anteriores son correctas."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Las firmas electrónicas pueden utilizarse por:",
+    "options": [
+      "Personas físicas jurídicas y administración pública.",
+      "Solo personas físicas.",
+      "Personas físicas y personas jurídicas.",
+      "Solo personas jurídicas."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Se pueden mandar comunicaciones comerciales por email?",
+    "options": [
+      "Si se cuenta con el consentimiento o existe una relación contractual.",
+      "Si las cuentas son gratuitas (Gmail Outlook).",
+      "Si se han recabado de páginas web.",
+      "Si son de empresas."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "El servicio de comercio electrónico de material deportivo:",
+    "options": [
+      "No requiere ninguna autorización para prestarse.",
+      "Requiere autorización administrativa.",
+      "Debe autorizarse por organismo pertinente.",
+      "Se presta por entidad certificada."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "La normativa de protección de datos:",
+    "options": [
+      "No se aplica en actividades exclusivamente públicas.",
+      "Solo se aplica a empresas privadas.",
+      "No se aplica a mayores de edad.",
+      "No se aplica en actividades exclusivamente personales y domésticas."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Las fotografías con datos personales almacenados en el teléfono particular:",
+    "options": [
+      "No sujetas a SSI.",
+      "No sujetas a propiedad intelectual.",
+      "No sujetas a derecho al honor.",
+      "No sujetas a protección de datos si son de ámbito doméstico."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "El consentimiento es un requisito para tratar datos personales:",
+    "options": [
+      "Si son personas identificadas.",
+      "Si se tratan de forma automatizada.",
+      "Siempre que no haya otra base jurídica o de licitud.",
+      "Si son personas físicas y no jurídicas."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "Una transferencia internacional de datos se produce:",
+    "options": [
+      "Al transferir fuera de España.",
+      "Al intercomunicar servidores de varios países.",
+      "Cuando se transfieren datos fuera de la Unión Europea.",
+      "Al contratar un servicio de Cloud."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "En su actividad, el profesional informático está obligado a cumplir:",
+    "options": [
+      "Conductas restrictivas.",
+      "Ética constructiva.",
+      "Secreto profesional y confidencialidad.",
+      "Relaciones con iguales."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿A qué tipo de datos no se le aplicaría la normativa sobre protección de datos personales?",
+    "options": [
+      "Datos que no identifican ni hacen identificable a una persona física.",
+      "Datos en soporte papel.",
+      "Datos en varios servidores.",
+      "Datos manejados por más de un proveedor."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "La protección de propiedad intelectual tiene un plazo de duración con respecto al:",
+    "options": [
+      "Soporte de la obra.",
+      "La obra misma.",
+      "Plazo de duración de la obra.",
+      "Autor."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "A diferencia del DNI físico, el DNI electrónico permite:",
+    "options": [
+      "Identificar y firmar.",
+      "Identificar únicamente.",
+      "Firmar únicamente.",
+      "Identificar y autentificar."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "El uso del hash en una prueba digital se utiliza para garantizar:",
+    "options": [
+      "Cadena de legalidad.",
+      "Legalidad de la prueba.",
+      "Cadena de custodia de la prueba.",
+      "Destino de la prueba."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿De qué es responsable el administrador de un foro respecto a lo publicado?",
+    "options": [
+      "De todo lo publicado.",
+      "Si mantiene contenido sabiendo que es ilícito.",
+      "Si no tiene identificados a los usuarios.",
+      "Solo de lo publicado por no identificados."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "La propiedad intelectual es un derecho que se obtiene:",
+    "options": [
+      "Con el certificado de registro.",
+      "Al registrar en el registro de propiedad intelectual.",
+      "Cuando la obra se comercializa.",
+      "Cuando la obra se ha creado."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿Qué se debe informar al interesado cuando se recaban datos de un tercero?",
+    "options": [
+      "En el plazo máximo de un mes.",
+      "En el plazo máximo de 10 días.",
+      "En cualquier momento.",
+      "En el plazo máximo de 48 horas."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "La responsabilidad del profesional informático puede ser:",
+    "options": [
+      "Civil contractual y extracontractual.",
+      "Medioambiental.",
+      "Social y departamental.",
+      "Ética y social."
+    ],
+    "correct": 0,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿A quién puede facilitar el responsable los datos sin que sea cesión?",
+    "options": [
+      "A una administración pública.",
+      "A un encargado del tratamiento.",
+      "A un importador de datos.",
+      "A cualquier tercero autorizado."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "La inscripción en el Registro de la Propiedad Intelectual es:",
+    "options": [
+      "Necesario para obtener derechos.",
+      "Voluntario e independiente a obtener derechos.",
+      "Obligatorio para derechos de explotación.",
+      "Requisito legal indispensable."
+    ],
+    "correct": 1,
+    "theme": "original_q2"
+  },
+  {
+    "q": "La posibilidad de usar software sin adquirir más derechos que ejecución es:",
+    "options": [
+      "Transmisión de software.",
+      "Cesión de derechos.",
+      "Cesión de comercialización.",
+      "Licencia de derechos de uso."
+    ],
+    "correct": 3,
+    "theme": "original_q2"
+  },
+  {
+    "q": "¿El Reglamento General de Protección de Datos es una norma?",
+    "options": [
+      "Que se debe trasponer con una ley.",
+      "Un marco de referencia nacional.",
+      "Que tiene efectos directos y no debe trasponerse.",
+      "De efectos directos si no contradice norma nacional."
+    ],
+    "correct": 2,
+    "theme": "original_q2"
+  }
+]
