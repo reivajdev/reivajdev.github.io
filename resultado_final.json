@@ -2097,7 +2097,7 @@
       "Cualquiera cuando el producto es importado.",
       "Los consumidores que lo hayan contratado."
     ],
-    "correct": 0,
+    "correct": 1,
     "theme": "original_q2"
   },
   {
@@ -2520,3 +2520,4 @@
   }
 
 ]
+
