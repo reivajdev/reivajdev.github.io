@@ -233,7 +233,7 @@
 <div class="container">
     <!-- SETUP: Selector de modo -->
     <div id="setup">
-        <h1>🎓 Deontología: Banco de Preguntas</h1>
+        <h1>🎓 Seguridad: Banco de Preguntas</h1>
         <p style="text-align:center; font-size: 1.1rem; margin-bottom: 30px;">¿Cómo deseas estudiar?</p>
         <div class="mode-selector">
             <div class="mode-btn study" onclick="selectMode('study')">📚 MODO ESTUDIO<br><small style="font-size: 0.8rem;">Ver todas las preguntas<br>con las respuestas correctas</small></div>
@@ -315,7 +315,7 @@
     let baseQuestions = [];
 
     // Cargar preguntas desde JSON
-    fetch('resultado_final.json')
+    fetch('q.json')
         .then(response => response.json())
         .then(data => {
             baseQuestions = data.map(q => ({
@@ -848,3 +848,4 @@
 
 </body>
 </html>
+
