@@ -1,0 +1,1388 @@
+[
+    {
+        "q": "1. Asegurarse de que los datos puedan ser accedidos siempre que se necesite es una tarea del servicio de...",
+        "options": [
+            "Confidencialidad",
+            "Disponibilidad",
+            "Integridad",
+            "todas las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "2. Averiguar el período de un cifrador polialfabético, es tarea de...",
+        "options": [
+            "El cifrador polialfabético",
+            "El índice de coincidencia",
+            "El cifrador monoalfabético",
+            "Ninguna las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "3. Las aplicaciones informáticas que recopilan datos sobre los hábitos de navegación, preferencias y gustos del usuario son llamadas...",
+        "options": [
+            "Adware",
+            "Spyware",
+            "Phising",
+            "Ransomware"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "4. En un escaneo de puertos, al enviar a una máquina un paquete TCP con el bit SYN activado...",
+        "options": [
+            "Si el puerto está abierto, el destino contesta con un RST",
+            "Si el puerto está abierto, el destino contesta con un SYN y ACK",
+            "Si el puerto está cerrado, el destino contesta con un RST.",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "5. ¿Qué mecanismo utilizan los algoritmos de cifrado simétricos y asimétricos?",
+        "options": [
+            "Mecanismos de confusión y difusión",
+            "Mecanismos de cifrado simple",
+            "Mecanismos de cifrado complejo",
+            "Ninguna de las anteriores."
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "6. Sencillos y flexibles, son las principales ventajas de...",
+        "options": [
+            "NIDS",
+            "HIDS",
+            "IDS basado en firmas",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "7. En el SPAM, cual de estas características NO es propia de una lista blanca",
+        "options": [
+            "Relación de contactos confiables",
+            "Genera listas que pueden ser excluyentes o no",
+            "Solo resulta de interés para usuarios finales.",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "8. Una botnet es...",
+        "options": [
+            "Una red de ordenadores comprometidos",
+            "Ordenadores donde hay instalados troyanos",
+            "En su inicio, los spammers usaban IRc para controlarlas",
+            "Todas las anteriores"
+        ],
+        "correct": 3,
+        "theme": "extra"
+    },
+    {
+        "q": "9. A través de una inundación MAC...",
+        "options": [
+            "Un atacante puede hacerse con el control del tráfico de red a través de envenenamiento ARP",
+            "No es posible hacer una inundación MAC, solo IP",
+            "Solo puede hacerse con el control de la puerta de enlace",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "10. Una pobre validación de entrada, da pie a la siguiente vía de ataque...",
+        "options": [
+            "XSS",
+            "Inyección de comandos SQL",
+            "Inyección de comandos del Sistema Operativo",
+            "Todos los anteriores"
+        ],
+        "correct": 3,
+        "theme": "extra"
+    },
+    {
+        "q": "11. La LOPD establece que el consentimiento para el tratamiento de datos de carácter personal debe ser...",
+        "options": [
+            "Tácito",
+            "Expreso",
+            "Innecesario",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "12. En un ataque de denegación de servicio (DoS), el objetivo principal es comprometer la...",
+        "options": [
+            "Confidencialidad",
+            "Integridad",
+            "Disponibilidad",
+            "Autenticidad"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "13. ¿Cuál de los siguientes protocolos se utiliza para la transferencia segura de archivos?",
+        "options": [
+            "HTTP",
+            "FTP",
+            "SFTP",
+            "Telnet"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "14. El estándar que define un Sistema de Gestión de Seguridad de la Información (SGSI) es:",
+        "options": [
+            "ISO 9001",
+            "ISO 27001",
+            "ISO 14001",
+            "ISO 20000"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "15. Un certificado digital vincula una clave pública con...",
+        "options": [
+            "Una clave privada",
+            "Una identidad (persona, entidad o equipo)",
+            "Un algoritmo de cifrado",
+            "Un sistema operativo"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "16. La técnica de ingeniería social que consiste en observar por encima del hombro de alguien se denomina...",
+        "options": [
+            "Phishing",
+            "Shoulder Surfing",
+            "Dumpster Diving",
+            "Pretexting"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "17. En criptografía asimétrica, para que alguien nos envíe un mensaje cifrado que solo nosotros podamos leer, debe usar:",
+        "options": [
+            "Nuestra clave privada",
+            "Su clave privada",
+            "Nuestra clave pública",
+            "Su clave pública"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "18. ¿Qué tipo de malware se caracteriza por cifrar los archivos del usuario y pedir un rescate?",
+        "options": [
+            "Rootkit",
+            "Ransomware",
+            "Gusano",
+            "Adware"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "19. Un Firewall de filtrado de paquetes trabaja principalmente en las capas del modelo OSI:",
+        "options": [
+            "1 y 2",
+            "3 y 4",
+            "5 y 6",
+            "7"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "20. La función hash se utiliza principalmente para garantizar la...",
+        "options": [
+            "Confidencialidad",
+            "Disponibilidad",
+            "Integridad",
+            "No repudio de origen"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "21. Las aplicaciones informáticas que recopilan datos sobre los hábitos de navegación, preferencias y gustos del usuario, son llamadas...",
+        "options": [
+            "Adware",
+            "Spyware",
+            "Phising",
+            "Ransomware"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "22. Una lista negra de documentos...",
+        "options": [
+            "Genera listas con dominios problemáticos",
+            "Genera listas con servidores problemáticos",
+            "Genera listas con direcciones IP problemáticas",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 3,
+        "theme": "extra"
+    },
+    {
+        "q": "23. Al proceso de insercción de código dentro de páginas enviadas por otra fuente, se le denomina...",
+        "options": [
+            "XSS",
+            "SQL Injection",
+            "Spam",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "24. En código seguro, el acrónimo´3 D´s, se refiere a...",
+        "options": [
+            "Detección, Desarrollo y seguridad de Diseño",
+            "Seguridad en el Diseño, por Defecto y en el Despliegue",
+            "Seguridad en Datos, Diseño y Datagramas",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "25. La responsabilidad de detectar una inyeccion de paquetes maiciosas en una red es responsabilidad de...",
+        "options": [
+            "Honeypot",
+            "NIDS",
+            "HIDS",
+            "Ninguna de los anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "26. Que el receptor y el emisor deban compartir algoritmo y clave es...",
+        "options": [
+            "Un requisito de seguridad de la criptografía asimétrica",
+            "Un requisito de seguridad de la criptografía simétrica",
+            "Un requisito de funcionamiento de la criptografía asimétrica",
+            "Un requisito de funcionamiento de la criptografía simétrica"
+        ],
+        "correct": 3,
+        "theme": "extra"
+    },
+    {
+        "q": "27. Los mecanismos de confusión y difusión son utilizados por...",
+        "options": [
+            "Algoritmo de cifrado simétrico",
+            "Algoritmo de cifrado asimétrico",
+            "Ambos",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "28. El que un mensaje no haya sido modificado durante su transmisión o un dato no haya sido modificado, lo asegura el concepto de:",
+        "options": [
+            "Integridad",
+            "Confidencialidad",
+            "Disponibilidad",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "29. Los objetivos básicos de la seguridad de la información, son asegurar...",
+        "options": [
+            "Ataques a la propiedad intelectual, ataques vía software y ataques a la calidad del servicio de la información",
+            "Riesgos, vulnerabilidades y amenazas de la información",
+            "Confidencialidad, integridad y disponibilidad de la información",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "30. El índice de coincidencia...",
+        "options": [
+            "Averigua el período de un cifrador polialfabético",
+            "Analiza la longitud del alfabeto del mensaje de entrada",
+            "Analiza distribución de frecuencias",
+            "Todas las anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "31. ¿Qué ventaja tiene el uso del cifrado simétrico?",
+        "options": [
+            "La velocidad",
+            "La longitud de la clave",
+            "Ambos",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "32. ¿Como se denomina a un sistema señuelo o trampa?",
+        "options": [
+            "NIDS",
+            "IDS",
+            "Honeypot",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "33. Respecto a un escaneo de puertos...",
+        "options": [
+            "Analiza solo los puertos TCP",
+            "Puede analizar todos los puertos de TCP y UDP",
+            "Es legal hacerlo en cualquier máquina",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "34. ¿Como se denomina al malware con capacidad de recopilar preferencias y gustos del usuario?",
+        "options": [
+            "Adware",
+            "Ransomware",
+            "Phising",
+            "Ninguna de la santeriores"
+        ],
+        "correct": 3,
+        "theme": "extra"
+    },
+    {
+        "q": "35. Un mensaje de correo engañoso, que se difunde masivamente por Internet sembrando la alarma sobre supuestas infecciones víricas y amenazas contra los usuarios se denomina...",
+        "options": [
+            "Phising",
+            "Spyware",
+            "Hoaxes",
+            "Adware"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "36. Asegurarse de que los datos puedan ser accedidos siempre que se necesite es una tarea del servicio de...",
+        "options": [
+            "Confidencialidad",
+            "Disponibilidad",
+            "Integridad",
+            "todas las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "37. ¿Qué mecanismo utilizan los algoritmos de cifrado simétricos y asimétricos?",
+        "options": [
+            "Mecanismos de confusión y difusión",
+            "Mecanismos de cifrado simple",
+            "Mecanismos de cifrado complejo",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "38. En un escaneo de puertos...",
+        "options": [
+            "Solo actúa en TCP",
+            "Actúa en TCP y UDP",
+            "Solo actúa en UDP",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "39. Inyectar multitud de paquetes a un servidor con ánimo de desestabilizar es...",
+        "options": [
+            "Un ataque DoS",
+            "Escaneo de puertos",
+            "Ransomware",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "40. En el SPAM, cual de estas características NO es propia de una lista blanca",
+        "options": [
+            "Relación de contactos confiables",
+            "Genera listas que pueden ser excluyentes o no",
+            "Solo resulta de interés para usuarios finales.",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "41. Un cifrador de sustitución polialfabético es...",
+        "options": [
+            "César",
+            "Vigenere",
+            "Escítala",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "42. El método criptográfico donde coinciden la clave de cifrado y descifrado es..",
+        "options": [
+            "Cifrado simétrico",
+            "Cifrado asimétrico",
+            "Ambos",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "43. MD5 y SHA1 se tratan de...",
+        "options": [
+            "Certificados digitales",
+            "Algoritmos de cifrado simétrico",
+            "Funciones Hash",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "44. Una mula suele intervenir en un ataque de...",
+        "options": [
+            "ransomware",
+            "phising",
+            "DoS",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "45. PPTP...",
+        "options": [
+            "Es un protocolo VPN",
+            "Es un mecanismo de protección hardware",
+            "Es un software de código libre",
+            "Todas las anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "46. El sistema que aprende de los atacantes se denomina...",
+        "options": [
+            "NIDS",
+            "HIDS",
+            "IDS basado en firmas",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 3,
+        "theme": "extra"
+    },
+    {
+        "q": "47. ¿Que hacen las herramientas de spidering o crawling?",
+        "options": [
+            "Desbordamiento de bufer",
+            "Ataques de SQL Injection",
+            "Escanear un sitio web",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "48. El malware que secuestra y cifra un ordenador es llamado...",
+        "options": [
+            "Adware",
+            "Spyware",
+            "Phising",
+            "Ransomware"
+        ],
+        "correct": 3,
+        "theme": "extra"
+    },
+    {
+        "q": "49. El software que muestra publicidad, empleando cualquier tipo de medio, como ventanas emergentes, banners...etc, se denomina...",
+        "options": [
+            "Adware",
+            "Spyware",
+            "Ransomware",
+            "Phising"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "50. En un escaneo de puertos, al enviar a una máquina un paquete TCP con el bit SYN activado...",
+        "options": [
+            "Si el puerto está abierto, el destino contesta con un RST",
+            "Si el puerto está abierto, el destino contesta con un SYN y ACK",
+            "Si el puerto está cerrado, el destino contesta con un RST",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "51. El nivel (N) en una máquina “conversa” con el nivel (N) de otra máquina. Las reglas y convenciones utilizadas en esta conversación se conoce como...",
+        "options": [
+            "Protocolo",
+            "Servicio",
+            "Nivel",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "52. El campo de la cabecera IP que se encarga de gestionar contadores de salto entre routers se llama...",
+        "options": [
+            "IP origen",
+            "IP destino",
+            "Protocolo",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 3,
+        "theme": "extra"
+    },
+    {
+        "q": "53. El flag de la cabecera TCP utilizado para establecer una conexión se llama...",
+        "options": [
+            "FIN",
+            "URG",
+            "RST",
+            "SYN"
+        ],
+        "correct": 3,
+        "theme": "extra"
+    },
+    {
+        "q": "54. El método donde la clave de cifrado y descifrado coinciden se llama",
+        "options": [
+            "Métodos simétricos o de clave secreta",
+            "Métodos asimétricos o de clave privada",
+            "Métodos reales",
+            "Ninguna de los anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "55. El protocolo que garantiza la seguridad en el intercambio de datos entre un navegador y un servidor Web se llama...",
+        "options": [
+            "SSL",
+            "FTP",
+            "SMTP",
+            "Ninguna las anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "56. RSA es un algoritmo ...",
+        "options": [
+            "Simétrico",
+            "Asimétrico",
+            "Virtual",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "57. Un secuestro de sesión se llama...",
+        "options": [
+            "Sniffing",
+            "Spoofing",
+            "Hijacking",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "58. El protocolo garantiza la confidencialidad, la autenticación y la integridad de los mensajes intercambiados se llama...",
+        "options": [
+            "RSA",
+            "ICMP",
+            "SSL",
+            "Ningunq de las anteriores"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "59. El método en el que la clave de cifrado y descifrado son diferentes se llama...",
+        "options": [
+            "Método asimétrico o de clave pública",
+            "Método simétrico o de clave privada",
+            "SHA1",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "60. El proceso de inserción de código dentro de páginas enviadas por otra fuente se denomina...",
+        "options": [
+            "ICMP",
+            "Escaneador de puertos",
+            "SQL",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 3,
+        "theme": "extra"
+    },
+    {
+        "q": "61. Encase es una herramienta...",
+        "options": [
+            "De análisis de evidencias",
+            "De HIDS",
+            "Generación de SPAM",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "62. El que un mensaje no haya sido modificado durante su transmisión o un dato no haya sido modificado, lo asegura el concepto de:",
+        "options": [
+            "Integridad",
+            "Confidencialidad",
+            "Disponibilidad",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "63. Los mecanismos de confusión y difusión son utilizados por...",
+        "options": [
+            "Algoritmos de cifrado simétrico",
+            "Algoritmos de cifrado asimétrico",
+            "Ambos",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "64. En código seguro, el acrónimo 3 D´s se refiere a...",
+        "options": [
+            "Detección, Desarrollo y seguridad de Diseño",
+            "Seguridad en el Diseño, por Defecto y en el Despliegue",
+            "Seguridad en Datos, Diseño y Datagramas",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "65. Al proceso de inserción de código dentro de páginas enviadas por otra fuente, se le denomina...",
+        "options": [
+            "XSS",
+            "SQL Injection",
+            "Spam",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "66. Es un escaneo de puertos, al enviar a una máquina un paquete TCP con el bit SYN activado...",
+        "options": [
+            "Si el puerto está abierto, el destino contesta con un RST",
+            "Si el puerto está abierto, el destino contesta con un SYN y ACK",
+            "Si el puerto está cerrado, el destino contesta con un RST",
+            "Ninguna de los anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "67. Escalar privilegios dentro de una máquina, lo realiza el malware...",
+        "options": [
+            "Ransomware",
+            "Phising",
+            "Adware",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 3,
+        "theme": "extra"
+    },
+    {
+        "q": "68. El sistema que detecta intrusiones en una red es...",
+        "options": [
+            "HIDS",
+            "Honeypot",
+            "Firewall",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 3,
+        "theme": "extra"
+    },
+    {
+        "q": "69. RSA es un algoritmo...",
+        "options": [
+            "Simétrico",
+            "Asimétrico",
+            "Virtual",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "70. ¿En que malware interviene una mula?",
+        "options": [
+            "Virus",
+            "Phising",
+            "Ransomware",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "71. ¿Que protcolos se usan en un escaneo de puertos?",
+        "options": [
+            "TCP y UDP",
+            "ICMP",
+            "ARP",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "72. La responsabilidad de detectar una inyeccion de paquetes maliciosas en una red es responsabilidad de...",
+        "options": [
+            "Honeypot",
+            "NIDS",
+            "HIDS",
+            "Ninguna de los anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "73. En código seguro, el acrónimo 3Ds, se refiere a...",
+        "options": [
+            "Detección, Desarrollo y seguridad de Diseño",
+            "Seguridad en el Diseño, por Defecto y en el Despliegue",
+            "Seguridad en Datos, Diseño y Datagramas",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "74. ¿Como se denomina al malware con capacidad de recopilar preferencias y gustos del usuario?",
+        "options": [
+            "Adware",
+            "Ransomware",
+            "Phising",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 3,
+        "theme": "extra"
+    },
+    {
+        "q": "75. En un escaneo de puertos, al enviar a una máquina un paquete TCP con el bit SYN activado...",
+        "options": [
+            "Si el puerto está abierto, el destino contesta con un RST",
+            "Si el puerto está abierto, el destino contesta con un SYN y ACK",
+            "Si el puerto está cerrado, el destino contesta con un RST.podrian ser la 2 y la 3",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "76. En un escaneo de puertos, al enviar a una máquina un paquete TCP con el bit SYN activado...",
+        "options": [
+            "Si el puerto está abierto, el destino contesta con un RST",
+            "Si el puerto está abierto, el destino contesta con un SYN y ACK",
+            "Si el puerto está cerrado, el destino contesta con un RST",
+            "Las opciones B y C son correctas"
+        ],
+        "correct": 3,
+        "theme": "extra"
+    },
+    {
+        "q": "77. En código seguro, el acrónimo 3 D’s se refiere a...",
+        "options": [
+            "Detección, Desarrollo y seguridad de Diseño",
+            "Seguridad en el Diseño, por Defecto y en el Despliegue",
+            "Seguridad en Datos, Diseño y Datagramas",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "78. Una lista negra de orígenes...",
+        "options": [
+            "Genera listas con dominios problemáticos",
+            "Genera listas con servidores problemáticos",
+            "Genera listas con direcciones IP problemáticas",
+            "Todas las anteriores"
+        ],
+        "correct": 3,
+        "theme": "extra"
+    },
+    {
+        "q": "79. El período de un cifrador de Vigenere viene determinado por:",
+        "options": [
+            "La longitud del mensaje",
+            "La longitud de la clave",
+            "El número de alfabetos",
+            "La velocidad del procesador"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "80. El cifrador de Vernam se caracteriza por ser:",
+        "options": [
+            "Periódico",
+            "No periódico",
+            "Monoalfabético",
+            "Basado en bloques"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "81. El sistema que aprende de los atacantes se denomina...",
+        "options": [
+            "NIDS",
+            "HIDS",
+            "Honeypot",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "82. A través de una inundación MAC...",
+        "options": [
+            "Un atacante puede hacerse con el control del tráfico a través de envenenamiento ARP",
+            "No es posible hacer una inundación MAC, solo IP",
+            "Un switch puede pasar a modo hub",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "83. En el SPAM, cuál de estas características NO es propia de una lista blanca",
+        "options": [
+            "Relación de contactos confiables",
+            "Genera listas que pueden ser excluyentes o no",
+            "Garantiza el bloqueo total de spam",
+            "Solo resulta de interés para usuarios finales"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "84. Las reglas y convenciones utilizadas en la conversación entre niveles de máquinas se conocen como...",
+        "options": [
+            "Protocolo",
+            "Servicio",
+            "Nivel",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "85. El campo de la cabecera IP que se encarga de gestionar contadores de salto entre routers se llama...",
+        "options": [
+            "IP origen",
+            "IP destino",
+            "TTL (Time to Live)",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "86. ¿En qué malware interviene una mula?",
+        "options": [
+            "Virus",
+            "Phising",
+            "Ransomware",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "87. ¿Qué protocolos se usan en un escaneo de puertos?",
+        "options": [
+            "TCP y UDP",
+            "ICMP",
+            "ARP",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "88. Un mensaje de correo engañoso que siembra la alarma sobre supuestas infecciones víricas es un...",
+        "options": [
+            "Phising",
+            "Spyware",
+            "Hoaxes",
+            "Adware"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "89. Los objetivos básicos de la seguridad de la información son asegurar...",
+        "options": [
+            "Riesgos, vulnerabilidades y amenazas",
+            "Confidencialidad, integridad y disponibilidad",
+            "Hardware, software y personas",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "90. El método donde la clave de cifrado y descifrado coinciden se llama:",
+        "options": [
+            "Métodos simétricos o de clave secreta",
+            "Métodos asimétricos o de clave privada",
+            "Métodos reales",
+            "Ninguna de los anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "91. El método en el que la clave de cifrado y descifrado son diferentes se llama:",
+        "options": [
+            "Método asimétrico o de clave pública",
+            "Método simétrico o de clave privada",
+            "SHA1",
+            "Ninguna de las anteriores"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "92. La responsabilidad de detectar una inyección de paquetes maliciosos en una red es de...",
+        "options": [
+            "Honeypot",
+            "NIDS",
+            "HIDS",
+            "Ninguna de los anteriores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "93. Un tamaño de bloque típico en cifrado por bloques es de:",
+        "options": [
+            "8 y 16 bits",
+            "64 y 128 bits",
+            "1024 bits",
+            "Longitud variable siempre"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "94. El algoritmo DES fue creado por:",
+        "options": [
+            "Horst Feistel en IBM",
+            "Friedman en la NSA",
+            "Rivest en MIT",
+            "Anderson en 1980"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "95. A diferencia de DES, el algoritmo AES utiliza:",
+        "options": [
+            "Redes de Feistel",
+            "Álgebra de cuerpos finitos",
+            "Factorización de enteros",
+            "Curvas elípticas"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "96. En el cifrado en flujo, la operación fundamental es:",
+        "options": [
+            "Suma de caracteres",
+            "Función XOR",
+            "Factorización",
+            "Hashing"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "97. El conjunto de certificados digitales y Autoridades de Certificación se conoce como:",
+        "options": [
+            "SSL",
+            "PKI (Public Key Infrastructure)",
+            "VPN",
+            "IDS"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "98. En un escaneo UDP, el puerto se considera cerrado si responde con:",
+        "options": [
+            "SYN y ACK",
+            "RST",
+            "ICMP port unreachable",
+            "FIN"
+        ],
+        "correct": 2,
+        "theme": "extra"
+    },
+    {
+        "q": "99. El protocolo ARP sirve para traducir:",
+        "options": [
+            "Nombres en IPs",
+            "IPs en direcciones MAC",
+            "Mensajes en hashes",
+            "Protocolos en capas"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "100. Las direcciones globales 'no enrutables' reservadas por IANA se usan en:",
+        "options": [
+            "IPs públicas de servidores",
+            "Redes privadas internas",
+            "Certificados digitales",
+            "Conexiones SSH"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "101. El concepto de IDS fue introducido en 1980 por:",
+        "options": [
+            "James Anderson",
+            "Todd Herberlein",
+            "Horst Feistel",
+            "William Friedman"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "102. Cuando un IDS genera una alerta sobre un ataque que NO sucedió, se llama:",
+        "options": [
+            "Falso negativo",
+            "Falso positivo",
+            "Alerta real",
+            "Intrusión"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "103. Los IDS que funcionan a nivel máquina monitorizando el SO son:",
+        "options": [
+            "NIDS",
+            "HIDS",
+            "Honeypots",
+            "Firewalls"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "104. Un IDS 'Mixto' combina modos de funcionamiento:",
+        "options": [
+            "HIDS y NIDS",
+            "Reglas y anomalías",
+            "Hardware y software",
+            "Simétrico y asimétrico"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "105. ¿Qué ventaja tiene un TAP sobre un puerto span?",
+        "options": [
+            "No tiene problemas de rendimiento",
+            "Es más barato",
+            "No necesita hardware",
+            "Detecta virus solo"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "106. Los honeypots de 'alta interacción' utilizan:",
+        "options": [
+            "Simulaciones básicas",
+            "Sistemas operativos y aplicaciones reales",
+            "Solo texto plano",
+            "Filtros bayesianos"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "107. Un desbordamiento de búfer de pila permite sobrescribir:",
+        "options": [
+            "La dirección de retorno",
+            "El disco duro",
+            "La clave pública",
+            "El puerto 80"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "108. El envenenamiento bayesiano busca confundir al filtro incluyendo:",
+        "options": [
+            "Virus",
+            "Texto legítimo",
+            "Publicidad",
+            "Sentencias SQL"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "109. Las directivas en HTML que presentan el resultado de ejecutar comandos en el servidor son:",
+        "options": [
+            "XSS",
+            "SSI (Server Side Includes)",
+            "SQL",
+            "GET"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "110. El envío de formularios con GET revela información en:",
+        "options": [
+            "La base de datos",
+            "La URL y caché del navegador",
+            "La firma digital",
+            "El firewall"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "111. A diferencia del virus, el gusano (worm) puede...",
+        "options": [
+            "Autopropagarse por la red",
+            "Cifrar el disco",
+            "Ser inofensivo",
+            "Mostrar banners"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "112. Un troyano suele ocultar su presencia diciendo ser...",
+        "options": [
+            "Un virus",
+            "Un programa benigno (ej. juego)",
+            "Un servidor SSH",
+            "Una botnet"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "113. Para ser 'admisible', una evidencia forense debe...",
+        "options": [
+            "Ser auténtica",
+            "Haber sido obtenida legalmente",
+            "Estar relacionada con el hecho",
+            "Estar cifrada"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "114. Una evidencia es 'relevante' si...",
+        "options": [
+            "Es legal",
+            "Está relacionada con el hecho investigado",
+            "Es creíble",
+            "Ocupa poco espacio"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "115. El cifrador de Vernam usa una clave de...",
+        "options": [
+            "Igual longitud que el texto",
+            "8 bits",
+            "Longitud variable corta",
+            "1024 bits"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "116. En el ámbito académico y profesional se debe decir...",
+        "options": [
+            "Encriptar",
+            "Cifrar",
+            "Traducir",
+            "Codificar"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "117. La estructura en la que se basa DES se denomina...",
+        "options": [
+            "Cuerpo finito",
+            "Red de Feistel",
+            "Curva elíptica",
+            "RSA"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "118. Las Autoridades de Certificación se encargan de...",
+        "options": [
+            "Cifrar el tráfico",
+            "Crear y validar certificados",
+            "Detectar intrusiones",
+            "Bloquear spam"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "119. La herramienta más conocida para escaneo de puertos es...",
+        "options": [
+            "Nmap",
+            "Wireshark",
+            "TrueCrypt",
+            "EnCase"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "120. SSH fue diseñado para reemplazar a...",
+        "options": [
+            "SSL",
+            "Telnet y FTP",
+            "RSA",
+            "Nmap"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "121. A la comunicación segura entre dos nodos VPN se le llama:",
+        "options": [
+            "Sesión",
+            "Túnel VPN",
+            "Enlace NAT",
+            "Hash"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "122. Todd Herberlein introdujo los IDS de red en:",
+        "options": [
+            "1980",
+            "1990",
+            "1997",
+            "2021"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "123. En un NIDS, el elemento que captura y analiza el tráfico es la:",
+        "options": [
+            "Consola",
+            "Sonda (o sensor)",
+            "Base de datos",
+            "VPN"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "124. Los clasificadores de spam más eficaces hacen uso del:",
+        "options": [
+            "Teorema de Bayes",
+            "Algoritmo RSA",
+            "Cifrado AES",
+            "Protocolo ARP"
+        ],
+        "correct": 0,
+        "theme": "extra"
+    },
+    {
+        "q": "125. The Sleuth Kit es una herramienta para:",
+        "options": [
+            "Cifrado fuerte",
+            "Análisis forense",
+            "Envío de spam",
+            "Escaneo SYN"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    },
+    {
+        "q": "126. La seguridad informática es un proceso:",
+        "options": [
+            "Puntual",
+            "Iterativo y constante",
+            "Innecesario",
+            "Solo para servidores"
+        ],
+        "correct": 1,
+        "theme": "extra"
+    }
+]
