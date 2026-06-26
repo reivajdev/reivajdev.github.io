@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integración de Sistemas · Banco de Preguntas UNIR</title>
+    <style>
+        :root {
+            --primary: #1f4e79;
+            --accent:  #2e75b6;
+            --success: #1e8e51;
+            --error:   #c0392b;
+            --bg:      #f4f6f9;
+            --amber:   #b9770e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg);
+            color: var(--primary);
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            width: 100%;
+            max-width: 1000px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            margin: 20px auto;
+        }
+        h1 {
+            text-align: center;
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        h2 { color: var(--primary); margin: 20px 0; }
+        .subtitle {
+            text-align: center;
+            color: #667;
+            font-size: 13px;
+            margin-bottom: 25px;
+        }
+        .mode-selector {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .mode-btn {
+            padding: 25px 20px;
+            border: 3px solid #ddd;
+            border-radius: 12px;
+            background: white;
+            cursor: pointer;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.3s;
+            color: var(--primary);
+        }
+        .mode-btn:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .mode-btn.blue  { color: #1f4e79; }
+        .mode-btn.orange{ color: #e67e22; }
+        .mode-btn.purple{ background: #9b59b6; color: white; border-color: #9b59b6; }
+        .mode-btn.teal  { background: #16a085; color: white; border-color: #16a085; }
+        .tema-filter {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 15px;
+            padding: 12px 15px;
+            background: #eaf0f7;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        .tema-filter label { font-weight: 600; color: var(--primary); white-space: nowrap; }
+        .tema-filter select {
+            flex: 1;
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: 1px solid #c8d8e8;
+            font: inherit;
+            color: var(--primary);
+        }
+        .hint { text-align: center; font-size: 12px; color: #667; margin-top: 12px; }
+
+        /* Study view */
+        .question-block {
+            background: #f9f9f9;
+            border-left: 5px solid var(--success);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .q-number  { font-weight: bold; color: var(--accent); margin-bottom: 8px; font-size: 13px; }
+        .q-text    { font-size: 1.05rem; font-weight: bold; margin-bottom: 14px; color: var(--primary); }
+        .q-badge   { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 9px; border-radius: 20px; margin-bottom: 10px; }
+        .q-badge.tema  { background: #eaf0f7; color: var(--primary); }
+        .q-badge.amber { background: #fdf3e3; color: var(--amber); }
+        .options   { display: flex; flex-direction: column; gap: 8px; }
+        button.option-btn {
+            background: white;
+            border: 2px solid #ddd;
+            padding: 11px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: left;
+            transition: 0.25s;
+            font-size: 0.95rem;
+            width: 100%;
+        }
+        button.option-btn:hover:not(:disabled) { border-color: var(--accent); background: #f0f8ff; }
+        button.correct { background: var(--success) !important; color: white; border-color: var(--success) !important; }
+        button.wrong   { background: var(--error)   !important; color: white; border-color: var(--error)   !important; }
+        button.show-correct { border-color: var(--success) !important; background: #e7f6ee; }
+        .explanation {
+            margin-top: 13px;
+            padding: 11px 14px;
+            background: #e8f4fd;
+            border-left: 5px solid var(--accent);
+            border-radius: 4px;
+            font-size: 0.92rem;
+            line-height: 1.55;
+        }
+
+        /* Exam view */
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            font-weight: bold;
+            background: #eee;
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        .progress-bar { width: 100%; height: 8px; background: #ddd; border-radius: 4px; margin-bottom: 18px; overflow: hidden; }
+        .progress-fill { height: 100%; background: var(--success); width: 0%; transition: width 0.3s; }
+        .page-header {
+            text-align: center;
+            margin-bottom: 24px;
+            padding: 14px;
+            background: #f0f8ff;
+            border-radius: 8px;
+        }
+        .page-header strong { font-size: 1.1rem; }
+        .page-header small  { display: block; margin-top: 5px; color: #666; font-size: 0.9rem; }
+
+        /* Nav buttons */
+        .nav-buttons {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .nav-buttons button {
+            padding: 11px 26px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.25s;
+            font-size: 14px;
+        }
+        .nav-buttons button:hover { background: #1c5c9a; }
+        .nav-buttons button.success-btn { background: var(--success); }
+        .nav-buttons button.cancel-btn  { background: #7f8c8d; }
+
+        /* Review / results */
+        .results-summary { text-align: center; padding: 26px; background: #eee; border-radius: 12px; margin-bottom: 24px; }
+        .final-score { font-size: 2rem; font-weight: bold; color: var(--primary); margin: 16px 0; }
+        .result-item { padding: 14px; margin: 10px 0; border-radius: 8px; background: white; border-left: 5px solid #ddd; }
+        .result-item.correct { border-left-color: var(--success); background: #f0f8f4; }
+        .result-item.wrong   { border-left-color: var(--error);   background: #fef5f5; }
+        .result-icon { font-weight: bold; margin-right: 8px; font-size: 1.1rem; }
+
+        /* Dev view */
+        .dev-block {
+            background: #f9f9f9;
+            border-left: 5px solid #16a085;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .dev-q { font-size: 1.05rem; font-weight: bold; color: var(--primary); margin-bottom: 14px; line-height: 1.5; }
+        .dev-model-btn {
+            padding: 10px 20px;
+            background: #16a085;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.25s;
+            margin-top: 10px;
+        }
+        .dev-model-btn:hover { background: #117a65; }
+        .dev-model {
+            margin-top: 14px;
+            padding: 16px;
+            background: #e8f8f5;
+            border-left: 5px solid #16a085;
+            border-radius: 6px;
+            font-size: 0.93rem;
+            line-height: 1.65;
+            display: none;
+        }
+        .dev-model.show { display: block; }
+        .dev-section-title { font-weight: bold; color: #117a65; margin: 10px 0 4px; font-size: 0.95rem; }
+
+        /* Filter buttons */
+        .filter-row { display: flex; gap: 10px; justify-content: center; margin-bottom: 18px; flex-wrap: wrap; }
+        .filter-btn {
+            padding: 9px 18px;
+            border: 2px solid #bdc3c7;
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 13px;
+            transition: 0.2s;
+        }
+
+        .hidden { display: none !important; }
+
+        @media (max-width: 650px) {
+            .mode-selector { grid-template-columns: 1fr; }
+            .container { padding: 18px; }
+            .nav-buttons { flex-direction: column; }
+            .nav-buttons button { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- SETUP -->
+    <div id="setup">
+        <h1>Integración de Sistemas · Banco de Preguntas</h1>
+        <p class="subtitle">Banco de exámenes UNIR 2020–2025 · respuesta oficial (2020–2022) y según temario (2024–2025)</p>
+        <div class="mode-selector">
+            <div class="mode-btn blue"   onclick="selectMode('study')">📚 MODO ESTUDIO<br><small style="font-size:0.75rem;font-weight:normal">Ver preguntas con respuestas correctas</small></div>
+            <div class="mode-btn orange" onclick="selectMode('exam')">✍️ MODO EXAMEN<br><small style="font-size:0.75rem;font-weight:normal">Responde y comprueba tu desempeño</small></div>
+            <div class="mode-btn purple" onclick="selectMode('random')">🎲 MODO ALEATORIO<br><small style="font-size:0.75rem;font-weight:normal">20 preguntas al azar · repaso rápido</small></div>
+            <div class="mode-btn teal"   onclick="selectMode('dev')">📝 DESARROLLO<br><small style="font-size:0.75rem;font-weight:normal">Preguntas abiertas con respuesta modelo</small></div>
+        </div>
+        <div class="tema-filter">
+            <label>🗂️ Filtrar por tema:</label>
+            <select id="temaFilter"><option value="all">Todos los temas</option></select>
+        </div>
+        <p class="hint">El filtro de tema se aplica a los modos Estudio y Examen. Sin penalización por fallo.</p>
+    </div>
+
+    <!-- STUDY VIEW -->
+    <div id="study-view" class="hidden">
+        <h2 id="study-title">📚 Modo Estudio</h2>
+        <div id="study-content"></div>
+        <div class="nav-buttons">
+            <button class="cancel-btn" onclick="backToModes()">⬅ Volver al Menú</button>
+        </div>
+    </div>
+
+    <!-- EXAM VIEW -->
+    <div id="exam-view" class="hidden">
+        <div class="progress-bar"><div id="progress-fill" class="progress-fill"></div></div>
+        <div class="stats"><span id="exam-progress"></span><span id="exam-score"></span></div>
+        <div id="exam-content"></div>
+        <div id="exam-nav-buttons" class="nav-buttons">
+            <button class="cancel-btn" onclick="backToModes()">⬅ Cancelar</button>
+        </div>
+    </div>
+
+    <!-- RANDOM VIEW -->
+    <div id="random-view" class="hidden">
+        <h2>🎲 Modo Aleatorio · 20 preguntas</h2>
+        <div id="random-content"></div>
+        <div class="nav-buttons">
+            <button class="success-btn" onclick="submitRandomAnswers()">Enviar Respuestas ✓</button>
+            <button class="cancel-btn"  onclick="backToModes()">⬅ Cancelar</button>
+        </div>
+    </div>
+
+    <!-- DEV VIEW -->
+    <div id="dev-view" class="hidden">
+        <h2>📝 Preguntas de Desarrollo</h2>
+        <p style="color:#667;font-size:13px;margin-bottom:20px">Redacta tu respuesta mentalmente y compárala con la respuesta modelo pulsando el botón.</p>
+        <div id="dev-content"></div>
+        <div class="nav-buttons">
+            <button class="cancel-btn" onclick="backToModes()">⬅ Volver al Menú</button>
+        </div>
+    </div>
+
+    <!-- REVIEW VIEW -->
+    <div id="review-view" class="hidden">
+        <h2 style="text-align:center">📋 Revisión antes de Finalizar</h2>
+        <div style="text-align:center;padding:14px;background:#f0f8ff;border-radius:8px;margin-bottom:18px">
+            <div style="font-size:1.05rem;font-weight:bold" id="review-stats"></div>
+            <p style="margin-top:6px;color:#666;font-size:0.9rem">Haz clic en cualquier pregunta para editarla</p>
+        </div>
+        <div class="filter-row">
+            <button class="filter-btn" id="filter-all-btn"     onclick="filterReview('all')">📋 Todas</button>
+            <button class="filter-btn" id="filter-correct-btn" onclick="filterReview('correct')">✅ Correctas</button>
+            <button class="filter-btn" id="filter-wrong-btn"   onclick="filterReview('wrong')">❌ Incorrectas</button>
+        </div>
+        <div id="review-content"></div>
+        <div class="nav-buttons">
+            <button class="success-btn" onclick="submitReview()">✓ Finalizar Examen</button>
+            <button onclick="backToExamReview()">⬅ Volver a Responder</button>
+        </div>
+    </div>
+
+    <!-- RESULTS VIEW -->
+    <div id="results-view" class="hidden">
+        <h2 style="text-align:center">✓ ¡Examen Finalizado!</h2>
+        <div class="results-summary">
+            <div id="final-score" class="final-score"></div>
+            <p id="final-message" style="font-size:1.05rem;margin-bottom:16px"></p>
+        </div>
+        <div id="results-list"></div>
+        <div class="nav-buttons">
+            <button onclick="location.reload()">🔄 Volver al Menú</button>
+        </div>
+    </div>
+
+</div><!-- /container -->
+
+<script>
+/* =========================================================
+   DATOS · Integración de Sistemas (UNIR)
+   ========================================================= */
+const RAW = {
+test:[
+{q:"Si profundizamos en las dimensiones de los Sistemas de Información, la jerarquía y las funciones de negocio tienen que ver con la dimensión:",opts:["Tecnología","Administración","Organización","Ninguna de las anteriores"],correct:"Organización",tema:1,temaLabel:"Tema 1 · Introducción a los SI",expl:"La jerarquía y las funciones de negocio forman parte de la dimensión Organización del SI (junto con tecnología y administración)."},
+{q:"Con un SI podemos analizar el coste que supone comprar en el mercado o fabricar por sí misma. Este concepto es:",opts:["Teoría del coste de transacción","Teoría de agencia","Teoría de la calidad de la información","Ninguna de las anteriores"],correct:"Teoría del coste de transacción",tema:2,temaLabel:"Tema 2 · Oportunidades y necesidades",expl:"Analizar si comprar en el mercado o fabricar uno mismo es la teoría del coste de transacción (Coase). La plantilla oficial marcaba 'Ninguna', pero conceptualmente es esta: corregido."},
+{q:"En la clasificación clásica de SI, si trata grandes cantidades de datos externos e internos, es fácil de usar, muy gráfico y con análisis incorporado, se trata de:",opts:["MIS (información gerencial)","TPS (transaccional)","DSS (soporte a la decisión)","EIS (información ejecutiva)"],correct:"EIS (información ejecutiva)",tema:3,temaLabel:"Tema 3 · Conceptos e integración",expl:"Grandes volúmenes de datos internos y externos, muy gráfico y con análisis incorporado describe al EIS (información ejecutiva)."},
+{q:"En integración de sistemas, si son modulares integrables, no tienen por qué estar en operación pero hay una API que almacena la información que precisan, se trata de:",opts:["Ficheros transaccionales","Paso de mensajes","Middleware","Ninguno de los anteriores"],correct:"Middleware",tema:3,temaLabel:"Tema 3 · Conceptos e integración",expl:"Si existe una API que almacena la información y los sistemas no han de estar simultáneamente en operación, es middleware."},
+{q:"En los años 80, los sistemas integrados de gestión equivalían a los MRP II e incluían:",opts:["Gestión de la calidad","Gestión de proyectos","Marketing","Recursos humanos"],correct:"Marketing",tema:4,temaLabel:"Tema 4 · ERP",expl:"Los MRP II de los años 80 ampliaron el MRP incorporando áreas de gestión como el marketing."},
+{q:"Una adecuada gestión de la cadena de suministro permite ciertas ventajas. Señala la incorrecta:",opts:["Diferenciación","Control de la cadena de valor","Tener en cuenta cambios en paradigmas de productividad","Aumentar el efecto látigo o bullwhip"],correct:"Aumentar el efecto látigo o bullwhip",tema:5,temaLabel:"Tema 5 · Cadena de suministro (SCM)",expl:"Aumentar el efecto látigo (bullwhip) NO es una ventaja: es justo lo que una buena gestión de la cadena trata de evitar."},
+{q:"La relación entre los ingresos de un cliente, los gastos de darle servicio y la duración esperada de la relación se conoce como:",opts:["Valor de Tiempo de Vida del Cliente","Tasa de Cancelación del Cliente","Tasa de Cancelación de Vida del Cliente","Todas son verdaderas"],correct:"Valor de Tiempo de Vida del Cliente",tema:6,temaLabel:"Tema 6 · Relaciones con clientes (CRM)",expl:"Ingresos del cliente, menos el coste de servirle, por la duración esperada de la relación = Valor de Tiempo de Vida del Cliente (LTV)."},
+{q:"Aspectos como los estándares y la competitividad en los mercados, dentro de los criterios para la decisión de inversión, se relacionan con:",opts:["Calidad técnica","Criterio económico","Costes de cambio","Ninguno de los anteriores"],correct:"Costes de cambio",tema:9,temaLabel:"Tema 9 · Inversión en TIC",expl:"Los estándares y la competitividad en los mercados se relacionan con los costes de cambio (lock-in)."},
+{q:"Presentar procesos, aplicaciones y arquitectura para cubrir el denominado GAP se relaciona con la fase del plan de sistemas de:",opts:["Preparación y comprensión de la organización","Estudio de la situación actual en SI/TI","Formulación y construcción de escenarios","Plan de acción"],correct:"Formulación y construcción de escenarios",tema:8,temaLabel:"Tema 8 · Planificación de SI",expl:"Presentar procesos, aplicaciones y arquitectura para cubrir el GAP corresponde a la fase de formulación y construcción de escenarios."},
+{q:"En análisis de riesgos, el coste que supondría recuperarse de una incidencia determinada lo denominamos:",opts:["Activo","Valor","Impacto","Riesgo"],correct:"Valor",tema:12,temaLabel:"Tema 12 · Seguridad (MAGERIT)",expl:"El coste de recuperarse de una incidencia es el Valor del activo (valorar = coste de reposición)."},
+{q:"En el EVS, la valoración de riesgos y el análisis coste/beneficio se realiza en:",opts:["EVS4 Estudio de alternativas de solución","EVS2 Estudio de la situación actual","EVS3 Definición de requisitos","EVS5 Valoración de alternativas"],correct:"EVS5 Valoración de alternativas",tema:10,temaLabel:"Tema 10 · Viabilidad (EVS)",expl:"La valoración de riesgos y el análisis coste/beneficio se realizan en EVS5 (valoración de alternativas)."},
+{q:"El valor esperado monetario:",opts:["Es el sumatorio de la renta esperada de cada alternativa multiplicada por su probabilidad","Es el cociente del beneficio menos la inversión dividido por la inversión","Es la relación entre la inversión y los beneficios generados","Ninguna de las anteriores"],correct:"Es el sumatorio de la renta esperada de cada alternativa multiplicada por su probabilidad",tema:11,temaLabel:"Tema 11 · Aspectos financieros",expl:"El Valor Esperado Monetario es el sumatorio de la renta esperada de cada alternativa multiplicada por su probabilidad."},
+{q:"En BI, el proceso analítico en línea para organización y consulta de datos sobre una estructura multidimensional se corresponde con:",opts:["Data Warehouse","ETL","OLAP","Cuadro de mando"],correct:"OLAP",tema:7,temaLabel:"Tema 7 · Business Intelligence",expl:"El procesamiento analítico en línea, multidimensional y sobre cubos, es OLAP."},
+{q:"¿Cuál es el principal objetivo del proceso de Análisis del Sistema de Información (ASI)?",opts:["Una especificación detallada para un plan de pruebas completo","Una especificación detallada que satisfaga las necesidades de los usuarios y sirva de base al diseño","La valoración de alternativas y especificación de requisitos","Revisar la planificación inicial y obtener los requisitos iniciales"],correct:"Una especificación detallada que satisfaga las necesidades de los usuarios y sirva de base al diseño",tema:13,temaLabel:"Tema 13 · Métrica v.3",expl:"El objetivo del Análisis del SI (ASI) es una especificación detallada que satisfaga a los usuarios y sirva de base al diseño."},
+{q:"El sistema integrado de gestión pionero en bases de datos relacionales, con una opción sólida en gestión de operaciones financieras:",opts:["SAP","ORACLE","Microsoft Dynamics","Salesforce"],correct:"ORACLE",tema:4,temaLabel:"Tema 4 · ERP",expl:"El ERP pionero en bases de datos relacionales y fuerte en operaciones financieras es ORACLE."},
+{q:"Si un SI nos permite usar datos internos y externos y abandonar planteamientos preconcebidos, estratégicamente se relaciona con:",opts:["Intimidad con clientes y proveedores","Toma de decisiones mejorada","Diferenciación del producto","Nuevos productos, servicios y modelos de negocio"],correct:"Toma de decisiones mejorada",tema:1,temaLabel:"Tema 1 · Introducción a los SI",expl:"Usar datos internos y externos y abandonar planteamientos preconcebidos se asocia a la toma de decisiones mejorada."},
+{q:"Respecto a las estrategias de los SI para lidiar con las fuerzas competitivas, señala la única correcta de las presentadas:",opts:["Liderazgo por alto coste","Enfoque a nichos de mercado","Debilitar proveedores","Igualación de productos"],correct:"Enfoque a nichos de mercado",tema:2,temaLabel:"Tema 2 · Oportunidades y necesidades",expl:"Entre las estrategias competitivas válidas frente a las fuerzas del mercado está el enfoque a nichos de mercado."},
+{q:"Elementos fundamentales dados por supuestos en las organizaciones, muchas veces incuestionables, que chocan con la integración del SI, tienen que ver con:",opts:["Rutinas","Cultura","Procesos de negocio","Todas son correctas"],correct:"Cultura",tema:3,temaLabel:"Tema 3 · Conceptos e integración",expl:"Los elementos dados por supuestos e incuestionables que chocan con la integración son, sobre todo, la cultura."},
+{q:"En la clasificación clásica de SI, si se trata de información rutinaria con grandes cantidades de datos, normalmente de la propia empresa, se trata de:",opts:["MIS (información gerencial)","TPS (transaccional)","DSS (soporte a la decisión)","ES (sistemas expertos)"],correct:"TPS (transaccional)",tema:3,temaLabel:"Tema 3 · Conceptos e integración",expl:"Información rutinaria con grandes cantidades de datos, normalmente de la propia empresa = TPS (transaccional)."},
+{q:"En integración de sistemas, si son modulares integrables que han de estar en modo operación sin un dispositivo de almacenamiento, se trata de:",opts:["Ficheros transaccionales","Paso de mensajes","Middleware","Arquitectura orientada a servicios"],correct:"Paso de mensajes",tema:3,temaLabel:"Tema 3 · Conceptos e integración",expl:"Sistemas modulares que han de estar en operación y sin dispositivo de almacenamiento intermedio = paso de mensajes."},
+{q:"El origen de los sistemas integrados de gestión, en los años 60, está relacionado con:",opts:["MRP para listados de materiales y gestión del inventario","MRP para gestión de recursos humanos","MRP para distribución y transporte","MRP para aspectos de calidad"],correct:"MRP para listados de materiales y gestión del inventario",tema:4,temaLabel:"Tema 4 · ERP",expl:"El origen del ERP, en los años 60, fue el MRP para listados de materiales y gestión del inventario."},
+{q:"La adecuada gestión de la cadena de suministro con integración de SI supone… señala la respuesta falsa:",opts:["Mejora del servicio al cliente","Aumento de la edad media del producto servido","Reducción de las ventas perdidas","Reducción de costes por obsolescencia"],correct:"Aumento de la edad media del producto servido",tema:5,temaLabel:"Tema 5 · Cadena de suministro (SCM)",expl:"Es falsa: una buena cadena de suministro reduce (no aumenta) la edad media del producto servido."},
+{q:"El soporte técnico y Help Desk, en los sistemas de relación con clientes (CRM), se relaciona con:",opts:["CRM analítico","CRM operacional","CRM relacional","CRM principal"],correct:"CRM operacional",tema:6,temaLabel:"Tema 6 · Relaciones con clientes (CRM)",expl:"El soporte técnico y el Help Desk corresponden al CRM operacional."},
+{q:"Si el responsable decide implantar un sistema muy extendido en el mercado en lugar de uno especializado, para convertirse en experto en dicho sistema, incurre en:",opts:["Problemas de agencia","Comportamiento de manada","Cambio de paradigma","Ninguna de las anteriores"],correct:"Comportamiento de manada",tema:9,temaLabel:"Tema 9 · Inversión en TIC",expl:"Elegir un sistema muy extendido para no quedarse fuera de lo que hace el mercado es comportamiento de manada."},
+{q:"La creciente autonomía de los usuarios o la mejora en el seguimiento de proyectos justifica la planificación desde el punto de vista de:",opts:["Tecnología","Diferenciación","Costes","Ninguna de las anteriores"],correct:"Tecnología",tema:8,temaLabel:"Tema 8 · Planificación de SI",expl:"La creciente autonomía de los usuarios y la mejora del seguimiento de proyectos justifican la planificación desde la perspectiva de la tecnología."},
+{q:"En análisis de riesgos, el componente de un SI susceptible de ser atacado con consecuencias para la organización se denomina:",opts:["Valor","Riesgo","Amenaza","Activo"],correct:"Activo",tema:12,temaLabel:"Tema 12 · Seguridad (MAGERIT)",expl:"El componente del SI susceptible de ser atacado se denomina activo."},
+{q:"En el EVS, la descomposición inicial en subsistemas y la preselección de soluciones se corresponde con:",opts:["EVS1 Establecimiento del alcance","EVS4 Estudio de alternativas de solución","EVS3 Definición de requisitos","EVS2 Estudio de la situación actual"],correct:"EVS4 Estudio de alternativas de solución",tema:10,temaLabel:"Tema 10 · Viabilidad (EVS)",expl:"La descomposición inicial en subsistemas y la preselección de soluciones corresponde a EVS4 (estudio de alternativas)."},
+{q:"Profundizando en la estructura de costes según las condiciones económicas y financieras, señala la incorrecta:",opts:["Tratamos de reducir al máximo los costes ocultos","Estimamos los costes desde un nivel alto (Top-up)","Estimamos los costes a partir de criterios por unidad (Bottom-up)","Estimamos los costes desde un nivel macro (Top-down)"],correct:"Estimamos los costes desde un nivel alto (Top-up)",tema:11,temaLabel:"Tema 11 · Aspectos financieros",expl:"Es incorrecta porque no existe 'Top-up': los enfoques de estimación son Top-down y Bottom-up."},
+{q:"En BI, la documentación mediante la cual se presentan los resultados de uno o varios procesos de negocio se corresponde con:",opts:["Informes","ETL","OLAP","Cuadro de mando"],correct:"Informes",tema:7,temaLabel:"Tema 7 · Business Intelligence",expl:"La documentación que presenta los resultados de uno o varios procesos de negocio son los informes."},
+{q:"El mantenimiento del SI se realiza siempre después de la fase de implantación y aceptación:",opts:["Falsa, solo si se ha contratado","Verdadera, según acuerdo de nivel de servicio","Falsa, se solapa con la fase de implantación","Verdadera, es preceptivo por ley el mantenimiento correctivo"],correct:"Falsa, solo si se ha contratado",tema:13,temaLabel:"Tema 13 · Métrica v.3",expl:"Según la plantilla oficial, es falsa salvo que se haya contratado el mantenimiento."},
+{q:"En el impacto económico de los SI, según la teoría del coste de transacción:",opts:["La TI puede reducir el coste de participación en el mercado facilitando la contratación de proveedores externos","La TI permite aumentar tamaño y número de empleados porque es más costoso reducirlo","La TI disminuye la externalización aumentando la manufactura propia","Ninguna de las anteriores"],correct:"La TI puede reducir el coste de participación en el mercado facilitando la contratación de proveedores externos",tema:2,temaLabel:"Tema 2 · Oportunidades y necesidades",expl:"Según la teoría del coste de transacción, la TI reduce el coste de participar en el mercado y facilita externalizar."},
+{q:"Los SI y el aumento de la eficiencia y los estándares tienen que ver especialmente con la característica de la organización:",opts:["Entornos organizacionales","Cultura","Políticas","Procesos de negocio"],correct:"Procesos de negocio",tema:2,temaLabel:"Tema 2 · Oportunidades y necesidades",expl:"El aumento de la eficiencia y de los estándares se asocia a los procesos de negocio de la organización."},
+{q:"Elementos de tipo alfanumérico que describen eventos, actividades o transacciones son:",opts:["Datos","Información","Conocimiento","Sistemas de información"],correct:"Datos",tema:1,temaLabel:"Tema 1 · Introducción a los SI",expl:"Elementos alfanuméricos que describen eventos, actividades o transacciones son los datos."},
+{q:"Al integrar un sistema integrado de gestión hay que tener en cuenta que:",opts:["El objetivo es que el dato no sea único, sino diferente en cada departamento","El objetivo es que cada departamento introduzca cada dato","El objetivo es que el dato sea único y cada departamento tenga módulos para elaborar la información","El objetivo es que el módulo sea único y cada departamento tenga datos diferentes"],correct:"El objetivo es que el dato sea único y cada departamento tenga módulos para elaborar la información",tema:4,temaLabel:"Tema 4 · ERP",expl:"El objetivo del SI integrado es que el dato sea único y que cada departamento disponga de módulos para elaborar la información."},
+{q:"Los principales actores externos que intervienen en el proceso de producción son:",opts:["Gestión, cadena y suministro","Proveedores, distribuidores y clientes","Enlaces, transportes y consumidores","Ninguno de los anteriores"],correct:"Proveedores, distribuidores y clientes",tema:5,temaLabel:"Tema 5 · Cadena de suministro (SCM)",expl:"Los actores externos del proceso de producción son los proveedores, los distribuidores y los clientes."},
+{q:"En el CRM, la extrapolación de información y las previsiones efectivas se relaciona con:",opts:["CRM operativo","CRM de gestión","CRM analítico","Las dos primeras son correctas"],correct:"CRM analítico",tema:6,temaLabel:"Tema 6 · Relaciones con clientes (CRM)",expl:"La extrapolación de información y las previsiones efectivas corresponden al CRM analítico."},
+{q:"Aspectos como la escalabilidad y el rendimiento, en los criterios para la decisión de inversión, se relacionan con:",opts:["Calidad técnica","Criterio económico","Costes de cambio","Ninguno de los anteriores"],correct:"Calidad técnica",tema:9,temaLabel:"Tema 9 · Inversión en TIC",expl:"La escalabilidad y el rendimiento son aspectos de calidad técnica."},
+{q:"La mejora de la competitividad e incluso la supervivencia justifica la planificación desde el punto de vista de:",opts:["Tecnología","Diferenciación","Costes","Ninguna de las anteriores"],correct:"Costes",tema:8,temaLabel:"Tema 8 · Planificación de SI",expl:"La mejora de la competitividad e incluso la supervivencia justifican la planificación desde la perspectiva de costes."},
+{q:"En análisis de riesgos, si evaluamos cuánto resultaría perjudicado el valor del activo, nos referimos a:",opts:["Degradación","Probabilidad","Posibilidad","Riesgo"],correct:"Degradación",tema:12,temaLabel:"Tema 12 · Seguridad (MAGERIT)",expl:"Cuánto se perjudica el valor del activo se mide con la degradación."},
+{q:"En el EVS, la descomposición inicial en subsistemas y la preselección de soluciones se corresponde con:",opts:["EVS1 Establecimiento del alcance","EVS2 Estudio de la situación actual","EVS3 Definición de requisitos","EVS4 Estudio de alternativas de solución"],correct:"EVS4 Estudio de alternativas de solución",tema:10,temaLabel:"Tema 10 · Viabilidad (EVS)",expl:"La descomposición inicial en subsistemas y la preselección de soluciones corresponde a EVS4."},
+{q:"Medir el plazo necesario para que los flujos netos de efectivo recuperen el coste o inversión inicial se refiere a:",opts:["VAN (Valor Actual Neto)","TIR (Tasa Interna de Retorno)","Punto de equilibrio","ROI (Retorno de la Inversión)"],correct:"Punto de equilibrio",tema:11,temaLabel:"Tema 11 · Aspectos financieros",expl:"El plazo necesario para que los flujos recuperen la inversión inicial es el punto de equilibrio (payback)."},
+{q:"En BI, la integración de datos con un conjunto de aplicaciones, productos y técnicas que proporciona una visión única se corresponde con:",opts:["Data Warehouse","ETL","OLAP","ELT"],correct:"ETL",tema:7,temaLabel:"Tema 7 · Business Intelligence",expl:"Según la plantilla oficial, la respuesta marcada es ETL; conviene recordar que el Data Warehouse aporta la visión única integrada del negocio."},
+{q:"Entre los objetivos del Diseño del Sistema de Información se encuentra:",opts:["Definir la arquitectura del sistema","Definir el entorno tecnológico que lo soportará","Elaborar las especificaciones detalladas de los componentes del SI","Todas las anteriores"],correct:"Todas las anteriores",tema:13,temaLabel:"Tema 13 · Métrica v.3",expl:"Entre los objetivos del diseño del SI están la arquitectura, el entorno tecnológico y las especificaciones detalladas: todas."},
+{q:"Sobre los objetivos del establecimiento de acuerdo de nivel de servicio (IAS 8), ¿cuál es cierta?",opts:["Determinar los servicios que requiere el sistema","Especificar los niveles de servicio con los que se valora la calidad","Definir los compromisos que se adquieren con la entrega","Todas las anteriores"],correct:"Todas las anteriores",tema:13,temaLabel:"Tema 13 · Métrica v.3",expl:"Los objetivos del acuerdo de nivel de servicio (IAS 8) abarcan determinar servicios, especificar niveles y definir compromisos: todas."},
+{q:"Dividir proyectos, tareas e impactos en función de las acciones se relaciona con la fase del plan de sistemas de:",opts:["Preparación y comprensión de la organización","Estudio de la situación actual en SI/TI","Formulación y construcción de escenarios","Plan de acción"],correct:"Plan de acción",tema:8,temaLabel:"Tema 8 · Planificación de SI",expl:"Dividir proyectos, tareas e impactos en función de las acciones corresponde al plan de acción."},
+{q:"Las dimensiones de los sistemas de información son:",opts:["Organizaciones, tecnología y administración","Organizaciones, procesos de negocio y administración","Organizaciones, procesos de negocio y tecnología","Tecnología, administración y procesos de negocio"],correct:"Organizaciones, tecnología y administración",tema:1,temaLabel:"Tema 1 · Introducción a los SI",expl:"Las tres dimensiones del SI son organizaciones, tecnología y administración."},
+{q:"Señala la respuesta incorrecta. Los sistemas transaccionales o TPS:",opts:["Manejan grandes cantidades de datos","Son ejemplos los sistemas ERP y CRM","Son prescindibles, aunque estén implementados en la empresa","La información que manejan es rutinaria"],correct:"Son prescindibles, aunque estén implementados en la empresa",tema:3,temaLabel:"Tema 3 · Conceptos e integración",expl:"Es incorrecta: los TPS NO son prescindibles; son la base operativa de la empresa."},
+{q:"Respecto al impacto de un sistema en la organización de una empresa, señala la incorrecta:",opts:["Aplana las organizaciones","Habilita a empleados de menor nivel","Los altos mandos reciben información menos precisa","Los mandos intermedios pueden administrar más trabajadores"],correct:"Los altos mandos reciben información menos precisa",tema:2,temaLabel:"Tema 2 · Oportunidades y necesidades",expl:"Es incorrecta: con un SI los altos mandos reciben información MÁS precisa, no menos."},
+{q:"En la integración de sistemas mediante middleware:",opts:["La integración es bidireccional","Los dos sistemas han de estar en modo operación","Los sistemas pueden ser modulares no integrables","Todas las anteriores son correctas"],correct:"La integración es bidireccional",tema:3,temaLabel:"Tema 3 · Conceptos e integración",expl:"En la integración mediante middleware la comunicación es bidireccional."},
+{q:"El origen de los sistemas integrados de gestión, en los años 60, está relacionado con:",opts:["MRP para gestión de recursos humanos","MRP para distribución y transporte","MRP para aspectos de calidad","MRP para listados de materiales y gestión del inventario"],correct:"MRP para listados de materiales y gestión del inventario",tema:4,temaLabel:"Tema 4 · ERP",expl:"El origen del ERP (años 60) es el MRP para listados de materiales y gestión del inventario."},
+{q:"El sistema integrado de gestión pionero en bases de datos relacionales, con una opción sólida en gestión de operaciones financieras:",opts:["SAP","ORACLE","Microsoft Dynamics","Salesforce"],correct:"ORACLE",tema:4,temaLabel:"Tema 4 · ERP",expl:"Pionera en bases de datos relacionales y fuerte en operaciones financieras: ORACLE."},
+{q:"¿A qué corresponden las iniciales de un sistema CRM según su definición?",opts:["Customer, Resource, Management","Customer, Relationship, Management","Customer, Relationship, Maintenance","Customer, Resource, Maintenance"],correct:"Customer, Relationship, Management",tema:6,temaLabel:"Tema 6 · Relaciones con clientes (CRM)",expl:"CRM corresponde a Customer (cliente), Relationship (relación), Management (gestión)."},
+{q:"Los actores principales en la cadena de suministro son:",opts:["Los clientes, los proveedores y los distribuidores","Los clientes, los distribuidores de materias primas y los de nuestros productos","Los proveedores, el departamento de producción, los distribuidores y los clientes","Los proveedores, los distribuidores, los clientes y el tiempo"],correct:"Los proveedores, el departamento de producción, los distribuidores y los clientes",tema:5,temaLabel:"Tema 5 · Cadena de suministro (SCM)",expl:"Los actores principales de la cadena de suministro son proveedores, departamento de producción, distribuidores y clientes."},
+{q:"La diferencia fundamental entre la adquisición de software abierto y el comercializado radica en:",opts:["Su coste","Su nivel de soporte","La posibilidad de acuerdo de niveles de servicio","Todas las respuestas anteriores son verdaderas"],correct:"Todas las respuestas anteriores son verdaderas",tema:9,temaLabel:"Tema 9 · Inversión en TIC",expl:"La diferencia entre software abierto y comercializado abarca el coste, el soporte y la posibilidad de acuerdo de niveles de servicio: todas."},
+{q:"Presentar procesos, aplicaciones y arquitectura para cubrir el denominado GAP se relaciona con la fase del plan de sistemas de:",opts:["Preparación y comprensión de la organización","Estudio de la situación actual en SI/TI","Formulación y construcción de escenarios","Plan de acción"],correct:"Formulación y construcción de escenarios",tema:8,temaLabel:"Tema 8 · Planificación de SI",expl:"Cubrir el GAP presentando procesos, aplicaciones y arquitectura es la fase de construcción de escenarios."},
+{q:"¿Qué se entiende por riesgo dentro del campo de la seguridad de los SI?",opts:["El coste asociado al daño por la pérdida de información","Los daños que pueda causar la degradación de un activo","Los daños que pueda causar una determinada amenaza","La probabilidad de que una amenaza se materialice"],correct:"La probabilidad de que una amenaza se materialice",tema:12,temaLabel:"Tema 12 · Seguridad (MAGERIT)",expl:"El riesgo se asocia a la probabilidad de que una amenaza se materialice (combinada con el impacto)."},
+{q:"En un estudio de viabilidad, la «identificación de los sistemas de información existentes» forma parte de la actividad:",opts:["EVS 2. Estudio de la situación actual","EVS 2. Establecimiento del alcance del sistema","EVS 3. Definición de requisitos","EVS 4. Estudio de alternativas de solución"],correct:"EVS 2. Estudio de la situación actual",tema:10,temaLabel:"Tema 10 · Viabilidad (EVS)",expl:"Identificar los sistemas de información existentes pertenece a EVS2 (estudio de la situación actual)."},
+{q:"La estimación de costes por porcentaje en proyectos similares se denomina:",opts:["Top-down","Bottom-up","Top-bottom","Bottom-down"],correct:"Top-down",tema:11,temaLabel:"Tema 11 · Aspectos financieros",expl:"Estimar costes por porcentaje a partir de proyectos similares es el enfoque Top-down."},
+{q:"En BI, el almacén de datos que da una visión global, organizado en torno a un tema y no volátil, se corresponde con:",opts:["ETL","Data Warehouse","OLAP","Cuadro de mando"],correct:"Data Warehouse",tema:7,temaLabel:"Tema 7 · Business Intelligence",expl:"Un almacén de datos organizado en torno a un tema, integrado y no volátil es el Data Warehouse."},
+{q:"Entre los objetivos del Diseño del Sistema de Información se encuentra:",opts:["Definir la arquitectura del sistema","Definir el entorno tecnológico que lo soportará","Elaborar las especificaciones detalladas de los componentes del SI","Todas las anteriores"],correct:"Todas las anteriores",tema:13,temaLabel:"Tema 13 · Métrica v.3",expl:"Entre los objetivos del diseño del SI están la arquitectura, el entorno tecnológico y las especificaciones: todas."},
+{q:"Aspectos como las restricciones ambientales, los financiadores o la tecnología tienen que ver con la característica de la organización:",opts:["Cultura","Políticas organizacionales","Entornos organizacionales","Ninguna de las anteriores"],correct:"Entornos organizacionales",tema:2,temaLabel:"Tema 2 · Oportunidades y necesidades",expl:"Las restricciones ambientales, los financiadores o la tecnología tienen que ver con los entornos organizacionales."},
+{q:"Respecto al Modelo de Cadena de Valor de Porter:",opts:["Distingue tres categorías: primarias, de soporte y de apoyo","Representa la empresa como una cadena de actividades a las que se añade un margen de valor","Los SI se relacionan únicamente con las actividades primarias","Los SI se relacionan únicamente con las actividades de soporte"],correct:"Representa la empresa como una cadena de actividades a las que se añade un margen de valor",tema:2,temaLabel:"Tema 2 · Oportunidades y necesidades",expl:"La cadena de valor de Porter representa la empresa como una serie de actividades a las que se añade un margen de valor."},
+{q:"Los sistemas de soporte a la decisión (DSS):",opts:["Son difíciles de utilizar por los usuarios","No utilizan herramientas de modelización y análisis de datos","Dan soporte a decisiones secuenciales e independientes, permitiendo cambios en las condiciones iniciales","Dan soporte únicamente a decisiones predecibles con antelación"],correct:"Dan soporte a decisiones secuenciales e independientes, permitiendo cambios en las condiciones iniciales",tema:3,temaLabel:"Tema 3 · Conceptos e integración",expl:"El DSS da soporte a decisiones secuenciales e independientes y permite cambios en las condiciones iniciales."},
+{q:"En la integración de sistemas mediante ficheros transaccionales, señala la correcta:",opts:["No es preciso controlar la inexistencia o corrupción del fichero","No puede realizarse entre dos o más sistemas de información","Es preciso controlar la corrupción, puede hacerse entre varios sistemas y es la integración menos rápida (todas son ciertas)","Es la forma de integración más rápida"],correct:"Es preciso controlar la corrupción, puede hacerse entre varios sistemas y es la integración menos rápida (todas son ciertas)",tema:3,temaLabel:"Tema 3 · Conceptos e integración",expl:"En ficheros transaccionales hay que controlar la corrupción, puede usarse entre varios sistemas y es la integración más lenta: todas son ciertas."},
+{q:"¿Cuál de los siguientes NO es uno de los cuatro elementos fundamentales de la cadena de suministro?",opts:["Materias primas","Proveedores","Departamento de producción","Clientes"],correct:"Materias primas",tema:5,temaLabel:"Tema 5 · Cadena de suministro (SCM)",expl:"Materias primas NO es uno de los cuatro elementos de la cadena (sí lo son proveedores, producción, distribuidores y clientes)."},
+{q:"El sistema de clasificación de tareas en producción (por hacer / haciéndose / hecho) se corresponde con:",opts:["Just in time","Bullwhip","Kanban","Canvas"],correct:"Kanban",tema:5,temaLabel:"Tema 5 · Cadena de suministro (SCM)",expl:"Clasificar las tareas en por hacer / haciéndose / hecho corresponde al método Kanban."},
+{q:"Aspectos como los costes de soporte, en los criterios para la decisión de inversión, se relacionan con:",opts:["Criterio económico","Calidad técnica","Costes de cambio","Ninguno de los anteriores"],correct:"Criterio económico",tema:9,temaLabel:"Tema 9 · Inversión en TIC",expl:"Los costes de soporte se enmarcan en el criterio económico de la decisión de inversión."},
+{q:"Los sistemas de información gerencial o MIS:",opts:["Se basan en datos procedentes de los DSS","Tienen gran capacidad de análisis e interpretación de datos","Se basan en datos presentes, procedentes de los TPS","Se basan principalmente en datos de fuentes externas"],correct:"Se basan en datos presentes, procedentes de los TPS",tema:3,temaLabel:"Tema 3 · Conceptos e integración",expl:"El MIS (información gerencial) se nutre de datos presentes procedentes de los TPS.",src:"según temario"},
+{q:"En la integración de sistemas mediante middleware:",opts:["No necesitan una API que permita la integración","Está enfocado a sistemas modulares integrables","La integración es siempre unidireccional","El middleware no puede almacenar la información que precisen los sistemas"],correct:"Está enfocado a sistemas modulares integrables",tema:3,temaLabel:"Tema 3 · Conceptos e integración",expl:"El middleware está enfocado a sistemas modulares integrables; usa API y puede almacenar la información.",src:"según temario"},
+{q:"En la gestión de la cadena de suministro, el diseño de la red de distribución tiene más relación con:",opts:["Planificación estratégica","Planificación táctica","Planificación operativa","Ejecución"],correct:"Planificación estratégica",tema:5,temaLabel:"Tema 5 · Cadena de suministro (SCM)",expl:"El diseño de la red de distribución es una decisión de planificación estratégica de la cadena.",src:"según temario"},
+{q:"El diseño de soluciones a nivel organizativo y técnico a partir de una búsqueda general corresponde a la fase del plan de sistemas de:",opts:["Preparación y comprensión de la organización","Estudio de la situación actual en SI/TI","Formulación y construcción de escenarios","Plan de acción"],correct:"Formulación y construcción de escenarios",tema:8,temaLabel:"Tema 8 · Planificación de SI",expl:"Diseñar soluciones organizativas y técnicas a partir de una búsqueda general es la formulación y construcción de escenarios.",src:"según temario"},
+{q:"La determinación del coste que supondría recuperarse de una incidencia que destrozara el activo se relaciona con:",opts:["Valoración","Riesgo de ocurrencia","Probabilidad","Impacto"],correct:"Valoración",tema:12,temaLabel:"Tema 12 · Seguridad (MAGERIT)",expl:"Determinar el coste de recuperarse de una incidencia es la valoración del activo.",src:"según temario"},
+{q:"¿Qué dos actividades del proceso se pueden realizar en paralelo, según el esquema del Estudio de Viabilidad (EVS)?",opts:["Establecimiento del Alcance del Sistema y Estudio de la Situación Actual","Estudio de la Situación Actual y Valoración de las Alternativas","Valoración de las Alternativas y Especificación de Requisitos","Estudio de la Situación Actual y Definición de Requisitos del Sistema"],correct:"Estudio de la Situación Actual y Definición de Requisitos del Sistema",tema:10,temaLabel:"Tema 10 · Viabilidad (EVS)",expl:"El Estudio de la Situación Actual y la Definición de Requisitos pueden realizarse en paralelo.",src:"según temario"},
+{q:"Respecto al análisis financiero, NO corresponde tener en cuenta:",opts:["Costes amortizables","Ingresos","Flujo de caja","Punto de equilibrio"],correct:"Costes amortizables",tema:11,temaLabel:"Tema 11 · Aspectos financieros",expl:"En el flujo de caja no se computan los costes amortizables, porque la amortización no es una salida real de tesorería.",src:"según temario"},
+{q:"En Business Intelligence (BI), la herramienta que informa de la evolución de los parámetros fundamentales de negocio de una organización es:",opts:["Informes","ETL","OLAP","Cuadro de mando"],correct:"Cuadro de mando",tema:7,temaLabel:"Tema 7 · Business Intelligence",expl:"El cuadro de mando (dashboard) informa de la evolución de los parámetros fundamentales del negocio.",src:"según temario"},
+{q:"El catálogo de requisitos detallado que describe con precisión el SI y sirve para comprobar la especificación de los modelos se realiza en:",opts:["ASI 1 Definición del sistema","ASI 2 Establecimiento de requisitos","ASI 3 Identificación de subsistemas de análisis","ASI 6 Elaboración del modelo de datos"],correct:"ASI 2 Establecimiento de requisitos",tema:13,temaLabel:"Tema 13 · Métrica v.3",expl:"El catálogo de requisitos detallado se elabora en ASI 2 (Establecimiento de requisitos).",src:"según temario"},
+{q:"En ASI 1 (Definición del sistema) la definición inicial del SI se lleva a cabo:",opts:["Representando la información mediante modelos de bajo nivel","Mediante un catálogo de requisitos específicos","Delimitando el alcance del sistema","Mediante la representación del modelo de datos"],correct:"Delimitando el alcance del sistema",tema:13,temaLabel:"Tema 13 · Métrica v.3",expl:"En ASI 1 (Definición del sistema) se delimita el alcance del sistema.",src:"según temario"},
+{q:"Las etapas del análisis de riesgos son:",opts:["Análisis y valoración de activos, análisis de impacto y análisis de riesgos","Análisis y cuantificación de riesgos y diseño de sistemas de protección","Catálogo de requisitos de seguridad, estudio de viabilidad y cálculo de riesgos","Análisis de activos, valoración de riesgos y análisis de impacto"],correct:"Análisis y valoración de activos, análisis de impacto y análisis de riesgos",tema:12,temaLabel:"Tema 12 · Seguridad (MAGERIT)",expl:"Las etapas son: análisis y valoración de activos, análisis de impacto y análisis de riesgos.",src:"según temario"},
+{q:"Comparar lo necesitado con lo que se tiene (GAP), marcando el punto de partida, se relaciona con la fase del plan de sistemas de:",opts:["Preparación y comprensión de la organización","Estudio de la situación actual en SI/TI","Formulación y construcción de escenarios","Plan de acción"],correct:"Estudio de la situación actual en SI/TI",tema:8,temaLabel:"Tema 8 · Planificación de SI",expl:"Comparar necesidades y situación como punto de partida es el estudio de la situación actual en SI/TI.",src:"según temario"},
+{q:"En la integración de sistemas mediante ficheros transaccionales, señala la correcta:",opts:["Es preciso controlar la inexistencia o corrupción del fichero","La integración se realiza siempre en un único sentido","Es el tipo de integración más rápido","Todas son falsas"],correct:"Es preciso controlar la inexistencia o corrupción del fichero",tema:3,temaLabel:"Tema 3 · Conceptos e integración",expl:"En ficheros transaccionales es preciso controlar la inexistencia o corrupción del fichero; además es la integración más lenta.",src:"según temario"},
+{q:"Los sistemas de soporte a la decisión (DSS):",opts:["Son difíciles de utilizar por los usuarios","No utilizan herramientas de modelización y análisis","Dan soporte a decisiones que no se pueden predecir con antelación","Solo sirven para decisiones rutinarias"],correct:"Dan soporte a decisiones que no se pueden predecir con antelación",tema:3,temaLabel:"Tema 3 · Conceptos e integración",expl:"El DSS da soporte a decisiones que no se pueden predecir con antelación.",src:"según temario"},
+{q:"En la cadena de suministro, ¿cuál NO es una afirmación verdadera?",opts:["Proveedores: principio de la cadena de suministro","Producción: última parte en las redes de suministro","Distribución: logística, transporte y entrega","Clientes: consumidores finales"],correct:"Producción: última parte en las redes de suministro",tema:5,temaLabel:"Tema 5 · Cadena de suministro (SCM)",expl:"Es falsa: la producción no es la última parte; son los clientes quienes cierran la cadena.",src:"según temario"},
+{q:"Una estructura con distintos niveles o áreas, división de funciones y una jerarquía establecida se corresponde con:",opts:["Tecnología de la información","Administración","Organizaciones","Modelos de negocio"],correct:"Organizaciones",tema:1,temaLabel:"Tema 1 · Introducción a los SI",expl:"Personas, estructura, división de funciones y jerarquía describen la dimensión Organizaciones.",src:"según temario"},
+{q:"La especificación inicial del alcance, los objetivos y los requisitos generales corresponde a la actividad del EVS:",opts:["Estudio de la Situación Actual","Valoración de las Alternativas","Definición de Requisitos","Establecimiento del alcance del sistema"],correct:"Establecimiento del alcance del sistema",tema:10,temaLabel:"Tema 10 · Viabilidad (EVS)",expl:"El establecimiento del alcance del sistema es la primera actividad del EVS (EVS1).",src:"según temario"},
+{q:"El impacto que se calcula teniendo en cuenta el valor propio del activo y las amenazas de los activos de los que depende es el:",opts:["Impacto repercutido","Impacto acumulado","Riesgo residual","Impacto potencial"],correct:"Impacto repercutido",tema:12,temaLabel:"Tema 12 · Seguridad (MAGERIT)",expl:"El impacto que considera el valor propio y las amenazas de los activos de los que depende es el impacto repercutido.",src:"según temario"},
+{q:"En Business Intelligence, los procesos de extraer, transformar y cargar los datos en el almacén se denominan:",opts:["Informes","Procesos ETL","OLAP","Cuadro de mando"],correct:"Procesos ETL",tema:7,temaLabel:"Tema 7 · Business Intelligence",expl:"Extraer, transformar y cargar son los procesos ETL.",src:"según temario"},
+{q:"El orden correcto de la aproximación metódica del análisis de riesgos (MAGERIT) es:",opts:["Determinar riesgo, activos, amenazas e impacto","Determinar impacto, activos, amenazas y riesgo","Determinar amenazas, activos, impacto y riesgo","Determinar los activos, las amenazas, el impacto y el riesgo"],correct:"Determinar los activos, las amenazas, el impacto y el riesgo",tema:12,temaLabel:"Tema 12 · Seguridad (MAGERIT)",expl:"El orden metódico es: determinar activos, amenazas, impacto y riesgo.",src:"según temario"},
+{q:"Una sucesión de flujos de tesorería e inversiones descontados a una tasa r a lo largo de t periodos define:",opts:["VEM Valor Esperado Monetario","TIN Tipo de Interés Nominal","TAE Tasa Anual Equivalente","VAN Valor Actual Neto"],correct:"VAN Valor Actual Neto",tema:11,temaLabel:"Tema 11 · Aspectos financieros",expl:"Los flujos de tesorería descontados a una tasa r durante t periodos definen el VAN.",src:"según temario"},
+{q:"Es el sumatorio de la renta que se espera obtener en cada alternativa multiplicada por la probabilidad de que se produzca:",opts:["VAN Valor Actual Neto","TIR Tasa Interna de Retorno","RP Rentabilidad Prevista","VEM Valor Esperado Monetario"],correct:"VEM Valor Esperado Monetario",tema:11,temaLabel:"Tema 11 · Aspectos financieros",expl:"El sumatorio de la renta esperada por su probabilidad es el VEM.",src:"según temario"},
+{q:"Respecto al Modelo de Cadena de Valor de Porter:",opts:["Los SI se relacionan con la infraestructura de la empresa, los RRHH, la logística o el marketing, entre otros","Los SI se relacionan únicamente con las actividades de apoyo","Los SI se relacionan únicamente con las actividades primarias","Los SI se relacionan únicamente con las actividades de soporte"],correct:"Los SI se relacionan con la infraestructura de la empresa, los RRHH, la logística o el marketing, entre otros",tema:2,temaLabel:"Tema 2 · Oportunidades y necesidades",expl:"En la cadena de valor de Porter los SI se relacionan con infraestructura, RRHH, logística o marketing, entre otros.",src:"según temario"},
+{q:"¿Qué significan las siglas MAGERIT?",opts:["Metodología de Activos y Riesgos en el campo de las TIC","Metodología de Análisis y Gestión de Riesgos elaborada por el Consejo Superior de Administración Electrónica","Metodología Adaptada al Registro y Gestión de Riesgos IT","Management of Risks for Enterprises that Generates IT"],correct:"Metodología de Análisis y Gestión de Riesgos elaborada por el Consejo Superior de Administración Electrónica",tema:12,temaLabel:"Tema 12 · Seguridad (MAGERIT)",expl:"MAGERIT = Metodología de Análisis y Gestión de Riesgos, del Consejo Superior de Administración Electrónica.",src:"según temario"},
+{q:"En la Definición de Requisitos (EVS 3) se analiza la información obtenida definiendo los requisitos y sus prioridades, que se añaden al catálogo de requisitos:",opts:["Es falso","Es verdadero","Depende del tipo de solicitud del cliente","Depende de los resultados del estudio de la situación actual"],correct:"Es verdadero",tema:10,temaLabel:"Tema 10 · Viabilidad (EVS)",expl:"Verdadero: en EVS3 se definen los requisitos y sus prioridades y se añaden al catálogo.",src:"según temario"},
+{q:"¿Cuál de los siguientes se utiliza como indicador de rentabilidad de la inversión?",opts:["ROI Retorno sobre la Inversión","VAN Valor Actual Neto","VEM Valor Esperado Monetario","Todas son correctas"],correct:"Todas son correctas",tema:11,temaLabel:"Tema 11 · Aspectos financieros",expl:"ROI, VAN y VEM son todos indicadores de rentabilidad de la inversión.",src:"según temario"},
+{q:"El diseño de la red de distribución y la localización de almacenes en la cadena de suministro es una decisión de tipo:",opts:["Estratégico","Táctico","Operativo","De ejecución"],correct:"Estratégico",tema:5,temaLabel:"Tema 5 · Cadena de suministro (SCM)",expl:"La localización de almacenes y el diseño de la red son decisiones estratégicas de la cadena.",src:"según temario"}
+],
+dev:[
+{q:"Elabora un informe para la dirección sobre la conveniencia de implantar un sistema integrado de gestión (ERP): explica qué es, las ventajas e inconvenientes de desarrollo propio frente a adquisición de un paquete, los factores de éxito y los principales proveedores.",tema:4,temaLabel:"Tema 4 · ERP",model:"Un ERP integra los módulos de la empresa (compras, almacén, producción, ventas, finanzas, RRHH) sobre una ÚNICA base de datos: el dato se introduce una sola vez, tiene un responsable, permisos, respaldo e historial.\n\nDESARROLLO PROPIO: máxima adaptación y mantiene la metodología propia, pero es lento, caro de desarrollar, exige experiencia, resulta rígido y su mantenimiento es costoso en entornos cambiantes.\n\nPAQUETE ERP: instalación rápida, incorpora buenas prácticas y experiencias previas, pero con licencias caras, costes de parametrización variables e imposición de procesos estándar (ventaja e inconveniente).\n\nBENEFICIOS: control de la actividad, aceleración de procesos, menos inventarios y duplicidades, mejor time-to-market, mejor servicio al cliente y comunicación interna.\n\nFACTORES DE ÉXITO: alineamiento procesos-ERP, implicación de la dirección, buen equipo, selección/gestión de consultores, metodología de implantación, formación de usuarios y mejora continua.\n\nPROVEEDORES: SAP (líder, por sectores, Business One para pymes), ORACLE (pionera en BD relacionales, fuerte en finanzas, nube) y Microsoft Dynamics (NAV para pymes, AX para grandes).\n\nRECOMENDACIÓN: en una pyme con procesos estándar, paquete; con procesos muy singulares y recursos, valorar desarrollo o solución mixta."},
+{q:"Describe la metodología MAGERIT: su finalidad, las fases del análisis de riesgos, los elementos que maneja (activo, amenaza, degradación, probabilidad, impacto, riesgo) y el papel de las salvaguardas. Pon ejemplos de salvaguardas.",tema:12,temaLabel:"Tema 12 · Seguridad (MAGERIT)",model:"MAGERIT es la metodología de análisis y gestión de riesgos del Consejo Superior de Administración Electrónica; considera la gestión del riesgo pieza clave del buen gobierno.\n\nAPROXIMACIÓN METÓDICA: determinar activos → amenazas → salvaguardas y su eficacia → estimar impacto → estimar riesgo.\n\nELEMENTOS:\n• ACTIVO = componente del SI susceptible de ataque (información, datos, servicios, software, hardware, comunicaciones, recursos), valorado en cinco dimensiones (Confidencialidad, Integridad, Disponibilidad, Autenticidad, Trazabilidad).\n• AMENAZA = causa potencial de incidente (natural, del entorno, defectos de aplicaciones, humana accidental o deliberada).\n• DEGRADACIÓN = fracción del valor que se perdería.\n• PROBABILIDAD/FRECUENCIA = cómo de probable es la materialización.\n• IMPACTO = daño sobre el activo (acumulado o repercutido).\n• RIESGO = impacto × probabilidad.\n\nSALVAGUARDAS: reducen la probabilidad y/o limitan el daño, dando impacto y riesgo RESIDUALES; ejemplos: copias de seguridad, redundancia, cifrado, control de accesos, monitorización, SAI, plan de recuperación, formación.\n\nEs un proceso ITERATIVO y se concreta en un Plan de Seguridad (PS1 identificación de proyectos, PS2 plan de ejecución, PS3 ejecución)."},
+{q:"Explica el Estudio de Viabilidad del Sistema (EVS) de Métrica v.3: su objetivo, los criterios que valora, sus seis fases y algunas técnicas empleadas.",tema:10,temaLabel:"Tema 10 · Viabilidad (EVS)",model:"El EVS analiza un conjunto de necesidades y propone una solución valorándola con criterios económicos, técnicos, legales y operativos; las alternativas pueden ser a medida, de producto del mercado o mixtas.\n\nFASES:\n• EVS1 Establecimiento del alcance (objetivos, requisitos iniciales, unidades afectadas)\n• EVS2 Estudio de la situación actual (sistemas existentes)\n• EVS3 Definición de requisitos (catálogo de requisitos)\n• EVS4 Estudio de alternativas (preselección y descripción técnica)\n• EVS5 Valoración de alternativas (estudio de la inversión, coste/beneficio, riesgos y planificación)\n• EVS6 Selección de la solución (evaluación, elección y aprobación)\n\nTÉCNICAS: catálogo de requisitos, entrevistas y reuniones, sesiones JAD (con usuarios) y JRP (con alta dirección), matrices NxM para trazabilidad, análisis coste/beneficio (con punto y periodo de amortización y ROI) y factores críticos de éxito."},
+{q:"Desarrolla qué es un Plan de Sistemas de Información: desde qué perspectivas se justifica, sus fases de elaboración y quiénes participan.",tema:8,temaLabel:"Tema 8 · Planificación de SI",model:"El Plan de SI es el instrumento que define las bases de los futuros SI a partir de la situación actual y de los objetivos; es una herramienta viva que requiere seguimiento.\n\nSE JUSTIFICA desde tres perspectivas: tecnología (productividad), reducción de costes (competitividad y supervivencia) y diferenciación; cuidado con la paradoja de la productividad.\n\nFASES:\n1. Preparación y comprensión de la organización (lanzamiento, conocimiento de la empresa y su entorno)\n2. Estudio de la situación actual y balance de necesidades, comparando lo necesario con lo existente (análisis GAP)\n3. Formulación y construcción de escenarios, con procesos, aplicaciones y arquitectura que cubran el GAP\n4. Plan de acción e implantación, con calendario, prioridades, dependencias y gestión del cambio\nDespués: seguimiento y actualización.\n\nPARTICIPAN: comité informático, equipo de proyecto, consultores internos/externos, expertos y grupos de usuarios."},
+{q:"Explica qué es el Business Intelligence y su arquitectura: Data Warehouse, ETL, OLAP, cuadros de mando e informes.",tema:7,temaLabel:"Tema 7 · Business Intelligence",model:"El BI es el conjunto de metodologías, aplicaciones y capacidades para transformar datos en información y conocimiento que permita decidir mejor; es evolución de los DSS.\n\nDATA WAREHOUSE: almacén organizado por temas, integrado, no volátil y variable en el tiempo; elementos: tablas de hecho (medidas), dimensiones y métricas; esquemas en estrella o copo de nieve.\n\nETL (extraer, transformar, cargar): integra datos estructurados, semiestructurados y no estructurados en el almacén.\n\nOLAP: análisis multidimensional sobre cubos (MOLAP, ROLAP, HOLAP).\n\nPor encima: cuadros de mando/dashboards, informes (estáticos, ad hoc, paramétricos), minería de datos y análisis predictivo.\n\nConviene distinguir BI, Business Analytics y Big Data."},
+{q:"Explica la gestión de la cadena de suministro (SCM): qué actores intervienen, la variable fundamental, la evolución de push a pull y el papel de los sistemas de información.",tema:5,temaLabel:"Tema 5 · Cadena de suministro (SCM)",model:"La cadena de suministro conecta proveedores, departamento de producción, distribuidores y clientes; la variable fundamental que la rige es el TIEMPO (llevar el producto al mercado en tiempo y forma).\n\nA partir de la demanda real o estimada se calcula la producción, las materias primas y la distribución.\n\nEVOLUCIÓN: del almacenamiento masivo (push) a sistemas pull guiados por la demanda, con foco en optimizar, integrar, colaborar y sincronizar.\n\nPAPEL DE LOS SI: dar visibilidad de extremo a extremo, planificar la demanda y coordinar a los actores; hay soluciones SCM específicas y módulos integrados en el ERP.\n\nConceptos asociados: logística inversa y sostenibilidad de la cadena (centro de valor, no solo de coste)."},
+{q:"PRÁCTICA · Árbol de decisión. Una empresa decide entre IMPLANTAR un ERP o NO. Implantar: 65% de éxito técnico; con éxito, adopción alta (70%, +200) o media (30%, +100); sin éxito pleno (35%), parcial (40%, +30) o fracaso (60%, −100). No implantar: 50% mejoras parciales —estabiliza (60%, +40) o se mantiene (40%, +10)— y 50% sin mejorar —pérdida moderada (55%, −40) o grave (45%, −120)—. ¿Qué decisión conviene?",tema:9,temaLabel:"Tema 9 · Inversión en TIC (práctica)",model:"Se resuelve de derecha a izquierda con Valor Esperado = Σ(probabilidad × resultado).\n\nIMPLANTAR:\n• Éxito → 0,70·200 + 0,30·100 = 170\n• Sin éxito pleno → 0,40·30 + 0,60·(−100) = −48\n• Valor de implantar = 0,65·170 + 0,35·(−48) = 110,5 − 16,8 = 93,7 UM\n\nNO IMPLANTAR:\n• Mejoras → 0,60·40 + 0,40·10 = 28\n• Sin mejorar → 0,55·(−40) + 0,45·(−120) = −76\n• Valor = 0,50·28 + 0,50·(−76) = −24 UM\n\nDECISIÓN: IMPLANTAR el ERP, porque 93,7 UM > −24 UM."},
+{q:"PRÁCTICA · Análisis de riesgos (MAGERIT). Activo A = 500.000 €, degradación 90%, frecuencia 0,1/año. Salvaguardas: 90% de eficacia sobre el impacto y 50% sobre la frecuencia. Activo B = 100.000 €, depende de A en un 30%. Calcula impacto, riesgo, residuales e impacto repercutido en B.",tema:12,temaLabel:"Tema 12 · Seguridad (práctica)",model:"Impacto potencial en A = 500.000 × 0,90 = 450.000 €\nRiesgo potencial = 450.000 × 0,1 = 45.000 €/año\nImpacto residual = 450.000 × (1 − 0,90) = 45.000 €\nFrecuencia residual = 0,1 × (1 − 0,50) = 0,05/año\nRiesgo residual = 45.000 × 0,05 = 2.250 €/año\nImpacto repercutido en B = 100.000 × 0,90 × 0,30 = 27.000 €\n\nLas salvaguardas reducen la pérdida anual esperada de 45.000 € a 2.250 € (−90%)."},
+{q:"PRÁCTICA · VAN y payback. Proyecto A (CRM): inversión 30.000, primer flujo 9.000, crecimiento 4% anual, tasa 8%, 5 años. Proyecto B (BI): inversión 25.000, primer flujo 7.000, crecimiento 7%, tasa 8%, 5 años. Calcula el VAN y di cuál conviene.",tema:11,temaLabel:"Tema 11 · Aspectos financieros (práctica)",model:"Flujos con FTt = FT1·(1+g)^(t−1), descontados entre 1,08^t.\n\nPROYECTO A (CRM):\nValores actuales: 8.333 + 8.025 + 7.727 + 7.442 + 7.166 = 38.693\nVAN = −30.000 + 38.693 = +8.693 UM\n\nPROYECTO B (BI):\nValores actuales: 6.481 + 6.421 + 6.362 + 6.303 + 6.245 = 31.812\nVAN = −25.000 + 31.812 = +6.812 UM\n\nAmbos son rentables (VAN > 0) y recuperan la inversión durante el año 4 (payback ≈ 3,2 y 3,3 años).\nSi solo cabe uno, por mayor creación de valor se elige A."}
+]
+};
+
+/* =========================================================
+   TRANSFORMACIÓN DE DATOS
+   ========================================================= */
+const baseQuestions = RAW.test.map(q => ({
+    q:        q.q,
+    options:  q.opts,
+    correct:  q.opts.indexOf(q.correct),
+    explain:  q.expl,
+    theme:    q.tema,
+    temaLabel:q.temaLabel,
+    src:      q.src || null
+}));
+
+const devQuestions = RAW.dev;
+
+/* =========================================================
+   ESTADO
+   ========================================================= */
+let currentMode      = '';
+let currentQuestions = [];
+let currentPage      = 0;
+let questionsPerPage = 10;
+let answers          = [];
+let reviewFilter     = 'all';
+
+/* =========================================================
+   INICIALIZACIÓN DEL SELECTOR DE TEMA
+   ========================================================= */
+(function initTemaSelect() {
+    const temas = [...new Set(RAW.test.map(q => q.tema))].sort((a, b) => a - b);
+    const sel   = document.getElementById('temaFilter');
+    temas.forEach(t => {
+        const lbl = RAW.test.find(q => q.tema === t).temaLabel;
+        const n   = RAW.test.filter(q => q.tema === t).length;
+        const o   = document.createElement('option');
+        o.value       = t;
+        o.textContent = lbl + ' (' + n + ')';
+        sel.appendChild(o);
+    });
+})();
+
+/* =========================================================
+   NAVEGACIÓN
+   ========================================================= */
+function hideAll() {
+    ['setup','study-view','exam-view','random-view','dev-view','review-view','results-view']
+        .forEach(id => document.getElementById(id).classList.add('hidden'));
+}
+
+function backToModes() {
+    clearExamState();
+    hideAll();
+    document.getElementById('setup').classList.remove('hidden');
+    currentMode = '';
+}
+
+function selectMode(mode) {
+    currentMode = mode;
+    const temaVal = document.getElementById('temaFilter').value;
+    const filtered = temaVal === 'all'
+        ? [...baseQuestions]
+        : baseQuestions.filter(q => q.theme == temaVal);
+
+    hideAll();
+
+    if (mode === 'study') {
+        currentQuestions = filtered;
+        showStudyView(temaVal);
+    } else if (mode === 'exam') {
+        currentQuestions = filtered;
+        answers = new Array(currentQuestions.length);
+        currentPage = 0;
+
+        const saved = localStorage.getItem('isQuiz_answers');
+        const savedTema = localStorage.getItem('isQuiz_tema');
+        if (saved && savedTema === temaVal) {
+            const answeredCount = JSON.parse(saved).filter(a => a !== undefined).length;
+            const msg = '⚠️ Se encontró un examen guardado\n\nProgreso: ' + answeredCount + '/' + currentQuestions.length + ' preguntas respondidas\n\n¿Deseas continuar?';
+            if (confirm(msg)) {
+                answers = JSON.parse(saved);
+                currentPage = parseInt(localStorage.getItem('isQuiz_currentPage') || '0');
+            } else {
+                clearExamState();
+            }
+        }
+        showExamView();
+    } else if (mode === 'random') {
+        currentQuestions = shuffle([...baseQuestions]).slice(0, 20);
+        showRandomView();
+    } else if (mode === 'dev') {
+        showDevView();
+    }
+}
+
+/* =========================================================
+   MODO ESTUDIO
+   ========================================================= */
+function showStudyView(temaVal) {
+    const view = document.getElementById('study-view');
+    view.classList.remove('hidden');
+    const label = temaVal === 'all' ? 'Todos los temas' :
+        RAW.test.find(q => q.tema == temaVal).temaLabel;
+    document.getElementById('study-title').textContent = '📚 Modo Estudio · ' + label;
+
+    let html = '';
+    currentQuestions.forEach((q, i) => {
+        html += `
+        <div class="question-block">
+            <div class="q-number">Pregunta ${i + 1} de ${currentQuestions.length}</div>
+            <span class="q-badge tema">${q.temaLabel}</span>
+            ${q.src ? `<span class="q-badge amber" style="margin-left:6px">${q.src}</span>` : ''}
+            <div class="q-text">${q.q}</div>
+            <div class="options">`;
+        q.options.forEach((opt, j) => {
+            const isOk = j === q.correct;
+            html += `<button class="option-btn ${isOk ? 'correct' : ''}" disabled>${opt}${isOk ? ' ✓' : ''}</button>`;
+        });
+        html += `</div>
+            <div class="explanation"><strong>Explicación:</strong> ${q.explain}</div>
+        </div>`;
+    });
+
+    document.getElementById('study-content').innerHTML = html;
+}
+
+/* =========================================================
+   MODO EXAMEN
+   ========================================================= */
+function showExamView() {
+    document.getElementById('exam-view').classList.remove('hidden');
+    renderExamPage();
+}
+
+function renderExamPage() {
+    const start = currentPage * questionsPerPage;
+    const end   = Math.min(start + questionsPerPage, currentQuestions.length);
+    const total = Math.ceil(currentQuestions.length / questionsPerPage);
+    const answeredCount = answers.filter(a => a !== undefined).length;
+
+    document.getElementById('progress-fill').style.width =
+        (answeredCount / currentQuestions.length * 100) + '%';
+    document.getElementById('exam-progress').textContent =
+        answeredCount + '/' + currentQuestions.length + ' respondidas';
+    document.getElementById('exam-score').textContent =
+        'Página ' + (currentPage + 1) + ' / ' + total;
+
+    let html = `<div class="page-header">
+        <strong>Página ${currentPage + 1} de ${total}</strong>
+        <small>Preguntas ${start + 1} a ${end} · Respondidas: ${answeredCount}/${currentQuestions.length}</small>
+    </div>`;
+
+    currentQuestions.slice(start, end).forEach((q, idx) => {
+        const gi  = start + idx;
+        const ans = answers[gi];
+        const ok  = ans === q.correct;
+
+        let bgColor = '#f9f9f9', borderColor = '#ddd';
+        if (ans !== undefined) {
+            bgColor     = ok ? '#f0f8f4' : '#fef5f5';
+            borderColor = ok ? 'var(--success)' : 'var(--error)';
+        }
+
+        html += `<div class="question-block" style="background:${bgColor};border-left-color:${borderColor}">
+            <div class="q-number">Pregunta ${gi + 1}</div>
+            <span class="q-badge tema">${q.temaLabel}</span>
+            ${q.src ? `<span class="q-badge amber" style="margin-left:6px">${q.src}</span>` : ''}
+            <div class="q-text" style="margin-top:8px">${q.q}</div>
+            <div class="options">`;
+
+        q.options.forEach((opt, j) => {
+            let cls = 'option-btn';
+            if (ans !== undefined) {
+                if (j === ans && j === q.correct) cls += ' correct';
+                else if (j === ans && j !== q.correct) cls += ' wrong';
+                else if (j === q.correct) cls += ' show-correct';
+            }
+            const mark = ans === j && j === q.correct ? ' ✓'
+                       : ans === j && j !== q.correct ? ' ✗'
+                       : ans !== undefined && j === q.correct && j !== ans ? ' ← Correcta'
+                       : '';
+            html += `<button class="${cls}" onclick="selectAnswer(${gi},${j})" ${ans !== undefined ? 'disabled' : ''}>${opt}${mark}</button>`;
+        });
+
+        html += `</div></div>`;
+    });
+
+    document.getElementById('exam-content').innerHTML = html;
+
+    /* botones de navegación */
+    const nav = document.getElementById('exam-nav-buttons');
+    nav.querySelectorAll('[data-nav]').forEach(b => b.remove());
+
+    const cancelBtn = nav.querySelector('button');
+
+    function navBtn(label, fn) {
+        const b = document.createElement('button');
+        b.textContent = label;
+        b.dataset.nav = 'true';
+        b.onclick = fn;
+        nav.insertBefore(b, cancelBtn);
+        return b;
+    }
+
+    if (currentPage > 0)
+        navBtn('⬅ Anterior', () => { currentPage--; renderExamPage(); });
+
+    if (currentPage < total - 1)
+        navBtn('Siguiente ➡', () => { currentPage++; renderExamPage(); });
+
+    const finBtn = navBtn('Finalizar Examen ✓', finishExam);
+    finBtn.classList.add('success-btn');
+}
+
+function selectAnswer(gi, j) {
+    answers[gi] = j;
+    saveExamState();
+    renderExamPage();
+}
+
+function finishExam() {
+    document.getElementById('exam-view').classList.add('hidden');
+    showReviewView();
+}
+
+function saveExamState() {
+    const temaVal = document.getElementById('temaFilter').value;
+    localStorage.setItem('isQuiz_answers',     JSON.stringify(answers));
+    localStorage.setItem('isQuiz_currentPage', currentPage.toString());
+    localStorage.setItem('isQuiz_tema',        temaVal);
+}
+
+function clearExamState() {
+    ['isQuiz_answers','isQuiz_currentPage','isQuiz_tema'].forEach(k => localStorage.removeItem(k));
+}
+
+/* =========================================================
+   MODO ALEATORIO
+   ========================================================= */
+function showRandomView() {
+    document.getElementById('random-view').classList.remove('hidden');
+    let html = '';
+    currentQuestions.forEach((q, i) => {
+        html += `<div class="question-block">
+            <div class="q-number">Pregunta ${i + 1}</div>
+            <span class="q-badge tema">${q.temaLabel}</span>
+            <div class="q-text" style="margin-top:8px">${q.q}</div>
+            <div class="options" style="margin-top:12px">`;
+        q.options.forEach((opt, j) => {
+            html += `<label style="display:block;margin:8px 0;padding:10px;border:2px solid #ddd;border-radius:8px;cursor:pointer">
+                <input type="radio" name="rq${i}" value="${j}" style="margin-right:8px">${opt}
+            </label>`;
+        });
+        html += `</div></div>`;
+    });
+    document.getElementById('random-content').innerHTML = html;
+}
+
+function submitRandomAnswers() {
+    const randomAnswers = [];
+    let answered = 0;
+    currentQuestions.forEach((q, i) => {
+        const sel = document.querySelector(`input[name="rq${i}"]:checked`);
+        if (sel) { answered++; randomAnswers.push(parseInt(sel.value)); }
+        else      { randomAnswers.push(undefined); }
+    });
+    if (answered === 0) { alert('Por favor, responde al menos una pregunta.'); return; }
+    answers = randomAnswers;
+    document.getElementById('random-view').classList.add('hidden');
+    showResults();
+}
+
+/* =========================================================
+   MODO DESARROLLO
+   ========================================================= */
+function showDevView() {
+    document.getElementById('dev-view').classList.remove('hidden');
+    let html = '';
+    devQuestions.forEach((q, i) => {
+        const mid = 'dev-model-' + i;
+        html += `<div class="dev-block">
+            <div class="q-number">Pregunta ${i + 1} de ${devQuestions.length}</div>
+            <span class="q-badge tema">${q.temaLabel}</span>
+            <div class="dev-q" style="margin-top:10px">${q.q}</div>
+            <button class="dev-model-btn" onclick="toggleModel('${mid}', this)">Ver respuesta modelo</button>
+            <div class="dev-model" id="${mid}">${q.model.replace(/\n/g, '<br>')}</div>
+        </div>`;
+    });
+    document.getElementById('dev-content').innerHTML = html;
+}
+
+function toggleModel(id, btn) {
+    const el = document.getElementById(id);
+    const shown = el.classList.toggle('show');
+    btn.textContent = shown ? 'Ocultar respuesta modelo' : 'Ver respuesta modelo';
+}
+
+/* =========================================================
+   VISTA DE REVISIÓN (antes de resultados)
+   ========================================================= */
+function showReviewView() {
+    document.getElementById('review-view').classList.remove('hidden');
+    reviewFilter = 'all';
+    updateFilterButtons();
+
+    const total     = currentQuestions.length;
+    const answered  = answers.filter(a => a !== undefined).length;
+    const correct   = answers.filter((a, i) => a !== undefined && a === currentQuestions[i].correct).length;
+
+    document.getElementById('review-stats').innerHTML =
+        `${answered}/${total} preguntas respondidas &nbsp;·&nbsp; ✅ ${correct} correctas &nbsp;·&nbsp; ❌ ${answered - correct} incorrectas`;
+
+    displayReviewQuestions();
+}
+
+function updateFilterButtons() {
+    const map = { all: 'filter-all-btn', correct: 'filter-correct-btn', wrong: 'filter-wrong-btn' };
+    const colors = { all: '#3498db', correct: 'var(--success)', wrong: 'var(--error)' };
+    Object.entries(map).forEach(([key, id]) => {
+        const btn = document.getElementById(id);
+        btn.style.background   = reviewFilter === key ? colors[key] : 'white';
+        btn.style.color        = reviewFilter === key ? 'white'     : colors[key];
+        btn.style.borderColor  = reviewFilter === key ? colors[key] : '#bdc3c7';
+    });
+}
+
+function filterReview(f) { reviewFilter = f; updateFilterButtons(); displayReviewQuestions(); }
+
+function displayReviewQuestions() {
+    let html = '', shown = 0;
+    currentQuestions.forEach((q, i) => {
+        const ans = answers[i];
+        const ok  = ans === q.correct;
+        if (reviewFilter === 'correct' && !ok) return;
+        if (reviewFilter === 'wrong'   && (ans === undefined || ok)) return;
+        shown++;
+        const icon = ans === undefined ? '⭕' : ok ? '✅' : '❌';
+        const txt  = ans === undefined ? 'Sin responder' : ok ? 'Correcta' : 'Incorrecta';
+        const bg   = ans === undefined ? '#f9f9f9' : ok ? '#f0f8f4' : '#fef5f5';
+        const bc   = ans === undefined ? '#ddd' : ok ? 'var(--success)' : 'var(--error)';
+        html += `<div class="question-block" style="background:${bg};border-left-color:${bc};cursor:pointer"
+            onclick="editReviewQuestion(${i})">
+            <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:8px">
+                <div class="q-number">Pregunta ${i + 1}</div>
+                <span>${icon} <small style="color:#666">${txt}</small></span>
+            </div>
+            <div class="q-text">${q.q}</div>
+            ${ans !== undefined
+                ? `<div style="margin-top:10px;padding:9px;background:rgba(52,152,219,.1);border-radius:6px;font-size:13px"><strong>Tu respuesta:</strong> ${q.options[ans]}</div>`
+                : `<div style="margin-top:10px;padding:9px;background:rgba(189,195,199,.2);border-radius:6px;font-style:italic;color:#666;font-size:13px">Sin responder</div>`}
+            <div style="margin-top:6px;font-size:12px;color:var(--accent);font-weight:bold">Haz clic para editar</div>
+        </div>`;
+    });
+    if (!shown) html = `<div style="text-align:center;padding:40px;color:#999;font-size:1.05rem">No hay preguntas con este filtro</div>`;
+    document.getElementById('review-content').innerHTML = html;
+}
+
+function editReviewQuestion(qi) {
+    currentPage = Math.floor(qi / questionsPerPage);
+    document.getElementById('review-view').classList.add('hidden');
+    document.getElementById('exam-view').classList.remove('hidden');
+    renderExamPage();
+    setTimeout(() => {
+        const el = document.querySelector('.question-block');
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 80);
+}
+
+function backToExamReview() {
+    document.getElementById('review-view').classList.add('hidden');
+    document.getElementById('exam-view').classList.remove('hidden');
+    renderExamPage();
+}
+
+function submitReview() {
+    document.getElementById('review-view').classList.add('hidden');
+    clearExamState();
+    showResults();
+}
+
+/* =========================================================
+   RESULTADOS
+   ========================================================= */
+function showResults() {
+    document.getElementById('results-view').classList.remove('hidden');
+    const total   = currentQuestions.length;
+    let correct   = 0;
+    answers.forEach((a, i) => { if (a === currentQuestions[i].correct) correct++; });
+    const pct = Math.round(correct / total * 100);
+
+    document.getElementById('final-score').textContent = correct + ' / ' + total + ' (' + pct + '%)';
+    document.getElementById('final-message').textContent =
+        pct === 100 ? '¡Perfecto! 🎉' : pct >= 70 ? '¡Aprobado! 🌟' : pct >= 50 ? 'Buen intento 👍' : 'Necesitas repasar más 📚';
+
+    let html = '';
+    currentQuestions.forEach((q, i) => {
+        const a   = answers[i];
+        const ok  = a === q.correct;
+        const cls = a === undefined ? 'result-item' : ok ? 'result-item correct' : 'result-item wrong';
+        html += `<div class="${cls}">
+            <div style="display:flex;align-items:flex-start">
+                <span class="result-icon">${ok ? '✓' : '✗'}</span>
+                <div style="flex:1">
+                    <div style="font-weight:bold;margin-bottom:6px">P${i + 1}: ${q.q}</div>
+                    <div style="margin:6px 0"><strong>Tu respuesta:</strong> ${a !== undefined ? q.options[a] : 'No respondida'}</div>
+                    <div style="margin:6px 0"><strong>Respuesta correcta:</strong> ${q.options[q.correct]}</div>
+                    <div style="margin:6px 0;font-style:italic;color:#555;font-size:0.9rem">${q.explain}</div>
+                </div>
+            </div>
+        </div>`;
+    });
+    document.getElementById('results-list').innerHTML = html;
+}
+
+/* =========================================================
+   UTILIDADES
+   ========================================================= */
+function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.random() * (i + 1) | 0;
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+</script>
+</body>
+</html>
