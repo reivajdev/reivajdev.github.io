@@ -1,0 +1,1115 @@
+[
+  {
+    "q": "¿Cuál de los siguientes factores es diferencial hoy en día a la hora de seleccionar un dispositivo móvil?",
+    "options": ["Bluetooth", "WiFi", "Tipo de tarjeta", "Peso"],
+    "correct": 3,
+    "explain": "El peso es uno de los factores diferenciales clave al elegir un dispositivo móvil hoy en día.",
+    "theme": "moviles"
+  },
+  {
+    "q": "Uno de los métodos para la obtención del conocimiento es:",
+    "options": ["La creencia", "La observación", "El pensamiento", "La idea"],
+    "correct": 1,
+    "explain": "Los métodos esenciales para la obtención de conocimiento son la observación y el razonamiento.",
+    "theme": "innovacion"
+  },
+  {
+    "q": "En el apartado de orientaciones, dentro del diseño móvil, es conveniente:",
+    "options": ["Considerar las orientaciones vertical y horizontal como iguales", "Considerar las orientaciones vertical y horizontal como diferenciadas", "Considerar, únicamente, la orientación vertical al ser la más importante", "Considerar, únicamente, la orientación horizontal al ser la más importante"],
+    "correct": 1,
+    "explain": "Se recomienda considerar siempre las orientaciones vertical y horizontal como diferenciadas.",
+    "theme": "servicios"
+  },
+  {
+    "q": "¿Cuál de los siguientes GNSS no existe?",
+    "options": ["GPS", "Galileo", "GLONASS", "ChimDu"],
+    "correct": 3,
+    "explain": "Los GNSS reales son GPS, Galileo, GLONASS y BeiDou (además de los regionales IRNSS y QZSS); \"ChimDu\" no existe.",
+    "theme": "localizacion"
+  },
+  {
+    "q": "HDR son las siglas de:",
+    "options": ["High Data Ratio", "High Definition Range", "High Data Range", "High Dynamic Ratio"],
+    "correct": 1,
+    "explain": "ATENCIÓN: el temario define HDR como \"High Dynamic Range\" (Alto Rango Dinámico) y ninguna de las 4 opciones del examen reproduce exactamente esa combinación de palabras (todas difieren en una palabra). Se marca \"b\" como respuesta más probable, pero conviene verificarla con la clave real del examen.",
+    "theme": "moviles"
+  },
+  {
+    "q": "En la tecnología Blockchain, cada bloque tiene un puntero hash al:",
+    "options": ["Dato que almacena", "Código cifrado", "Bloque anterior", "Bloque actual"],
+    "correct": 2,
+    "explain": "Cada bloque tiene un puntero hash enlazado de forma indestructible al bloque anterior de la cadena.",
+    "theme": "blockchain"
+  },
+  {
+    "q": "En la realidad virtual, el escenario en el que nos sumergimos es:",
+    "options": ["Real", "Simulado", "En 2 dimensiones", "En 1 dimensión"],
+    "correct": 1,
+    "explain": "La realidad virtual es una realidad simulada y creada por ordenador, totalmente inmersiva.",
+    "theme": "realidad-extendida"
+  },
+  {
+    "q": "¿Cuál es el número mínimo de personas representativas del segmento que se recomienda en la aplicación de la técnica test de usuarios?",
+    "options": ["15", "20", "100", "1000"],
+    "correct": 0,
+    "explain": "Según Nielsen, se recomienda realizar el test de usuarios con 15 personas representativas del segmento.",
+    "theme": "ux"
+  },
+  {
+    "q": "Los sistemas de Internet de las Cosas se comunican de manera:",
+    "options": ["Síncrona", "Autónoma", "Dependiente", "Funcional"],
+    "correct": 1,
+    "explain": "Los objetos IoT se comunican con otros sistemas u objetos de forma autónoma, sin intervención de personas.",
+    "theme": "iot"
+  },
+  {
+    "q": "¿Cuánto duran las iteraciones en la metodología Scrum?",
+    "options": ["Entre 1 y 2 meses", "Entre 2 y 4 semanas", "Entre 1 y dos años", "Entre 1 y 3 días"],
+    "correct": 1,
+    "explain": "Scrum se caracteriza por la planificación en base a iteraciones (sprints) de entre 2 y 4 semanas.",
+    "theme": "iot"
+  },
+  {
+    "q": "El tipo de realidad en la que se mezcla la realidad aumentada y la virtual se denomina:",
+    "options": ["Realidad Focalizada", "Realidad Mixta", "Realidad Forzada", "Realidad Virtualizada"],
+    "correct": 1,
+    "explain": "Se habla de realidad mixta (MR) cuando se mezclan la realidad aumentada y la realidad virtual.",
+    "theme": "realidad-extendida"
+  },
+  {
+    "q": "En la técnica de creación de personas y escenarios:",
+    "options": ["Se crean escenarios de cuentos", "Se crean personajes con identidades ficticias", "Se crean identidades reales, con permiso de las personas", "No es necesario crear ni escenarios ni personajes"],
+    "correct": 1,
+    "explain": "Se crean «personas»: personajes ficticios con las características reales de los usuarios.",
+    "theme": "ux"
+  },
+  {
+    "q": "El tipo de comunicaciones que engloban la detección de ángulos muertos se denominan:",
+    "options": ["Vehículo a Infraestructura", "Vehículo a Vehículo", "Vehículo a Peatón", "Infraestructura a Peatón"],
+    "correct": 1,
+    "explain": "Las comunicaciones Vehículo a Vehículo (V2V) permiten la detección mutua en ángulos muertos e intersecciones.",
+    "theme": "conduccion-autonoma"
+  },
+  {
+    "q": "Uno de los mayores inconvenientes de las aplicaciones móviles híbridas es:",
+    "options": ["Que no se suelen ver bien", "Que solo se pueden programar para determinados sistemas operativos", "Que su velocidad dista mucho de ser la de una aplicación nativa", "Que no permiten el acceso a datos"],
+    "correct": 2,
+    "explain": "Las apps híbridas suelen ser de mayor tamaño y su velocidad dista mucho de la de una app nativa.",
+    "theme": "servicios"
+  },
+  {
+    "q": "Las balizas usadas por el ecosistema de productos de Apple son:",
+    "options": ["EddyStone", "iTunes", "Flinstone", "iBeacons"],
+    "correct": 3,
+    "explain": "Los iBeacons están enfocados al ecosistema de dispositivos de Apple.",
+    "theme": "localizacion"
+  },
+  {
+    "q": "Entre las aplicaciones del Internet de las Cosas encontramos:",
+    "options": ["Monitorización de entornos", "Control remoto de sistemas", "Automatización de procesos", "Todas las anteriores son correctas"],
+    "correct": 3,
+    "explain": "El temario cita como aplicaciones de IoT la monitorización de entornos, el control remoto de sistemas y la automatización de procesos.",
+    "theme": "iot"
+  },
+  {
+    "q": "El principal objetivo de las técnicas de computación en la nube y computación en el extremo es:",
+    "options": ["Aumentar las latencias", "Minimizar las latencias", "Incrementar los costes", "Disminuir la calidad de las conexiones"],
+    "correct": 1,
+    "explain": "El Edge Computing está orientado a reducir los elevados tiempos de latencia.",
+    "theme": "iot"
+  },
+  {
+    "q": "¿Qué permite incorporar a Internet la tecnología Blockchain?",
+    "options": ["La confianza", "La velocidad", "La rigidez", "La madurez"],
+    "correct": 0,
+    "explain": "La tecnología Blockchain hace posible incorporar a Internet la confianza.",
+    "theme": "blockchain"
+  },
+  {
+    "q": "El control de crucero activo de un vehículo es un sistema:",
+    "options": ["Altamente autónomo", "De información al conductor", "Parcialmente autónomo", "Totalmente autónomo"],
+    "correct": 2,
+    "explain": "El control de crucero activo es un ejemplo de sistema parcialmente autónomo.",
+    "theme": "conduccion-autonoma"
+  },
+  {
+    "q": "La reducción del tamaño de los transistores conlleva beneficios tales como:",
+    "options": ["Incremento de las frecuencias de trabajo", "Aumento del calentamiento", "Creación de procesadores más grandes", "Limitación del número de tareas"],
+    "correct": 0,
+    "explain": "Permite incrementar las frecuencias de trabajo, ya que los transistores conmutan más rápidamente.",
+    "theme": "innovacion"
+  },
+  {
+    "q": "La réplica actualizada y exacta de un objeto físico, obtenida mediante sensores, se denomina:",
+    "options": ["Digital copy", "Digital copy and paste", "Digital twin", "Digital clone"],
+    "correct": 2,
+    "explain": "Un gemelo digital (digital twin) es una réplica digital actualizada y exacta de un objeto físico, obtenida mediante sensores.",
+    "theme": "iot"
+  },
+  {
+    "q": "Las aplicaciones que se desarrollan de una forma concreta para una plataforma o dispositivo móvil se denominan:",
+    "options": ["Híbridas", "Nativas", "Web", "Mixtas"],
+    "correct": 1,
+    "explain": "Las apps nativas se desarrollan de forma concreta para una plataforma o sistema operativo móvil.",
+    "theme": "servicios"
+  },
+  {
+    "q": "Uno de los ejemplos más conocidos de la tecnología Blockchain es:",
+    "options": ["Bitcoin", "ChainCoin", "BlockCoin", "CoinB"],
+    "correct": 0,
+    "explain": "Bitcoin es el ejemplo más conocido del uso de una cadena de bloques.",
+    "theme": "blockchain"
+  },
+  {
+    "q": "En ella se integran la realidad virtual, la realidad aumentada y la realidad virtualizada:",
+    "options": ["Realidad extendida", "Virtualidad aumentada", "Realidad mezclada", "Virtualidad real"],
+    "correct": 0,
+    "explain": "La realidad extendida (XR) engloba la realidad virtual, la realidad aumentada y la realidad virtualizada.",
+    "theme": "realidad-extendida"
+  },
+  {
+    "q": "Stock Android, una de las variantes de Android:",
+    "options": ["No permite personalizaciones del fabricante", "Admite personalizaciones del fabricante", "Facilita las actualizaciones", "Está diseñada para equipos muy modestos"],
+    "correct": 1,
+    "explain": "El Stock Android admite personalizaciones fuertes por parte de los fabricantes, lo que dificulta las actualizaciones (a diferencia de Android One o Android Go).",
+    "theme": "servicios"
+  },
+  {
+    "q": "¿Cuál de los siguientes componentes no forma parte de la experiencia de usuario?",
+    "options": ["Deseabilidad", "Productividad", "Usabilidad", "Utilidad"],
+    "correct": 1,
+    "explain": "La UX engloba tres componentes: Utilidad, Usabilidad y Deseabilidad; la Productividad no es uno de ellos.",
+    "theme": "ux"
+  },
+  {
+    "q": "Hyperledger es un DLT:",
+    "options": ["Sin permisos", "Opened", "Closed", "Con permisos"],
+    "correct": 3,
+    "explain": "Hyperledger es un DLT con permisos, orientado a consorcios de empresas.",
+    "theme": "blockchain"
+  },
+  {
+    "q": "¿Cuál de los siguientes ejemplos no es una aplicación basada en servicios de localización orientada a personas?",
+    "options": ["Juego Pokemon Go", "Google Maps", "Servicio de carsharing", "Apple Maps"],
+    "correct": 2,
+    "explain": "El servicio de carsharing es un ejemplo de LBS orientado a dispositivos, no a personas.",
+    "theme": "localizacion"
+  },
+  {
+    "q": "La inclusión de diferentes elementos (CPU, tarjeta gráfica, placa base) en un solo chip en los dispositivos móviles se denomina:",
+    "options": ["System-in-a-Chip (SiC)", "System-Chip (SC)", "System-on-a-Chip (SoC)", "System-with-a-Chip (SwaC)"],
+    "correct": 2,
+    "explain": "Meter la CPU, la tarjeta gráfica y más elementos en un solo chip se denomina System-on-a-Chip (SoC).",
+    "theme": "moviles"
+  },
+  {
+    "q": "¿En qué año surge el concepto Internet de las Cosas o Internet of things?",
+    "options": ["1999", "2005", "1890", "2020"],
+    "correct": 0,
+    "explain": "El concepto de Internet de las Cosas surge en 1999 (Auto-ID Center, MIT).",
+    "theme": "iot"
+  },
+  {
+    "q": "¿En qué país nace la metodología Kanban?",
+    "options": ["Alemania", "Francia", "Italia", "Japón"],
+    "correct": 3,
+    "explain": "Kanban nace en Japón alrededor del año 1950.",
+    "theme": "iot"
+  },
+  {
+    "q": "La Ley de Moore indicaba que los procesadores:",
+    "options": ["Duplicaban su precio cada año", "Duplicaban su capacidad cada dos años", "Triplicaban su precio cada dos años", "Multiplicaban por diez su lentitud"],
+    "correct": 1,
+    "explain": "La Ley de Moore postulaba que la densidad de transistores (y por tanto la capacidad) se duplicaba cada dos años.",
+    "theme": "innovacion"
+  },
+  {
+    "q": "Los servicios que integran la ubicación geográfica y otra información de contexto relevante se denominan:",
+    "options": ["Servicios basados en localización", "Servicios basados en posicionamiento", "Servicios en red", "Servicios de posicionamiento global"],
+    "correct": 0,
+    "explain": "Los servicios basados en localización (LBS) integran la ubicación con otra información de contexto relevante.",
+    "theme": "localizacion"
+  },
+  {
+    "q": "La reducción del tamaño de los transistores conlleva beneficios tales como:",
+    "options": ["Aumento del calentamiento", "Creación de procesadores más grandes", "Limitación del número de tareas", "Reducción del consumo"],
+    "correct": 3,
+    "explain": "Baja el consumo del chip, por lo que se calienta menos.",
+    "theme": "innovacion"
+  },
+  {
+    "q": "¿Cuál de los siguientes factores es diferencial hoy en día a la hora de seleccionar un dispositivo móvil?",
+    "options": ["Peso", "Bluetooth", "Carcasa", "Cámara de vídeo"],
+    "correct": 0,
+    "explain": "El peso es uno de los factores diferenciales clave al elegir un dispositivo móvil hoy en día.",
+    "theme": "moviles"
+  },
+  {
+    "q": "La visualización del mundo real en la realidad aumentada puede ser:",
+    "options": ["Directa o Inversa", "Indirecta únicamente", "Directa únicamente", "Directa o indirecta"],
+    "correct": 3,
+    "explain": "La visión del mundo real en la realidad aumentada puede ser directa o bien indirecta.",
+    "theme": "realidad-extendida"
+  },
+  {
+    "q": "En la técnica de creación de personas y escenarios:",
+    "options": ["Se crean escenarios de cuentos", "Se crean identidades reales, con permiso de las personas implicadas", "Se crean escenarios o situaciones que permiten contextualizar el uso del producto", "No es necesario crear ni escenarios ni personajes"],
+    "correct": 2,
+    "explain": "Se crean escenarios o situaciones que permiten contextualizar el uso del producto.",
+    "theme": "ux"
+  },
+  {
+    "q": "Los sistemas del Internet de las Cosas utilizan diferentes:",
+    "options": ["Funciones de cálculo", "Sistemas cerrados", "Objetos físicos", "Usuarios"],
+    "correct": 2,
+    "explain": "Los sistemas IoT utilizan diferentes «objetos» físicos.",
+    "theme": "iot"
+  },
+  {
+    "q": "El nivel más bajo de asistencia activa se denomina:",
+    "options": ["Sistema de información al conductor", "Sistema parcialmente autónomo", "Sistema altamente autónomo", "Sistema ultra autónomo"],
+    "correct": 0,
+    "explain": "Los sistemas de información al conductor dejan el control en todos los casos al conductor; es el nivel más básico.",
+    "theme": "conduccion-autonoma"
+  },
+  {
+    "q": "El nivel más alto de asistencia activa se denomina:",
+    "options": ["Sistema de información al conductor", "Sistema altamente autónomo", "Sistema parcialmente autónomo", "Sistema ultra autónomo"],
+    "correct": 1,
+    "explain": "Los sistemas altamente autónomos (p. ej. aparcamiento automático) son el nivel más alto de los niveles de asistencia activa descritos en el temario; \"sistema ultra autónomo\" no existe.",
+    "theme": "conduccion-autonoma"
+  },
+  {
+    "q": "El elemento que mayor impacto tiene en la velocidad de un dispositivo móvil es:",
+    "options": ["la pantalla", "la CPU", "la memoria caché", "Ninguna de las anteriores"],
+    "correct": 1,
+    "explain": "El chipset/procesador (CPU) es el elemento que más impacto tiene en la velocidad de funcionamiento del dispositivo.",
+    "theme": "moviles"
+  },
+  {
+    "q": "¿Cuál es el tamaño de transistor (en nm) que incumplió, por primera vez, la Ley de Moore?",
+    "options": ["140", "180", "14", "65"],
+    "correct": 2,
+    "explain": "Se tardó dos años y medio en pasar de 22 a 14 nanómetros, ralentizando el ritmo previsto por la Ley de Moore.",
+    "theme": "innovacion"
+  },
+  {
+    "q": "Las gafas Microsoft HoloLens son un tipo de sistema óptico:",
+    "options": ["Fijos", "Móviles", "Externo", "Interno"],
+    "correct": 3,
+    "explain": "Son sistemas internos, que el usuario lleva encima, como sucede con las gafas HoloLens.",
+    "theme": "realidad-extendida"
+  },
+  {
+    "q": "La colaboración ciudadana en las Smart cities ha dado lugar a un nuevo concepto como es:",
+    "options": ["Crowdsourced city", "Crowded city", "Smarty city", "Tecno city"],
+    "correct": 0,
+    "explain": "Esta colaboración ciudadana ha dado lugar a que algunas fuentes hablen de «crowdsourced city».",
+    "theme": "iot"
+  },
+  {
+    "q": "En la pirámide de Maslow, ¿cuáles son las necesidades más prioritarias?",
+    "options": ["Fisiológicas o básicas", "Sociales", "De seguridad", "De autoestima"],
+    "correct": 0,
+    "explain": "Las necesidades fisiológicas o básicas son la base de la pirámide de Maslow, las más prioritarias.",
+    "theme": "ux"
+  },
+  {
+    "q": "¿Cuál de las siguientes es una iniciativa basada en cadenas de bloques?",
+    "options": ["CoinBase", "BlockCoin", "Coinum", "Hyperledger"],
+    "correct": 3,
+    "explain": "Aparte de Bitcoin, las iniciativas más importantes hasta la fecha son Ethereum e Hyperledger.",
+    "theme": "blockchain"
+  },
+  {
+    "q": "La realidad aumentada visualiza:",
+    "options": ["Un escenario simulado", "Un escenario digitalizado", "El mundo real", "Una recreación del mundo real"],
+    "correct": 2,
+    "explain": "En la realidad aumentada se visualiza el mundo real que nos rodea, y se \"aumenta\" o mejora dicha vista con gráficos.",
+    "theme": "realidad-extendida"
+  },
+  {
+    "q": "Los objetos más simples del Internet de las Cosas permiten únicamente conocer:",
+    "options": ["Su identidad", "Sus protocolos", "Datos del entorno físico", "Datos de los sensores"],
+    "correct": 0,
+    "explain": "Los objetos más «simples» permiten únicamente conocer su identidad o algún tipo de información básica.",
+    "theme": "iot"
+  },
+  {
+    "q": "Los sistemas de aparcamiento automático son sistemas:",
+    "options": ["De Información al conductor", "Parcialmente autónomos", "Totalmente autónomos", "Altamente autónomos"],
+    "correct": 3,
+    "explain": "Los sistemas altamente autónomos incluyen, por ejemplo, los de aparcamiento automático.",
+    "theme": "conduccion-autonoma"
+  },
+  {
+    "q": "¿Cuál de los siguientes GNSS no existe?",
+    "options": ["ASP", "GPS", "Galileo", "BeiDou"],
+    "correct": 0,
+    "explain": "Los GNSS reales son GPS, Galileo, GLONASS y BeiDou; \"ASP\" no existe.",
+    "theme": "localizacion"
+  },
+  {
+    "q": "¿Cuál es la principal característica del sistema Bitcoin?",
+    "options": ["Que hay que pagar un pequeño canon por usarlo", "Que permite realizar operaciones sin intermediarios", "Que se comunica con tu cuenta y tarjetas del banco", "Que las transacciones se registran en un solo nodo"],
+    "correct": 1,
+    "explain": "Bitcoin permite realizar transacciones económicas sin intermediarios.",
+    "theme": "blockchain"
+  },
+  {
+    "q": "¿Qué nombre reciben los desarrollos orientados a incrementar la seguridad de vehículos de conducción autónoma?",
+    "options": ["ADAS", "ADOS", "ADUS", "ADES"],
+    "correct": 0,
+    "explain": "Estos desarrollos se denominan colectivamente Sistemas Avanzados de Asistencia al Conductor (ADAS).",
+    "theme": "conduccion-autonoma"
+  },
+  {
+    "q": "¿Cuál de las siguientes recomendaciones no es cierta respecto al diseño móvil?",
+    "options": ["Se han de ofrecer opciones de asistencia al usuario", "Es recomendable usar un asistente en la primera ejecución de la aplicación", "Se deben ofrecer múltiples canales de consulta", "Se han de poner muchos botones para que el usuario pueda elegir"],
+    "correct": 3,
+    "explain": "Las recomendaciones reales son ofrecer asistencia, usar un asistente en la primera ejecución y ofrecer múltiples canales de consulta; poner muchos botones no es una recomendación del temario.",
+    "theme": "servicios"
+  },
+  {
+    "q": "¿Cuál de los siguientes ejemplos es una aplicación basada en servicios de localización orientada a dispositivos?",
+    "options": ["Juego Pokemon Go", "Google Maps", "Servicio de carsharing", "Apple Maps"],
+    "correct": 2,
+    "explain": "El servicio de carsharing es un ejemplo de LBS orientado a dispositivos, como localizar vehículos disponibles.",
+    "theme": "localizacion"
+  },
+  {
+    "q": "Uno de los principios de la mecánica cuántica que usan los ordenadores cuánticos es:",
+    "options": ["El entrelazamiento", "La traslación", "La rotación", "La rotura"],
+    "correct": 0,
+    "explain": "Los ordenadores cuánticos usan, entre otros, los principios de superposición y entrelazamiento.",
+    "theme": "innovacion"
+  },
+  {
+    "q": "Los objetos del Internet de las Cosas tienen diferentes niveles de:",
+    "options": ["energía", "recursión", "capacitación", "inteligencia"],
+    "correct": 3,
+    "explain": "Los objetos IoT tienen diferentes niveles de inteligencia o capacidades de interacción.",
+    "theme": "iot"
+  },
+  {
+    "q": "El prototipado:",
+    "options": ["Debería involucrar a usuarios y trabajadores", "Permite probar la usabilidad de un producto antes de su puesta en marcha", "Se puede aplicar haciendo uso de varias técnicas", "Todas las anteriores son correctas"],
+    "correct": 3,
+    "explain": "El prototipado debería involucrar a usuarios y trabajadores, permite probar la usabilidad antes de su puesta en marcha y se puede aplicar con varias técnicas.",
+    "theme": "ux"
+  },
+  {
+    "q": "En las aplicaciones nativas se pueden usar:",
+    "options": ["Todos los sensores", "El GPS y las cámaras", "El sensor de movimiento, el GPS y el Bluetooth", "Los sensores básicos de movimiento"],
+    "correct": 0,
+    "explain": "Las apps nativas pueden sacar partido de todos los sensores del dispositivo: GPS, cámaras, sensores de movimiento, etc.",
+    "theme": "servicios"
+  },
+  {
+    "q": "¿Qué nombre recibe el estándar Bluetooth que usa en aquellos dispositivos móviles que requieren de un bajo consumo?",
+    "options": ["BLE", "BPE", "BNE", "BCE"],
+    "correct": 0,
+    "explain": "Se recomienda usar Bluetooth versión 5, de muy bajo consumo (Bluetooth Low Energy, BLE).",
+    "theme": "moviles"
+  },
+  {
+    "q": "En cuanto a la tecnología NFC:",
+    "options": ["Posibilita el acceso a información con solo acercar el móvil a un tag o punto de información.", "Solo se puede usar para realizar pagos.", "Está disponible en todos los dispositivos del mercado.", "Ninguna de las anteriores."],
+    "correct": 0,
+    "explain": "NFC permite acceder a información simplemente acercando el móvil a un tag o punto de información (Test oficial Tema 1).",
+    "theme": "moviles"
+  },
+  {
+    "q": "Están en orden creciente de velocidad de transmisión:",
+    "options": ["3G, 2G y LTE.", "2G, LTE y 5G.", "3G, 2G y LTE Advanced.", "3g, 3.5G, 3.78G, 3.91G y 4G."],
+    "correct": 1,
+    "explain": "El orden creciente de velocidad real es 2G, LTE y 5G (Test oficial Tema 1).",
+    "theme": "moviles"
+  },
+  {
+    "q": "Los componentes que más impacto tienen en el rendimiento percibido de un móvil son:",
+    "options": ["SoC y memoria RAM.", "La duración de la batería.", "La tecnología de la pantalla.", "Ninguna de las anteriores."],
+    "correct": 0,
+    "explain": "El SoC (procesador) y la memoria RAM son los componentes con mayor impacto en el rendimiento percibido (Test oficial Tema 1).",
+    "theme": "moviles"
+  },
+  {
+    "q": "¿Cuáles son las redes WiFi más avanzadas accesibles con un móvil?",
+    "options": ["WiFi-N y WiFi-AC.", "WiFi Lightning 7.0.", "WiFi N y WiFi H.", "Fast WiFi 2.0."],
+    "correct": 0,
+    "explain": "Las redes WiFi más avanzadas accesibles con un móvil son WiFi-N y WiFi-AC (Test oficial Tema 1).",
+    "theme": "moviles"
+  },
+  {
+    "q": "Son sensores que pueden estar presentes en un móvil:",
+    "options": ["Pluviómetro, para el caudal de agua de lluvia.", "Detector de radares de ondas milimétricas para evitar sanciones por exceso de velocidad.", "Sensores de tipo biométrico que permiten, por ejemplo, el reconocimiento facial.", "En iPhone, el sensor iWealth para cobrar las apps a sus usuarios según su apariencia física."],
+    "correct": 2,
+    "explain": "Los móviles pueden incorporar sensores biométricos, como los que permiten el reconocimiento facial (Test oficial Tema 1).",
+    "theme": "moviles"
+  },
+  {
+    "q": "La pantalla de un dispositivo móvil:",
+    "options": ["Su resolución llega a superar la capacidad perceptiva del ojo humano.", "Siempre es de tipo Super AMOLED.", "Todas tienen la misma densidad de puntos por pulgada (ppi).", "Ninguna de las anteriores es cierta."],
+    "correct": 0,
+    "explain": "La resolución de las pantallas de los móviles actuales puede superar la capacidad perceptiva del ojo humano (Test oficial Tema 1).",
+    "theme": "moviles"
+  },
+  {
+    "q": "Un SoC es:",
+    "options": ["El corazón de un móvil, todo un sistema en un chip.", "El controlador de la batería, que se encarga de drenarla cada vez más rápido según la edad del dispositivo móvil.", "System of Cells, es el conjunto de áreas de cobertura móvil de un operador.", "Ninguna de las anteriores es cierta."],
+    "correct": 0,
+    "explain": "Un SoC (System-on-a-Chip) es el corazón de un móvil, un sistema completo integrado en un solo chip (Test oficial Tema 1).",
+    "theme": "moviles"
+  },
+  {
+    "q": "ANT+ es:",
+    "options": ["La secuela de la película AntZ, en Ultra Alta Definición Plus.", "El circuito emisor que posibilita que ni las hormigas ni otros insectos se acerquen al dispositivo móvil cuando disfrutamos una velada en el campo.", "Un mecanismo de comunicación inalámbrica, usado principalmente para conexión con dispositivos de fitness.", "Ninguna de las anteriores es cierta."],
+    "correct": 2,
+    "explain": "ANT+ es un mecanismo de comunicación inalámbrica usado principalmente para conectar dispositivos de fitness (Test oficial Tema 1).",
+    "theme": "moviles"
+  },
+  {
+    "q": "HDR es:",
+    "options": ["High Data Rate.", "High Dynamic Range.", "High Definition Radio.", "Ninguna de las anteriores es cierta."],
+    "correct": 1,
+    "explain": "HDR significa High Dynamic Range (Test oficial Tema 1).",
+    "theme": "moviles"
+  },
+  {
+    "q": "Son monederos digitales disponibles en algunos móviles:",
+    "options": ["Samsung pay y Apple Pay.", "AEAT Money Drain.", "Visa Pass Money.", "Ninguna de las anteriores es cierta."],
+    "correct": 0,
+    "explain": "Samsung Pay y Apple Pay son monederos digitales disponibles en algunos móviles (Test oficial Tema 1).",
+    "theme": "moviles"
+  },
+  {
+    "q": "En las apps nativas, en cuanto al diseño visual:",
+    "options": ["Es absolutamente idéntico al de las aplicaciones mobile Web.", "Dependerá fuertemente de las cuestiones específicas tanto de las interfaces como de las interacciones de la plataforma en cuestión.", "Es totalmente idéntico incluso dentro de las diferentes versiones de la plataforma móvil.", "Ninguna de las anteriores es correcta."],
+    "correct": 1,
+    "explain": "El diseño visual de una app nativa depende fuertemente de las interfaces e interacciones específicas de cada plataforma (Test oficial Tema 2).",
+    "theme": "servicios"
+  },
+  {
+    "q": "Una aplicación móvil nativa:",
+    "options": ["Puede funcionar offline, sin necesidad de establecer una conexión móvil de datos.", "Puede acceder a distintos elementos hardware como las cámaras, los receptores de geolocalización GPS y otros sensores.", "Su rendimiento es el más alto de entre los distintos tipos de aplicaciones móviles.", "Todas las anteriores son correctas."],
+    "correct": 3,
+    "explain": "Una app nativa puede funcionar offline, acceder al hardware del dispositivo y ofrece el mayor rendimiento (Test oficial Tema 2).",
+    "theme": "servicios"
+  },
+  {
+    "q": "Una aplicación de tipo mobile web:",
+    "options": ["Su alcance es superior que el de una app nativa.", "Tiene acceso, si bien limitado, a algunos elementos hardware del móvil, como la cámara.", "Su coste de desarrollo es el menor de entre los distintos tipos de aplicaciones móviles.", "Todas las anteriores son correctas."],
+    "correct": 3,
+    "explain": "Una mobile web tiene mayor alcance, acceso limitado al hardware y el menor coste de desarrollo (Test oficial Tema 2).",
+    "theme": "servicios"
+  },
+  {
+    "q": "Siguiendo el criterio de ventas, las principales plataformas móviles a nivel mundial son (en orden decreciente):",
+    "options": ["Android de Google e iOS de Apple.", "iOS, Tizen y Android.", "iOS, Android y Tizen.", "Ninguna de las anteriores es correcta."],
+    "correct": 0,
+    "explain": "Por criterio de ventas, las principales plataformas móviles son Android de Google e iOS de Apple, en ese orden (Test oficial Tema 2).",
+    "theme": "servicios"
+  },
+  {
+    "q": "Sobre las aplicaciones Mobile Web:",
+    "options": ["Se accede directamente a ellas con una URL (dirección Web).", "Son más costosas a nivel de desarrollo que las apps nativas.", "Se deben desarrollar específicamente, y con dos equipos independientes, para cada tipo de móvil (iOS, Android, etc.).", "Todas las anteriores son correctas."],
+    "correct": 0,
+    "explain": "Las aplicaciones Mobile Web se acceden directamente con una URL (Test oficial Tema 2).",
+    "theme": "servicios"
+  },
+  {
+    "q": "Sobre las apps Híbridas:",
+    "options": ["Son más económicas de desarrollar que las aplicaciones Mobile Web.", "Se trata de una web móvil que queda encapsulada dentro de una app nativa llamada contenedor, y que es específica de cada plataforma.", "Son las que menos volumen en MB proporcionan en todos los casos, y siempre son más pequeñas que las apps nativas.", "Todas las anteriores son correctas."],
+    "correct": 1,
+    "explain": "Una app híbrida es una web móvil encapsulada dentro de una app nativa llamada contenedor, específica de cada plataforma (Test oficial Tema 2).",
+    "theme": "servicios"
+  },
+  {
+    "q": "Una de las grandes dificultades a la hora de crear una app satisfactoria para el usuario es:",
+    "options": ["La enorme diversidad y variedad de dispositivos móviles.", "La necesidad de simular un iPhone cuando se tiene un Android.", "Que el usuario ya solo entiende la interfaz de WhatsApp y las apps deben ser lo más similares a dicha app.", "Todas las anteriores son correctas."],
+    "correct": 0,
+    "explain": "La enorme diversidad y variedad de dispositivos móviles es una de las grandes dificultades para crear una app satisfactoria (Test oficial Tema 2).",
+    "theme": "servicios"
+  },
+  {
+    "q": "La segunda de las grandes dificultades a la hora de crear una app satisfactoria para el usuario es:",
+    "options": ["El contexto de uso.", "Que solo se pueden hacer aplicaciones de éxito en dispositivos de gama muy alta, con precios superiores a 900€.", "La notable falta de concentración del usuario móvil medio, ya que se distrae enseguida con las notificaciones, normalmente de mensajería instantánea.", "Todas las anteriores son correctas."],
+    "correct": 0,
+    "explain": "El contexto de uso es la segunda gran dificultad a la hora de crear una app satisfactoria (Test oficial Tema 2).",
+    "theme": "servicios"
+  },
+  {
+    "q": "La monetización de una App Nativa:",
+    "options": ["Solo puede realizarla Apple con sus dispositivos iPhone.", "Se puede realizar con el uso de la correspondiente tienda de aplicaciones.", "Solo es posible si la aplicación admite pagos con Apple Pay o Samsung Pay.", "Ninguna de las anteriores es correcta."],
+    "correct": 1,
+    "explain": "La monetización de una app nativa se puede realizar a través de la tienda de aplicaciones correspondiente (Test oficial Tema 2).",
+    "theme": "servicios"
+  },
+  {
+    "q": "La monetización de una aplicación Mobile Web:",
+    "options": ["Solo se puede hacer con suscripciones, muros de pago o técnicas similares.", "Se puede realizar con el uso de la correspondiente tienda de aplicaciones.", "Solo se puede hacer con transferencia bancaria.", "Ninguna de las anteriores es correcta."],
+    "correct": 0,
+    "explain": "La monetización de una mobile web solo se puede hacer con suscripciones, muros de pago o técnicas similares, al no pasar por una tienda de apps (Test oficial Tema 2).",
+    "theme": "servicios"
+  },
+  {
+    "q": "Los servicios de carsharing o vehículos compartidos",
+    "options": ["Utilizan apps LBS orientadas a dispositivos.", "Utilizan apps LBS que no tienen en cuenta la ubicación del usuario que los solicita.", "Utilizan servicios de localización en interiores como tecnología predominante."],
+    "correct": 0,
+    "explain": "Los servicios de carsharing utilizan apps LBS orientadas a dispositivos, ya que localizan el vehículo, no a la persona (Test oficial Tema 3).",
+    "theme": "localizacion"
+  },
+  {
+    "q": "Una aplicación LBS reactiva",
+    "options": ["Es aquella que reacciona negativamente cuando obtiene datos de ubicación poco convincentes.", "Es aquella que está programada con la librería de código abierto React.", "Se caracteriza por la interacción necesaria entre usuario y servicio."],
+    "correct": 2,
+    "explain": "Una aplicación LBS reactiva se caracteriza por la interacción necesaria entre el usuario y el servicio (Test oficial Tema 3).",
+    "theme": "localizacion"
+  },
+  {
+    "q": "En una aplicación LBS de tipo Push",
+    "options": ["La interacción entre el usuario y el servicio es asíncrona.", "No es posible la inicialización automática por determinados eventos.", "La interacción entre el usuario y el servicio es síncrona."],
+    "correct": 0,
+    "explain": "En una aplicación LBS de tipo Push, la interacción entre usuario y servicio es asíncrona (Test oficial Tema 3).",
+    "theme": "localizacion"
+  },
+  {
+    "q": "Las tecnologías de localización basadas en red",
+    "options": ["Únicamente permiten localizar smartphones.", "Permiten localizar cualquier tipo de dispositivo móvil.", "Son aquellas que utilizan una red neuronal para mejorar la localización."],
+    "correct": 1,
+    "explain": "Las tecnologías de localización basadas en red permiten localizar cualquier tipo de dispositivo móvil, no solo smartphones (Test oficial Tema 3).",
+    "theme": "localizacion"
+  },
+  {
+    "q": "La exactitud en GNSS",
+    "options": ["Es lo mismo que la precisión.", "Expresa una proximidad entre una ubicación real y una ubicación obtenida.", "No es cuantificable en el caso de dispositivos de tipo smartphone."],
+    "correct": 1,
+    "explain": "La exactitud en GNSS expresa la proximidad entre una ubicación real y la ubicación obtenida, y es distinta de la precisión (Test oficial Tema 3).",
+    "theme": "localizacion"
+  },
+  {
+    "q": "Para calcular la exactitud en GNSS",
+    "options": ["Se debe tener un punto geográfico de referencia muy bien conocido.", "Solo es posible hacerlo con un smartphone del ecosistema de Apple.", "El smartphone debe tener desactivado el servicio de Ubicación/Geolocalización."],
+    "correct": 0,
+    "explain": "Para calcular la exactitud en GNSS es necesario disponer de un punto geográfico de referencia muy bien conocido (Test oficial Tema 3).",
+    "theme": "localizacion"
+  },
+  {
+    "q": "Las antenas GNSS en los dispositivos móviles",
+    "options": ["Son menos eficientes que las de dispositivos GNSS específicos de alto rendimiento.", "Suelen ser antenas camufladas en el cable de los auriculares no inalámbricos.", "A y B son correctas."],
+    "correct": 0,
+    "explain": "Las antenas GNSS de los móviles son menos eficientes que las de dispositivos GNSS específicos de alto rendimiento (Test oficial Tema 3).",
+    "theme": "localizacion"
+  },
+  {
+    "q": "La tecnología de beacons",
+    "options": ["Únicamente puede funcionar con smartphones de Apple.", "Se puede utilizar para ofrecer información del entorno o contexto próximo.", "Es una tecnología aún incipiente y aún no comercializada, en la que trabaja Google y que Apple replicará posteriormente en sus dispositivos."],
+    "correct": 1,
+    "explain": "La tecnología de beacons se puede utilizar para ofrecer información del entorno o contexto próximo (Test oficial Tema 3).",
+    "theme": "localizacion"
+  },
+  {
+    "q": "Acerca de las balizas o beacons",
+    "options": ["Existen dos alternativas: iBeacon y Eddystone.", "Suelen tener una batería con muy poca autonomía (una semana en el mejor caso).", "Están específicamente diseñadas para entornos marinos, y se colocan en boyas de señalización."],
+    "correct": 0,
+    "explain": "Existen dos alternativas de balizas o beacons: iBeacon (Apple) y Eddystone (Google) (Test oficial Tema 3).",
+    "theme": "localizacion"
+  },
+  {
+    "q": "Sobre las aplicaciones LBS orientadas a personas",
+    "options": ["El usuario no controla el servicio.", "El usuario objeto de la localización debe controlar siempre el servicio.", "La localización se utiliza únicamente para redes sociales."],
+    "correct": 1,
+    "explain": "En las aplicaciones LBS orientadas a personas, el usuario objeto de la localización debe controlar siempre el servicio (Test oficial Tema 3).",
+    "theme": "localizacion"
+  },
+  {
+    "q": "¿Cuál es el factor más relevante del que depende el éxito de un servicio o producto?",
+    "options": ["El precio.", "Si es costoso, la posibilidad de financiarlo a plazos.", "La satisfacción percibida por el usuario.", "Ninguna de las anteriores es correcta."],
+    "correct": 2,
+    "explain": "El factor más relevante del éxito de un servicio o producto es la satisfacción percibida por el usuario (Test oficial Tema 4).",
+    "theme": "ux"
+  },
+  {
+    "q": "¿Qué es la Experiencia de Usuario (UX)?",
+    "options": ["El diseño de los usuarios de tipo robot que integrarán una fábrica.", "Una filosofía que trata de posibilitar la creación de productos o servicios útiles, usables y deseables.", "Se trata de una filosofía de ordenación y orientación de interfaces basada en el legendario Feng-shui.", "Una Experiencia de Marketing Hipnótico consistente en colocar un logotipo de una fruta mordida para incrementar ventas."],
+    "correct": 1,
+    "explain": "La UX es una filosofía que busca posibilitar la creación de productos o servicios útiles, usables y deseables (Test oficial Tema 4).",
+    "theme": "ux"
+  },
+  {
+    "q": "¿De qué forma se abrevian como acrónimos tanto «Experiencia de usuario» como «diseño centrado en usuario»?",
+    "options": ["UCI y MUX.", "UX y DCU.", "UX y DCEU.", "Ninguna de las anteriores es correcta."],
+    "correct": 1,
+    "explain": "«Experiencia de usuario» se abrevia UX y «diseño centrado en usuario» se abrevia DCU (Test oficial Tema 4).",
+    "theme": "ux"
+  },
+  {
+    "q": "¿En qué se diferencian los términos consumidor y usuario?",
+    "options": ["En nada, son perfectamente intercambiables", "Consumidor es el usuario que desgasta el producto con su uso", "Consumidor se refiere a la persona que adquiere el producto, y usuario a quien lo utiliza.", "Todas las anteriores son ciertas."],
+    "correct": 2,
+    "explain": "Consumidor es quien adquiere el producto, y usuario quien lo utiliza; no siempre son la misma persona (Test oficial Tema 4).",
+    "theme": "ux"
+  },
+  {
+    "q": "Son herramientas válidas para obtener información acerca de los usuarios:",
+    "options": ["Card sorting.", "Entrevistas a los usuarios.", "Encuestas a los usuarios.", "Todas las anteriores son correctas."],
+    "correct": 3,
+    "explain": "Card sorting, entrevistas y encuestas son todas herramientas válidas para obtener información de los usuarios (Test oficial Tema 4).",
+    "theme": "ux"
+  },
+  {
+    "q": "¿Qué se hace en el proceso o etapa de investigación en el diseño de la Experiencia de Usuario (UX)?",
+    "options": ["El proceso de obtención y recopilación de información acerca de los potenciales usuarios entender, entre otras cosas, sus necesidades y sus expectativas.", "Analizar la información de los usuarios y publicarla en foros de Internet para obtener feedback público y global.", "Investigar si hay usuarios con antecedentes penales para excluirlos de procesos posteriores de evaluación.", "Todas son correctas."],
+    "correct": 0,
+    "explain": "La etapa de investigación consiste en obtener y recopilar información sobre los potenciales usuarios, sus necesidades y expectativas (Test oficial Tema 4).",
+    "theme": "ux"
+  },
+  {
+    "q": "¿En qué consiste la técnica de «personas y escenarios»?",
+    "options": ["Definir personajes inventados con carácter previo y verificar si hay usuarios que encajen en dichas categorías.", "Es un método de análisis de la información, que tiene como base la categorización/síntesis de los usuarios encuestados, usando para ello personajes inventados pero que tienen características reales.", "Es una técnica específica para el Diseño de la UX de espacios teatrales y cinematográficos.", "Ninguna de las anteriores es cierta."],
+    "correct": 1,
+    "explain": "La técnica de personas y escenarios analiza la información categorizando/sintetizando a los usuarios encuestados mediante personajes inventados con características reales (Test oficial Tema 4).",
+    "theme": "ux"
+  },
+  {
+    "q": "¿Cuál es el propósito de la etapa de implementación?",
+    "options": ["Generar alternativas y soluciones de diseño en función de lo averiguado en la anterior fase de análisis.", "Implementar la versión final del producto.", "Implementar varias versiones del producto para que el usuario realice su elección de la preferida.", "Ninguna de las anteriores."],
+    "correct": 0,
+    "explain": "Según el temario (T04, fig. 7), la etapa de Implementación consiste en generar soluciones de diseño siguiendo las necesidades del usuario, concretando el proyecto en un prototipo, en base a lo averiguado en la fase de Análisis previa.",
+    "theme": "ux"
+  },
+  {
+    "q": "¿Qué métodos se usan en la etapa de Análisis en el diseño de la UX?",
+    "options": ["Blueprints y card sorting.", "Blueprints y customer journey mapping.", "Prototipado.", "Ninguna de las respuestas es correcta."],
+    "correct": 3,
+    "explain": "Ninguno de los métodos propuestos (blueprints, card sorting, customer journey mapping, prototipado) corresponde específicamente a la etapa de Análisis (Test oficial Tema 4).",
+    "theme": "ux"
+  },
+  {
+    "q": "¿Qué propósito tiene la evaluación?",
+    "options": ["Permite localizar posibles fallos o errores e ítems de mejora del servicio o producto.", "Conocer el grado de competencia digital de los usuarios, y saber si sabrán apreciar tener en sus manos un producto como el que les ofrecemos.", "Básicamente supone perder el tiempo, pero sirve para poder entregar un documento más, que posiblemente se facture al cliente.", "En realidad el producto siempre se acaba aprobando, por lo que es una etapa superflua."],
+    "correct": 0,
+    "explain": "La evaluación permite localizar posibles fallos o errores e identificar ítems de mejora del servicio o producto (Test oficial Tema 4).",
+    "theme": "ux"
+  },
+  {
+    "q": "La Realidad Aumentada:",
+    "options": ["No requiere gafas ni ningún dispositivo de visualización.", "No es inmersiva.", "Exige utilizar un Tablet.", "Ninguna de las anteriores es cierta."],
+    "correct": 1,
+    "explain": "La Realidad Aumentada no es inmersiva, a diferencia de la Realidad Virtual (Test oficial Tema 5).",
+    "theme": "realidad-extendida"
+  },
+  {
+    "q": "En la Realidad Aumentada, estrictamente hablando:",
+    "options": ["No hay ningún tipo de interacción entre el entorno virtual y el real.", "Exige que el usuario porte gafas con 6 grados de libertad de movimiento.", "Incluye elementos de realidad en un mundo virtual.", "Ninguna de las anteriores es cierta."],
+    "correct": 0,
+    "explain": "Estrictamente, en la Realidad Aumentada no hay interacción entre el entorno virtual y el real, solo superposición (Test oficial Tema 5).",
+    "theme": "realidad-extendida"
+  },
+  {
+    "q": "En la Realidad Mixta:",
+    "options": ["Los objetos virtuales tienen profundidad.", "Se crea la ilusión de integración de objetos virtuales en el espacio real.", "Si un elemento de la realidad pasa por delante de un objeto, este deja de verse total o parcialmente.", "Todas las anteriores son ciertas."],
+    "correct": 3,
+    "explain": "En la Realidad Mixta los objetos virtuales tienen profundidad, se integran en el espacio real y pueden ser ocultados por elementos reales (Test oficial Tema 5).",
+    "theme": "realidad-extendida"
+  },
+  {
+    "q": "Es un ejemplo de dispositivo de realidad mixta:",
+    "options": ["Un móvil con pantalla holográfica.", "Las gafas del sistema Playstation VR.", "Las gafas Microsoft HoloLens.", "Todas las anteriores son ciertas."],
+    "correct": 2,
+    "explain": "Las gafas Microsoft HoloLens son un ejemplo de dispositivo de realidad mixta (Test oficial Tema 5).",
+    "theme": "realidad-extendida"
+  },
+  {
+    "q": "La Virtualidad Aumentada:",
+    "options": ["Ofrece mundos virtuales en los que se integran objetos de la realidad.", "Es sinónimo de Realidad Aumentada.", "Es la técnica de Realidad Virtual cuando gracias al uso de lentes permite ver objetos muy lejanos como si estuvieran próximos.", "Todas las anteriores son ciertas."],
+    "correct": 0,
+    "explain": "La Virtualidad Aumentada ofrece mundos virtuales en los que se integran objetos de la realidad (Test oficial Tema 5).",
+    "theme": "realidad-extendida"
+  },
+  {
+    "q": "La Realidad Extendida:",
+    "options": ["Engloba la VR, AR y AV.", "Es la versión 2.0 de la VR.", "Es la posibilidad de jugar una partida extra -previo pago- en un juego de VR.", "Todas las anteriores son ciertas."],
+    "correct": 0,
+    "explain": "La Realidad Extendida (XR) engloba la Realidad Virtual, la Realidad Aumentada y la Virtualidad Aumentada (Test oficial Tema 5).",
+    "theme": "realidad-extendida"
+  },
+  {
+    "q": "Las tecnologías de tracking o seguimiento:",
+    "options": ["Deben gestionar datos de traslación.", "Deben gestionar datos de rotación.", "Tratan de ubicar en el espacio 3D los elementos usados en VR y AR.", "Todas las anteriores son ciertas."],
+    "correct": 3,
+    "explain": "Las tecnologías de tracking gestionan datos de traslación y rotación para ubicar en el espacio 3D los elementos usados en VR y AR (Test oficial Tema 5).",
+    "theme": "realidad-extendida"
+  },
+  {
+    "q": "En el tracking o seguimiento óptico:",
+    "options": ["Se usan sistemas internos y externos.", "Únicamente se utiliza luz infrarroja.", "No es posible su uso si el usuario sufre de presbicia o miopía.", "Todas las anteriores son ciertas."],
+    "correct": 0,
+    "explain": "En el seguimiento óptico se usan tanto sistemas internos como externos (Test oficial Tema 5).",
+    "theme": "realidad-extendida"
+  },
+  {
+    "q": "En cuanto a tecnologías de visualización:",
+    "options": ["En AR y VR la experiencia más realista se consigue con gafas.", "En AR los dispositivos estrella suelen ser los móviles y tablets.", "En un futuro habrá gafas muy poco aparatosas e intrusivas.", "Todas las anteriores son ciertas."],
+    "correct": 3,
+    "explain": "En AR y VR la experiencia más realista se logra con gafas, en AR predominan móviles y tablets, y se prevén gafas futuras menos aparatosas (Test oficial Tema 5).",
+    "theme": "realidad-extendida"
+  },
+  {
+    "q": "Realidad Virtual:",
+    "options": ["No requiere gafas.", "Es parcialmente inmersiva.", "Es totalmente inmersiva.", "Ninguna de las anteriores es cierta."],
+    "correct": 2,
+    "explain": "La Realidad Virtual es totalmente inmersiva (Test oficial Tema 5).",
+    "theme": "realidad-extendida"
+  },
+  {
+    "q": "En IoT los objetos interactúan mediante:",
+    "options": ["Brazos robóticos", "Contenedores", "Servicios", "Ninguna de las anteriores es cierta"],
+    "correct": 2,
+    "explain": "En IoT los objetos interactúan mediante servicios (Test oficial Tema 6).",
+    "theme": "iot"
+  },
+  {
+    "q": "En IoT los objetos tienen dos partes:",
+    "options": ["Parte física y servicios o acciones.", "Parte física y contenedores virtuales.", "Parte lógica y parte cuántica.", "Ninguna de las anteriores es cierta."],
+    "correct": 0,
+    "explain": "Un objeto IoT tiene una parte física y un catálogo de servicios o acciones (Test oficial Tema 6).",
+    "theme": "iot"
+  },
+  {
+    "q": "La inteligencia de un objeto puede ser de tipo:",
+    "options": ["Manejo de Información.", "Notificación.", "Toma de Decisiones.", "Todas las anteriores son ciertas."],
+    "correct": 3,
+    "explain": "La inteligencia de un objeto IoT puede ser de manejo de información, notificación o toma de decisiones (Test oficial Tema 6).",
+    "theme": "iot"
+  },
+  {
+    "q": "La toma de decisiones cuando hay varios objetos puede ser:",
+    "options": ["Centralizada y distribuida.", "Siempre peer-to-peer (p2p).", "Siempre centralizada en un servicio en la nube (cloud).", "Ninguna de las anteriores es cierta."],
+    "correct": 0,
+    "explain": "La toma de decisiones entre varios objetos IoT puede ser centralizada o distribuida (Test oficial Tema 6).",
+    "theme": "iot"
+  },
+  {
+    "q": "Para crear dispositivos IoT propios se pueden usar placas:",
+    "options": ["Arduino.", "Raspberry Pi.", "BeagleBone.", "Todas las anteriores son ciertas."],
+    "correct": 3,
+    "explain": "Arduino, Raspberry Pi y BeagleBone son placas válidas para crear dispositivos IoT propios (Test oficial Tema 6).",
+    "theme": "iot"
+  },
+  {
+    "q": "Una de las principales plataformas para la recogida de datos y analítica es:",
+    "options": ["GoodThings.", "DumbObjects.", "TalkingObject.", "Ninguna de las anteriores es cierta."],
+    "correct": 3,
+    "explain": "Ninguna de las opciones propuestas es una plataforma real; la plataforma de referencia citada en el temario es ThingSpeak (Test oficial Tema 6).",
+    "theme": "iot"
+  },
+  {
+    "q": "Las comunicaciones con tecnologías LPWAN:",
+    "options": ["Tienen una alta velocidad, como 4G.", "Tienen menos cobertura que las WWAN.", "Tienen poco ancho de banda pero mayor cobertura.", "Ninguna de las anteriores es cierta."],
+    "correct": 2,
+    "explain": "Las tecnologías LPWAN tienen poco ancho de banda pero mayor cobertura que las WWAN tradicionales (Test oficial Tema 6).",
+    "theme": "iot"
+  },
+  {
+    "q": "Son tecnologías LPWAN estándar:",
+    "options": ["3G y 4G.", "Sigfox y 3G.", "Sigfox y 4G.", "Ninguna de las anteriores es cierta."],
+    "correct": 3,
+    "explain": "Las tecnologías LPWAN estándar son LTE-M y NB-IoT, no las combinaciones propuestas (Test oficial Tema 6).",
+    "theme": "iot"
+  },
+  {
+    "q": "Es una tecnología LPWAN propietaria:",
+    "options": ["Aloha.", "LoRa.", "GPRS.", "Ninguna de las anteriores es correcta."],
+    "correct": 1,
+    "explain": "LoRa es una tecnología LPWAN propietaria (Test oficial Tema 6).",
+    "theme": "iot"
+  },
+  {
+    "q": "Las siguientes tecnologías LPWAN están en orden creciente de velocidad:",
+    "options": ["3G y 4G (LTE).", "Sigfox, NB-IoT y LTE-M.", "Sigfox, LTE-M y NB-IoT.", "Ninguna de las anteriores es correcta."],
+    "correct": 1,
+    "explain": "El orden creciente de velocidad de las tecnologías LPWAN es Sigfox, NB-IoT y LTE-M (Test oficial Tema 6).",
+    "theme": "iot"
+  },
+  {
+    "q": "La computación en la niebla:",
+    "options": ["Contempla los problemas de utilizar computadores en entornos de niebla casi perenne, como la campiña inglesa.", "Es conceptualmente idéntica a la computación en el extremo de la red, son sinónimos.", "Desplaza el procesamiento de los datos de los sensores a la red local.", "Ninguna de las anteriores es cierta."],
+    "correct": 2,
+    "explain": "La computación en la niebla (Fog Computing) desplaza el procesamiento de los datos de los sensores a la red local (Test oficial Tema 7).",
+    "theme": "iot"
+  },
+  {
+    "q": "En una Ciudad Inteligente o Smart City:",
+    "options": ["Se utilizan tecnologías muy diversas para mejorar la calidad de vida de los ciudadanos", "Los distintos sistemas de sensorización pueden utilizarse para comprometer la privacidad", "Se consigue una mayor eficiencia en distintos aspectos, como la gestión energética o la gestión de residuos urbanos", "Todas las anteriores son ciertas."],
+    "correct": 3,
+    "explain": "Una Smart City usa tecnologías diversas para mejorar la calidad de vida, gana eficiencia, pero también puede comprometer la privacidad si no se gestiona bien (Test oficial Tema 7).",
+    "theme": "iot"
+  },
+  {
+    "q": "Los Gemelos Digitales:",
+    "options": ["Son criptomonedas, como el Bitcoin.", "Son gemelos para puños de camisa que están conectados a Internet y permiten recibir notificaciones de aplicaciones de mensajería, vibrando cuando ello sucede.", "Son actores creados digitalmente para poder terminar películas cuando el protagonista ha fallecido o ha sido despedido en mitad del rodaje.", "Ninguno de los anteriores."],
+    "correct": 3,
+    "explain": "Un gemelo digital es una réplica digital actualizada y exacta de un objeto físico, no ninguna de las opciones absurdas propuestas (Test oficial Tema 7).",
+    "theme": "iot"
+  },
+  {
+    "q": "Cuál de las siguientes frases es cierta en relación a un proyecto (señala todas las que procedan):",
+    "options": ["Es un esfuerzo temporal.", "Incluye la fase de mantenimiento del producto.", "Pretende crear un único producto o servicio.", "No debe tener en cuenta a los interesados del proyecto."],
+    "correct": 0,
+    "explain": "Un proyecto es un esfuerzo temporal, a diferencia de las operaciones (que incluyen el mantenimiento) (Test oficial Tema 7).",
+    "theme": "iot"
+  },
+  {
+    "q": "El ciclo de vida del software:",
+    "options": ["Abarca la evolución desde el primer prototipo del producto hasta su retirada.", "Abarca la evolución desde la concepción del producto hasta su retirada.", "Abarca la evolución desde la concepción del producto hasta su puesta en producción.", "Abarca la evolución desde que se consiguen los fondos necesarios hasta que no se dispone de presupuesto para continuar con el servicio."],
+    "correct": 1,
+    "explain": "El ciclo de vida del software abarca la evolución del producto desde su concepción hasta su retirada (Test oficial Tema 7).",
+    "theme": "iot"
+  },
+  {
+    "q": "El ciclo de vida en cascada:",
+    "options": ["Permite gestionar de forma eficaz todo tipo de proyectos.", "No incluye la fase de mantenimiento.", "El diseño se hace de forma iterativa.", "No permite una detección temprana de errores y fallos en la toma de requisitos."],
+    "correct": 3,
+    "explain": "El ciclo de vida en cascada no permite una detección temprana de errores y fallos en la toma de requisitos, ya que la verificación llega al final (Test oficial Tema 7).",
+    "theme": "iot"
+  },
+  {
+    "q": "El ciclo de vida iterativo e incremental:",
+    "options": ["Permite entregar «algo» de valor al cliente o usuario final de forma iterativa.", "No permite entregar «algo» de valor al cliente o usuario final de forma iterativa.", "Incluye una única fase de análisis y en la primera iteración.", "Incluye una única fase de diseño y en la primera iteración."],
+    "correct": 0,
+    "explain": "El ciclo de vida iterativo e incremental permite entregar algo de valor al cliente de forma iterativa (Test oficial Tema 7).",
+    "theme": "iot"
+  },
+  {
+    "q": "Una metodología:",
+    "options": ["Se limita a especificar cómo se realizará el diseño del producto.", "No debe contemplar elementos de gestión del equipo.", "Define un conjunto de procedimientos que permiten producir y mantener un producto software.", "Estándar es la PMP."],
+    "correct": 2,
+    "explain": "Una metodología define un conjunto de procedimientos que permiten producir y mantener un producto software (Test oficial Tema 7).",
+    "theme": "iot"
+  },
+  {
+    "q": "La gestión ágil de proyectos:",
+    "options": ["Permite ir más rápido ya que no obliga a documentar.", "Es especialmente útil donde los requisitos son cambiantes y no están definidos con precisión.", "Se basa en poner en una pizarra las tareas pendientes.", "Sirve para todo tipo de proyectos en todos los ámbitos."],
+    "correct": 1,
+    "explain": "La gestión ágil de proyectos es especialmente útil cuando los requisitos son cambiantes y no están definidos con precisión (Test oficial Tema 7).",
+    "theme": "iot"
+  },
+  {
+    "q": "La limitación del trabajo en curso o Work In Progress (WIP):",
+    "options": ["Es un concepto difundido por el PMI.", "Aplica a todo tipo de proyectos y metodologías.", "Es un concepto abstracto y poco práctico.", "En la metodología Kanban limita el número de elementos que pueden estar en progreso en cada estado del flujo de trabajo."],
+    "correct": 3,
+    "explain": "En Kanban, el WIP limita el número de elementos que pueden estar en progreso en cada estado del flujo de trabajo (Test oficial Tema 7).",
+    "theme": "iot"
+  },
+  {
+    "q": "Los bloques de una cadena en blockchain:",
+    "options": ["Se almacenan en una inmensa base de datos centralizada.", "Se almacenan en las bases de datos de los distintos Bancos Centrales europeos.", "Se distribuyen en una red de nodos P2P (peer to peer, entre iguales).", "Ninguna de las anteriores es cierta."],
+    "correct": 2,
+    "explain": "Los bloques de una cadena en blockchain se distribuyen en una red de nodos P2P entre iguales (Test oficial Tema 8).",
+    "theme": "blockchain"
+  },
+  {
+    "q": "Bitcoin es:",
+    "options": ["La nueva moneda oficial de la República Bolivariana de Venezuela, creada para revolucionar las tradicionales estructuras capitalistas de intercambio de dinero.", "Una criptomoneda específicamente diseñada para que los Estados controlen todas las transacciones económicas entre particulares.", "Un sistema de pagos P2P que permite realizar transacciones económicas sin intermediarios.", "Ninguna de las anteriores es cierta."],
+    "correct": 2,
+    "explain": "Bitcoin es un sistema de pagos P2P que permite realizar transacciones económicas sin intermediarios (Test oficial Tema 8).",
+    "theme": "blockchain"
+  },
+  {
+    "q": "Sobre el conjunto de transacciones histórico de la cadena de bloques de Bitcoin:",
+    "options": ["Se podrían almacenar localmente en nuestros ordenadores.", "Su tamaño actual ronda los 200GB como mínimo.", "Nadie es dueño de esta cadena de bloques.", "Todas las anteriores son ciertas."],
+    "correct": 3,
+    "explain": "El histórico de transacciones de Bitcoin se podría almacenar localmente, ronda los 200GB y no tiene un único propietario (Test oficial Tema 8).",
+    "theme": "blockchain"
+  },
+  {
+    "q": "Son alternativas de Bitcoin:",
+    "options": ["Ethereum e Hyperledger.", "Ethereum y MegaBitCoin 2.0.", "Ethereum para monedas, y GalaxyNote para billetes.", "Ninguna de las anteriores es cierta."],
+    "correct": 0,
+    "explain": "Ethereum e Hyperledger son alternativas reales a Bitcoin (Test oficial Tema 8).",
+    "theme": "blockchain"
+  },
+  {
+    "q": "Son DLTs sin permisos:",
+    "options": ["Ethereum y Bitcoin.", "Ethereum e Hyperledger.", "Ethereum y MegaBitCoin 2.0.", "Ninguna de las anteriores es cierta."],
+    "correct": 0,
+    "explain": "Ethereum y Bitcoin son DLT sin permisos (públicas), a diferencia de Hyperledger que es con permisos (Test oficial Tema 8).",
+    "theme": "blockchain"
+  },
+  {
+    "q": "Para desarrollar Smart Contracts con Ethereum se usa:",
+    "options": ["Solidity.", "Liquidify.", "Gasify.", "Ninguna de las anteriores es cierta."],
+    "correct": 0,
+    "explain": "Solidity es el lenguaje de programación usado para desarrollar Smart Contracts con Ethereum (Test oficial Tema 8).",
+    "theme": "blockchain"
+  },
+  {
+    "q": "En bitcoin, es importante que las claves públicas:",
+    "options": ["Sean cortas.", "Sean largas.", "No se utilicen, como medida de seguridad.", "Ninguna de las anteriores es cierta."],
+    "correct": 0,
+    "explain": "El temario (T08, p.11) indica que es importante que las claves públicas sean cortas, para que su intercambio sea ágil (por QR o teléfono); la criptografía de curva elíptica permite mantener la seguridad con claves más cortas.",
+    "theme": "blockchain"
+  },
+  {
+    "q": "En el contexto de bitcoin, un minero es:",
+    "options": ["Una persona que ejecuta un programa en todos los servidores de Internet y que ayuda a verificar las transacciones Bitcoin al incluirlas en un registro inalterable.", "Una persona que ejecuta un programa en su ordenador y que ayuda a verificar las transacciones Bitcoin al incluirlas en un registro inalterable.", "Una persona que ejecuta un programa en todos los servidores de Internet para intentar hackearlos y tener beneficios económicos muy elevados.", "Ninguna de las anteriores es cierta."],
+    "correct": 1,
+    "explain": "Un minero de Bitcoin ejecuta un programa en su propio ordenador que ayuda a verificar las transacciones incluyéndolas en un registro inalterable (Test oficial Tema 8).",
+    "theme": "blockchain"
+  },
+  {
+    "q": "Un monedero frío o cold wallet es:",
+    "options": ["Un monedero de bitcoins que se guarda con refrigeración constante para evitar que el calor destruya los enlaces de la cadena de bloques.", "Un soporte no electrónico donde se registra una clave privada, como los monederos en papel.", "Un monedero electrónico de bitcoins, diseñado con especificaciones militares y apto para su uso en países nórdicos, especialmente en invierno.", "Ninguna de las anteriores es cierta."],
+    "correct": 1,
+    "explain": "Un monedero frío (cold wallet) es un soporte no electrónico donde se registra una clave privada, como los monederos en papel (Test oficial Tema 8).",
+    "theme": "blockchain"
+  },
+  {
+    "q": "Técnicamente, Blockchain es:",
+    "options": ["Una cadena de bloques de granito en los que se inscriben las claves privadas de todos los miembros de una empresa, como mecanismo sólido para probar identidades digitales.", "Es un tipo de Libro de Registro Distribuido (DLT, Distributed Ledger Technology).", "Un mecanismo que permite asegurar la confidencialidad de dos partes que se comunican a través de Internet.", "Ninguna de las anteriores es cierta."],
+    "correct": 1,
+    "explain": "Técnicamente, Blockchain es un tipo de Libro de Registro Distribuido (DLT) (Test oficial Tema 8).",
+    "theme": "blockchain"
+  },
+  {
+    "q": "ADAS es:",
+    "options": ["Un lenguaje de programación utilizado en exclusiva en el ámbito de los vehículos autónomos.", "Un conjunto de Sistemas Avanzados de Asistencia al Conductor.", "Un lenguaje de programación utilizado únicamente en el modelado de las ruedas de los vehículos autónomos.", "Ninguna de las anteriores es cierta."],
+    "correct": 1,
+    "explain": "ADAS es el conjunto de Sistemas Avanzados de Asistencia al Conductor (Test oficial Tema 9).",
+    "theme": "conduccion-autonoma"
+  },
+  {
+    "q": "Las tecnologías ADAS se pueden clasificar en:",
+    "options": ["Sistemas de Información al conductor.", "Sistemas parcialmente autónomos.", "Sistemas altamente autónomos.", "Todas las anteriores son ciertas."],
+    "correct": 3,
+    "explain": "Las tecnologías ADAS se clasifican en las tres categorías propuestas: sistemas de información al conductor, parcialmente autónomos y altamente autónomos (T09); las tres son ciertas conjuntamente, no por separado.",
+    "theme": "conduccion-autonoma"
+  },
+  {
+    "q": "Entre los principales inconvenientes de los sistemas electrónicos embarcados en vehículos autónomos se encuentran:",
+    "options": ["El espacio que ocupan y su coste actual.", "El consumo eléctrico, que obliga a usar al menos 3 baterías adicionales a la de arranque.", "Aún no se ha conseguido que sean interoperables con dispositivos de Apple.", "Ninguna de las anteriores es cierta."],
+    "correct": 0,
+    "explain": "El espacio que ocupan y su coste actual son inconvenientes reales de los sistemas electrónicos embarcados (Test oficial Tema 9).",
+    "theme": "conduccion-autonoma"
+  },
+  {
+    "q": "Son Sistemas ADAS de Información y aviso:",
+    "options": ["Cámaras laterales y traseras con pantalla para el conductor.", "Detección y reconocimiento de señales de tráfico.", "Imagen 360º del entorno del vehículo.", "Todas las anteriores son ciertas."],
+    "correct": 3,
+    "explain": "Las cámaras laterales/traseras, la detección de señales y la imagen 360º son todos sistemas ADAS de información y aviso (Test oficial Tema 9).",
+    "theme": "conduccion-autonoma"
+  },
+  {
+    "q": "Son Sistemas ADAS de Información y aviso:",
+    "options": ["Visión nocturna, con identificación de elementos.", "Asistencia para mantenerse en el centro del carril.", "Aparcamiento automático.", "Ninguna de las anteriores es cierta."],
+    "correct": 0,
+    "explain": "La visión nocturna con identificación de elementos es un sistema ADAS de información y aviso (Test oficial Tema 9).",
+    "theme": "conduccion-autonoma"
+  },
+  {
+    "q": "Son Sistemas ADAS para la automatización de funciones específicas:",
+    "options": ["Asistencia para mantenerse en el centro del carril.", "Frenado automático anticolisiones.", "Control de crucero activo en condiciones de tráfico cambiante.", "Todas las anteriores son ciertas."],
+    "correct": 3,
+    "explain": "La asistencia de carril, el frenado anticolisión y el control de crucero activo son sistemas ADAS de automatización de funciones específicas (Test oficial Tema 9).",
+    "theme": "conduccion-autonoma"
+  },
+  {
+    "q": "Los niveles de autonomía de un vehículo son:",
+    "options": ["Cinco.", "Cuatro.", "Seis.", "Once."],
+    "correct": 2,
+    "explain": "Los niveles de autonomía de un vehículo (SAE) son seis (del Nivel 0 al Nivel 5) (Test oficial Tema 9).",
+    "theme": "conduccion-autonoma"
+  },
+  {
+    "q": "¿En qué nivel de autonomía el vehículo es totalmente autosuficiente y se puede prescindir del conductor?",
+    "options": ["Nivel 4.", "Nivel 5.", "Nivel 6.", "Ninguna de las anteriores."],
+    "correct": 1,
+    "explain": "En el Nivel 5 el vehículo es totalmente autosuficiente y se puede prescindir del conductor (Test oficial Tema 9).",
+    "theme": "conduccion-autonoma"
+  },
+  {
+    "q": "Son comunicaciones V2X:",
+    "options": ["V2V.", "V2P.", "V2I.", "Todas las anteriores son ciertas."],
+    "correct": 3,
+    "explain": "V2V, V2P y V2I son todas modalidades de comunicaciones V2X (Test oficial Tema 9).",
+    "theme": "conduccion-autonoma"
+  },
+  {
+    "q": "¿Qué estándares de comunicación se utilizan hoy para V2X?",
+    "options": ["DSRC y C-V2X.", "WiFi y C-V2X.", "WiFi y Bluetooth Automovile Edition.", "Ninguna de las anteriores."],
+    "correct": 0,
+    "explain": "Los estándares de comunicación utilizados hoy para V2X son DSRC y C-V2X (Test oficial Tema 9).",
+    "theme": "conduccion-autonoma"
+  },
+  {
+    "q": "La ley de Moore:",
+    "options": ["Solo sigue vigente en ordenadores de Apple.", "Hasta 2015 era bastante fiable.", "Nos indica que siempre es preferible esperar como mínimo dos años a comprar un ordenador nuevo.", "Ninguna de las anteriores es cierta."],
+    "correct": 1,
+    "explain": "La Ley de Moore fue bastante fiable hasta aproximadamente 2015 (Test oficial Tema 10).",
+    "theme": "innovacion"
+  },
+  {
+    "q": "Los dos principios más importantes usados en un computador cuántico son:",
+    "options": ["Superposición y entrelazamiento.", "Suposición y adivinación.", "Suposición y entrelazamiento.", "Superposición y entretenimiento."],
+    "correct": 0,
+    "explain": "Los dos principios fundamentales de la computación cuántica son la superposición y el entrelazamiento (Test oficial Tema 10).",
+    "theme": "innovacion"
+  },
+  {
+    "q": "Entre las aplicaciones de la computación cuántica se encuentran:",
+    "options": ["Enfriamiento global.", "Soporte a loterías, para calcular números no elegidos durante varias semanas y que generen botes sustanciosos.", "Predicciones a medio y largo plazo de la distribución del parlamento en España.", "Generación automatizada de nuevas recetas de cocina y deconstrucciones varias, para restaurantes."],
+    "correct": 0,
+    "explain": "El temario (T10, apdo. 10.3) cita literalmente el «enfriamiento global» (simulación de interacciones moleculares para reducir emisiones de CO2) como una de las aplicaciones previsibles de la computación cuántica más cercanas en el tiempo.",
+    "theme": "innovacion"
+  },
+  {
+    "q": "A la hora de realizar un trabajo científico, siempre debemos comenzar buscando documentación previa sobre el tema que nos ocupa:",
+    "options": ["Falso, porque a veces se tratarán temas absolutamente inéditos.", "Falso, porque la búsqueda de documentación es una opción, no una obligación.", "Cierto, porque a ello obliga las normas de las revistas científicas.", "Cierto, porque por innovador que sea nuestro enfoque siempre hay que tratar proporcionar información sobre los conocimientos aceptados en el área, materias relacionadas y utilizar los trabajos o ideas previas para aportar conocimiento adicional."],
+    "correct": 3,
+    "explain": "Siempre hay que buscar documentación previa, ya que por innovador que sea el enfoque, debe apoyarse en los conocimientos aceptados y trabajos previos del área (Test oficial Tema 10).",
+    "theme": "innovacion"
+  },
+  {
+    "q": "Solemos emplear gestores bibliográficos para:",
+    "options": ["Organizar correctamente nuestras referencias bibliográficas.", "Buscar publicaciones científicas.", "Obtener el formato adecuado de citas bibliográficas.", "Todas las anteriores."],
+    "correct": 3,
+    "explain": "Los gestores bibliográficos sirven para organizar referencias, buscar publicaciones y obtener el formato adecuado de citas (Test oficial Tema 10).",
+    "theme": "innovacion"
+  },
+  {
+    "q": "El capítulo inicial de un artículo científico:",
+    "options": ["Suele incluir una introducción al tema que estamos tratando.", "Suele explicar el enfoque que se pretende seguir en el trabajo.", "Suele explicar al final del apartado la estructura que se seguirá en el artículo.", "Todas las anteriores."],
+    "correct": 3,
+    "explain": "El capítulo inicial de un artículo científico suele incluir introducción, enfoque y estructura del trabajo (Test oficial Tema 10).",
+    "theme": "innovacion"
+  },
+  {
+    "q": "Para un científico, publicar es:",
+    "options": ["Algo absolutamente opcional que se suele hacer por ego y visibilidad profesional.", "Una forma de compartir el conocimiento con la comunidad científica en particular y con la sociedad en general.", "Un paso previo antes de conseguir patentar los resultados y explotarlos comercialmente.", "Algo simple y trivial que, dado que no lleva tiempo, se hace por costumbre."],
+    "correct": 1,
+    "explain": "Para un científico, publicar es una forma de compartir el conocimiento con la comunidad científica y la sociedad (Test oficial Tema 10).",
+    "theme": "innovacion"
+  },
+  {
+    "q": "Los índices de impacto de una revista:",
+    "options": ["Son un elemento informativo sin ningún tipo de control y estandarización desarrollado por la comunidad científica para dar visión a su trabajo.", "Se emplean para indicar la popularidad de un científico.", "Son creados y utilizados por las universidades para promocionar a sus científicos.", "Ninguna de las anteriores."],
+    "correct": 3,
+    "explain": "Ninguna de las descripciones propuestas corresponde correctamente a los índices de impacto de una revista (Test oficial Tema 10).",
+    "theme": "innovacion"
+  },
+  {
+    "q": "Al reducir el tamaño de los transistores:",
+    "options": ["La densidad de transistores en un procesador es más alta.", "Baja el consumo del chip.", "Se pueden incrementar las frecuencias de trabajo.", "Todas las anteriores son ciertas."],
+    "correct": 3,
+    "explain": "Reducir el tamaño de los transistores aumenta su densidad, baja el consumo y permite incrementar las frecuencias de trabajo (Test oficial Tema 10).",
+    "theme": "innovacion"
+  },
+  {
+    "q": "Un qubit es:",
+    "options": ["La unidad de información que maneja un ordenador cuántico.", "Un bit cúbico, que permite trabajar con el triple de información que un bit normal.", "Cada uno de los bloques de hielo que se usan para refrigerar un ordenador cuántico.", "Un dispositivo electrónico que puede tener 17 estados y es la base de un ordenador cuántico."],
+    "correct": 0,
+    "explain": "Un qubit es la unidad de información que maneja un ordenador cuántico, análoga al bit clásico (Test oficial Tema 10).",
+    "theme": "innovacion"
+  }
+]

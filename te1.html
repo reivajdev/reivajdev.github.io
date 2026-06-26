@@ -365,7 +365,7 @@
     let baseQuestions = [];
 
     // Cargar preguntas desde JSON
-    fetch('resultado_final.json')
+    fetch('resultado_final_te.json')
         .then(response => response.json())
         .then(data => {
             baseQuestions = data.map(q => ({
